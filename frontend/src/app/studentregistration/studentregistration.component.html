@@ -1,0 +1,41 @@
+<div class="container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="details">
+      <h1>Register</h1>
+      <div *ngIf="notconfirm">
+      <form class="form_class" [formGroup]="sregisterForm" (ngSubmit)="submit()">
+          <div class="input-container">
+            <label>Admission Number:</label>
+            <div>
+              <input class="field_class" type="string" placeholder="." formControlName="adnumber" />
+            </div>
+            <div class="error-list" *ngIf="fc['adnumber'].errors && isSubmitted">
+              <div *ngIf="fc['adnumber'].errors['required']">Should not be empty</div>
+              <div *ngIf="fc['adnumber'].errors['adnumber']">Enter Proper Admission Number</div>
+            </div>
+          </div>
+          <div class="input-container">
+            <label>Create Password:</label>
+            <div>
+              <input class="field_class" type="password" placeholder="Enter password" formControlName="password" />
+            </div>
+            <div class="error-list" *ngIf="fc['password'].errors && isSubmitted">
+              <div *ngIf="fc['password'].errors['required']">Should not be empty</div>
+            </div>
+          </div>
+            <button type="submit">Register</button>
+      </form>
+    </div>
+    <div *ngIf="!notconfirm">
+      <h2>Check Your Details</h2><br>
+      <h4>Name:{{details.name}}</h4><br>
+      <h4>Email:{{details.email}}</h4><br>
+      <h4>Admission Number:{{details.admissionNo}}</h4><br>
+      <h4>Class:{{details.year}}-{{details.department}}-{{details.section}}</h4><br>
+      <button (click)="notconfirm=true">Cancel</button><button (click)="confirmdetails()">Confirm and Register</button>
+    </div>
+    </div>
+   </div>
+  

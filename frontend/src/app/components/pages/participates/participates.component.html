@@ -1,0 +1,103 @@
+
+<div class="container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div *ngIf="loading">
+      <app-loading></app-loading>
+    </div>
+    <div *ngIf="!loading">
+<div class="container" >
+    <div class="row" #scroll>
+    <div class="col-lg-6">
+        <div
+        class="about-content mt-50 wow fadeInLeftBig"
+        data-wow-duration="1s"
+        data-wow-delay="0.5s"
+        >
+        <div class="section-title">
+            <div class="line"></div>
+            <h3 class="title">
+            <span ></span>{{name}}
+            </h3>
+        </div>
+
+        <div class="alert alert-success mt-3" *ngIf="success" role="alert">
+          <label>{{msg}}</label>
+        </div>
+
+        <div class="alert alert-danger mt-3" *ngIf="alert" role="alert">
+            <label>{{error}}</label>
+        </div>
+
+
+        <form [formGroup]="participantForm" (ngSubmit)="participate()" *ngIf="afterForm">
+            <div>
+                <div>
+                    <label class="" for="teamname">Team Name</label>
+                    <input id="teamname" class="form-control mt-2" formControlName="teamname" type="text" placeholder="Team Name"/><br>
+                    <label><span>--------------------------------------------------------------------------------------</span></label>
+                </div>
+                
+                <div class="row">     
+                    <ng-container formArrayName="participants">
+                        <ng-container *ngFor="let participant of participants; let participantindex = index">
+                            <div [formGroupName]="participantindex">
+                                <label> Team Member {{participantindex+1}} Details</label>
+                                
+                                <div class="row">
+                                    
+                                    <div class="col-6">
+                                        <label for="adminno" class="mt-3">Adminsion Number:</label>
+                                        <input id="adminno" class="form-control mt-2" formControlName="admissionNo" type="text" placeholder="Adminssion Number"/>
+                                    </div>
+                                   <label> <span>--------------------------------------------------------------------------------------</span></label>
+                                </div> 
+                            </div>   
+                        </ng-container>
+                      </ng-container>
+                </div>
+            </div>
+            <button (click)="addParticipant()" type="button" *ngIf="addParticipantDisplay" >
+                +add participant
+            </button>
+            <div class="row">
+                <div class="col-4">
+                    <input type="submit" [disabled]="wait" class="main-btn" value="Participate"/>
+                </div>
+            </div>
+            
+        </form>
+            <div class="row">
+                <div class="col-4">
+                    <button (click)="back()" class="main-btn">Back</button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div
+        class="about-image text-center mt-50 wow fadeInRightBig"
+        data-wow-duration="1s"
+        data-wow-delay="0.5s"
+        >
+        <div class="alert alert-warning mt-3" role="alert">
+        <label> {{Linstructions}}</label>
+        </div>
+        <div class="alert alert-warning mt-3" role="alert">
+        <label> {{L2instructions}}</label>
+        </div>
+        <div class="alert alert-warning mt-3" role="alert">
+        <label> {{instructions}}</label>
+        </div>
+        <div class="alert alert-warning mt-3" role="alert">
+        <label> {{instructionsMax}}</label>
+        </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+    </div>
+</div>
