@@ -3,7 +3,7 @@ import { Product } from "./models/product.model";
 export const eventdetails:any[]= [{
       id: 0,
       name: "As You Like It",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/as you link it.png",
       rules: [
         "Time Duration: 3 mins; Venue : Mech Seminar Hall",
         "Reporting Time : 1.15 PM",
@@ -41,7 +41,7 @@ export const eventdetails:any[]= [{
     },{
       id: 2,
       name: "Solo Dance",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/solo dance.jpeg",
       rules: [
         "Audio track must be in mp3 format.",
         "Venue: MCC; Time Duration: 3 mins.",
@@ -61,7 +61,7 @@ export const eventdetails:any[]= [{
     },{
       id: 3,
       name: "Solo Singing",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/solo sinnging.jpeg",
       rules: [
         "Reporting time: 09.00 AM; Students should be in formal wear.",
         "Time Duration : 3 mins; Venue : Mech Seminar Hall",
@@ -81,7 +81,7 @@ export const eventdetails:any[]= [{
     },{
       id: 4,
       name: "Solo Instrumental",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/instrumental.jpeg",
       rules: [
         "Students should be in formal wear.",
         "Venue : Mech Seminar Hall;Time Duration : 3 mins.",
@@ -379,7 +379,7 @@ export const eventdetails:any[]= [{
     },{
       id: 18,
       name: "Group Dance",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/group dance.jpeg",
       rules:	[
 				"No of members: Minimum 4 to Maximum 15",
 				"Time Duration: 5 minutes.Venue: MCC",
@@ -417,7 +417,7 @@ export const eventdetails:any[]= [{
     },{
       id: 20,
       name: "Rangoli",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/rangoli.jpeg",
       rules:	[
         "Maximum of 3 participants per team.",
 				"Theme : WOMEN EMPOWERMENT",
@@ -434,7 +434,7 @@ export const eventdetails:any[]= [{
     },{
       id: 21,
       name: "Drama/Mime",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/drama_mime.jpeg",
       rules:	[
         "Maximum of 10 members and minimum of 4 per team.",
         "Time Duration: 8 min.;Venue : MCC",
