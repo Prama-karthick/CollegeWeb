@@ -139,22 +139,20 @@
     </div> -->
     <div *ngIf="product.id < 9" class="event">
       <h3>No of Participants:{{this.count}}</h3>
-      <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
+      <button style="float: right;" (click)="exportToExcel()">
         <i class="fa-solid fa-file-export"></i> Export to Excel
     </button>
       <table id="list">
         <tr>
           <th>Name</th>
           <th>Email</th>
-          <th>College</th>
-          <th>Payment Status</th>
+          <th>Class</th>
           <th>Gender</th>
         </tr>
         <tr *ngFor="let person of participantList">
           <td>{{person.name}}</td>
           <td>{{person.email}}</td>
-          <td>{{person.college}}</td>
-          <td><h4 *ngIf="person.eventPay">PAID</h4></td>
+          <td>{{person.year}}-{{person.department}} {{person.section}}</td>
           <td>{{person.gender}}</td>
         </tr>
       </table>

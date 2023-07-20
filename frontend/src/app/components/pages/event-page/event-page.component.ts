@@ -151,8 +151,8 @@ export class EventPageComponent {
       this.list=!this.list;
       this.eventservice.getparticipants(this.product.name).subscribe((response:any)=>{
         if(response){
-          this.List=response;
-          this.participantList=this.List.filter(student=>student.isAdmin===false);
+          this.participantList=response;
+          //this.participantList=this.List.filter(student=>student.isAdmin===false);
           this.count=this.participantList.length;
         }
 

@@ -179,9 +179,11 @@ router.post('/soloeventparticipation',asyncHandler(
     //     if(id==i){
     //       var  eventname=eventdetails[i].name
     // }}
-       const product=await EventModel.find({name:eventname});
-      
-      res.send(product);
+       const product=await EventModel.findOne({name:eventname});
+      if(product)
+        res.send(product.participants);
+    
+    res.json({msg:-1})
     }
   ));
 
