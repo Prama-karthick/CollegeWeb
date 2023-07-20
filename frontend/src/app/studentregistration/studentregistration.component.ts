@@ -15,17 +15,20 @@ export class StudentregistrationComponent implements OnInit{
   isSubmitted=false;
   returnUrl='';
   notconfirm=true;
+  loading!: boolean;
   details:any;
   constructor(private formBuilder:FormBuilder,private studentservice:StudentService
     ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){}
 
   ngOnInit(): void {
+    this.loading=true
       this.sregisterForm=this.formBuilder.group({
         adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(5)]],
         password:['',Validators.required]
       });
       this.returnUrl=this.activatedRoute.snapshot.queryParams['returnUrl'];
-  }
+      this.loading=false
+    }
 
   get fc(){
     return this.sregisterForm.controls;

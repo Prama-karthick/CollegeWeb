@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, delay } from 'rxjs';
 import { EventService } from 'src/app/services/event.service';
 import { Products } from 'src/app/shared/Product';
 
@@ -16,7 +16,7 @@ export class GroupPageComponent implements OnInit {
   ngOnInit(): void {
     this.loading=true;
 
-
+    delay(5000)
 
     this.loading=false;
 

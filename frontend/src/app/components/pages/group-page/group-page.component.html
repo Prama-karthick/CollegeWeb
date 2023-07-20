@@ -1,8 +1,8 @@
 <body>
   <div *ngIf="loading">
-    <app-loading></app-loading>
+    <img src="assets/fiesta/load.gif"/>
   </div>
-  <div class="details">
+  <div class="details" *ngIf="!loading">
     <div class="welcome">
       <img class="mepcologo logo" src="assets/mepcologocolor.png" alt="College logo">
       <!-- <img class="gyanlogo logo" src="assets/Gyanmitra.png" alt="Gyan Mitra logo"> -->
