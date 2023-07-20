@@ -172,4 +172,19 @@ router.post('/soloeventparticipation',asyncHandler(
  ))
 
 
+ router.get("/:id",asyncHandler(
+    async(req,res)=>{
+      var id=parseInt(req.params.id)
+      for(let i=0;i<eventdetails.length;i++){
+        if(id==i){
+          var  eventname=eventdetails[i].name
+    }}
+       const product=await EventModel.find({name:eventname});
+      
+      res.send(product);
+    }
+  ));
+
+
+
 export default router;

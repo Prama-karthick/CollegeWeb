@@ -19,9 +19,12 @@ const app=express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+var global="https://fiestaseniors.onrender.com/"
+var local="http://localhost:4200/"
+
 app.use(cors({
   credentials:true,
-  origin:["https://fiestaseniors.onrender.com/"]
+  origin:[local]
 }));
 
 

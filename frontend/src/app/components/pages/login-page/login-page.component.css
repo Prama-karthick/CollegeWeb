@@ -65,7 +65,7 @@ color: black;
 
 .details{
   letter-spacing: 3px;
-  width:40%;
+  width:flex;
   height: 60%;
   padding: 2em;
   margin-top: 5%;
