@@ -16,8 +16,6 @@ export class GroupPageComponent implements OnInit {
   ngOnInit(): void {
     this.loading=true;
 
-    delay(5000)
-
     this.loading=false;
 
   }
