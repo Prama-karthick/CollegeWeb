@@ -2,7 +2,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
-import { PRODUCT_BY_GROUP, PRODUCT_BY_ID_URL, PRODUCT_URL,ADD_PRODUCT_URL, SOLO_EVENT_PARTICIPATION, GROUP_EVENT_PARTICIPATION, SET_LEADER, ADD_MEMBER, GROUP_EVENT } from '../shared/constants/urls';
+import { PRODUCT_BY_GROUP, PRODUCT_BY_ID_URL, PRODUCT_URL,ADD_PRODUCT_URL, SOLO_EVENT_PARTICIPATION, GROUP_EVENT_PARTICIPATION, SET_LEADER, ADD_MEMBER, GROUP_EVENT, GET_SOLOPARTICIPANT } from '../shared/constants/urls';
 import { Events, Products} from '../shared/Product';
 import { ToastrService } from 'ngx-toastr';
 import { InewProduct } from '../shared/interfaces/inew-product';
@@ -66,5 +66,10 @@ export class EventService {
   participates(details: any): Observable<any>{
     return this.http.post(GROUP_EVENT, details);
   }
+
+  getparticipants(productname:string):Observable<any>{
+    return this.http.post<any>(GET_SOLOPARTICIPANT,productname);
+  }
+
 
 }

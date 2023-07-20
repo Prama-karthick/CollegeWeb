@@ -78,6 +78,7 @@
 }
 .gyanlogo{
   margin: 0% 1% 0% 92%;
+  
 }
 .sets{
   display: flex;
@@ -326,17 +327,17 @@
 }
 
 .domains{
-  margin: 2em 0 0 0;
+  margin: 0 0 0 0;
   font-size: 1.3em;
 }
 
 .domains:after{
-  padding: 0.3em 1em 1em 1em;
+  padding: 0.3em 1em 0.2em 1em;
   content: "";
   display: block;
   width: 50px;
   margin: 10px auto;
-  border-bottom: 10px dotted grey;
+  border-bottom: 5px dotted grey;
 }
 
 .Domain-details{
@@ -439,14 +440,14 @@
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 #head3{
-  font-size: 1em;
+  font-size: 2em;
   -webkit-animation: finalFade 1 3s ease-in;
   -moz-animation: finalFade 1 3s ease-in;
   -o-animation: finalFade 1 3s ease-in;
@@ -455,10 +456,10 @@
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 #head4{
@@ -590,6 +591,7 @@
 #c1{
   height: 50vh;
   font-size: 3em;
+  border-radius:10%;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/soloimg.jpg');
   background-size: cover;
 }
@@ -600,6 +602,7 @@
 #c2{
   height: 50vh;
   font-size: 3em;
+  border-radius:10%;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/teamimg.jpg');
   background-size: cover;
 }

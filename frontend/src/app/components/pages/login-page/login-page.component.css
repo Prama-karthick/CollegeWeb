@@ -41,7 +41,7 @@ button {
 .container{
 height: 100vh;
 width: 100vw;
-background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('../../../../assets/loginpage.jpg');
+background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../../../../assets/fiesta/loginbgimg.jpg');
 background-size: cover;
 background-color: white;
 display: flex;

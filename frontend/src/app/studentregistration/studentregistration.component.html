@@ -28,11 +28,12 @@
               <div *ngIf="fc['password'].errors['required']">Should not be empty</div>
             </div>
           </div>
-            <button type="submit">Register</button>
+            <button type="submit">Register</button><br><br>
       </form>
     </div>
     <div *ngIf="!notconfirm">
-      <h2>Check Your Details</h2><br>
+      <h2>Check Your Details</h2><br><br>
+      <span>-------------------------------------------------</span>
       <h4>Name:{{details.name}}</h4><br>
       <h4>Email:{{details.email}}</h4><br>
       <h4>Admission Number:{{details.admissionNo}}</h4><br>

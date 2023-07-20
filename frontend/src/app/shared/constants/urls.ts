@@ -45,3 +45,6 @@ export const ADD_MEMBER=GROUP_URL+'/addteammember';
 export const SET_LEADER=GROUP_URL+'/checkgroupevent';
 export const GROUP_EVENT_PARTICIPATION=GROUP_URL+'/groupeventparticipation';
 export const GROUP_EVENT=EVENT_URL+'/participates';
+
+
+export const GET_SOLOPARTICIPANT=EVENT_URL+'/getsoloparticipants';
