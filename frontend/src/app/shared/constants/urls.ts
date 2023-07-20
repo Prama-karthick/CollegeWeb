@@ -1,6 +1,8 @@
 import { environment } from "src/environments/environment";
+const global ="https://fiestaseniors.onrender.com/"
+const local="http://localhost:3000";
+const BASE_URL = global
 
-const BASE_URL = "http://localhost:3000";
 export const PRODUCT_URL=BASE_URL+'/api/products';
 export const PRODUCT_BY_ID_URL=PRODUCT_URL+'/';
 export const PRODUCT_BY_GROUP=PRODUCT_URL+'/group/';
