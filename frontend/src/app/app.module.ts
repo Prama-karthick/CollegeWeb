@@ -32,6 +32,7 @@ import { WorkshopComponent } from './components/pages/workshop/workshop.componen
 import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
 import { ParticipatesComponent } from './components/pages/participates/participates.component';
 import { LoadingComponent } from './components/partials/loading/loading.component';
+import { ProfilemodificationComponent } from './components/pages/profilemodification/profilemodification.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { LoadingComponent } from './components/partials/loading/loading.componen
     WorkshopComponent,
     StudentregistrationComponent,
     ParticipatesComponent,
-    LoadingComponent
+    LoadingComponent,
+    ProfilemodificationComponent
   ],
   imports: [
     BrowserModule,

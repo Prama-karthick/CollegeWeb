@@ -35,20 +35,20 @@
 
   <div class="flexing">
 
-  <!-- <div class="workshop">
+  <div class="workshop">
     <h2>Workshop</h2>
-    <div class="workshopName">
-      <li>{{this.workshopName}}</li>
+    <div class="workshopName" *ngFor="let teams of user.yourteams">
+      <li>{{teams}}</li><input type="submit" class="main-btn" routerLink="/modify/{{teams}}" value="Participate"/>
     </div>
   <br><br><br>
-    <div class="payments">
+    <!-- <div class="payments">
       <h4 *ngIf="user.isPayed">Workshop:{{this.workshopName}}<br>Workshop Fee:<br>PAID</h4>
       <div *ngIf="!user.isPayed">
       <h4>Workshop Fee:&nbsp;{{this.workshopPrice}}+ 4% Transaction charge</h4>
      <button (click)="workshopPay()">pay</button>
     </div>
-    </div>
-  </div> -->
+    </div> -->
+  </div>
 
   <div class="events">
     <h2>Events</h2>

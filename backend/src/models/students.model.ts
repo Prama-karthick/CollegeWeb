@@ -7,6 +7,7 @@ export interface Student{
   password:string;
   isAdmin:boolean;
   event:string[];
+  yourteams:string[];
   admissionNo:number;
   gender:string;
   department:string;
@@ -34,6 +35,7 @@ export const StudentSchema=new Schema<Student>({
   password:{type:String},
   isAdmin:{type:Boolean},
   event:{type:[String]},
+  yourteams:{type:[String]},
   admissionNo:{type:Number,required:true,unique:true},
   year:{type:String,required:true},
   gender:{type:String,required:true},

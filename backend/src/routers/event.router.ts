@@ -132,6 +132,10 @@ router.post('/soloeventparticipation',asyncHandler(
                             events.push(ename)
                             student.event=events
                           await student.save();
+                          var teams=student.yourteams
+                          teams.push(req.body.teamname)
+                          student.yourteams=teams
+                        await student.save();
                         //   const  newparticpant:RegisterStudent= {
                         //     name:student.name,
                         //     email:student.email,

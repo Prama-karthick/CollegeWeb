@@ -16,6 +16,7 @@ import { TeamPageComponent } from './components/pages/team-page/team-page.compon
 import { WorkshopComponent } from './components/pages/workshop/workshop.component';
 import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
 import { ParticipatesComponent } from './components/pages/participates/participates.component';
+import { ProfilemodificationComponent } from './components/pages/profilemodification/profilemodification.component';
 
 const routes: Routes = [
   {path:'login',component:LoginPageComponent},
@@ -29,6 +30,8 @@ const routes: Routes = [
   {path:'studentregistration',component:StudentregistrationComponent},
   {path:'teampage/:id',component:TeamPageComponent,canActivate:[AuthGuard]},
   {path:'groupevent/:id',component:ParticipatesComponent,canActivate:[AuthGuard]},
+  
+  {path:'modify/:tname',component:ProfilemodificationComponent,canActivate:[AuthGuard]},
 
   {path: "paid", component:PaidComponent,canActivate:[AuthGuard]},
   {path:"profile",component:ProfileComponent,canActivate:[AuthGuard]},
