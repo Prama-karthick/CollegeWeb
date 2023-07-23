@@ -2,10 +2,10 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-    <div *ngIf="loading">
+    <!-- <div *ngIf="loading">
       <img src="assets/fiesta/load.gif"/>
-    </div>
-    <div class="details" *ngIf="!loading">
+    </div> -->
+    <div class="details" >
       <h1>Register</h1>
       <div *ngIf="notconfirm">
       <form class="form_class" [formGroup]="sregisterForm" (ngSubmit)="submit()">

@@ -81,6 +81,7 @@ router.post('/soloeventparticipation',asyncHandler(
     //      res.json({message: -3}) //differnt user with differnt rollno
     //      return
     //  }
+    var member1= await StudentModel.findOne({admissionNo:req.body.participants[0].admissionNo})
      let obj= 1
      var ename!:string
      var newparticipants!:RegisterStudent[]
@@ -111,6 +112,10 @@ router.post('/soloeventparticipation',asyncHandler(
                     if(eventexists){
                         nochange=0
                        res.json({message:-4})//event exists for team member
+                    }
+                    else if(member1?.gender!=student.gender){
+                        nochange=0
+                        res.json({message:-2})
                     }
                     else{
                          nochange=1

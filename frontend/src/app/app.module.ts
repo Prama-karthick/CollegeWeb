@@ -69,8 +69,8 @@ import { ProfilemodificationComponent } from './components/pages/profilemodifica
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
-      timeOut:4000,
-      positionClass:'toast-bottom-right',
+      timeOut:5000,
+      positionClass:'toast-top-center',
       newestOnTop:false
     })
   ],

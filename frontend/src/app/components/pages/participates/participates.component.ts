@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { EventService } from 'src/app/services/event.service';
 import { StudentService } from 'src/app/services/student.service';
 
@@ -116,7 +117,7 @@ export class ParticipatesComponent implements OnInit {
 
   constructor(private fb: FormBuilder,private route: ActivatedRoute, 
     private router: Router, private studentservice: StudentService,
-    private eventservice:EventService) { }
+    private eventservice:EventService,private toastrservice:ToastrService) { }
 
   participantForm= new FormGroup({
     teamname:new FormControl('',[Validators.required]),
@@ -222,7 +223,7 @@ export class ParticipatesComponent implements OnInit {
     if(!this.participantForm.valid){
       window.scroll(0,0);
       this.alert= true;
-      this.error= "Fill in all details";
+      this.toastrservice.error("Fill in all details");
       return
     }
     this.alert= false;
@@ -242,7 +243,7 @@ export class ParticipatesComponent implements OnInit {
       }
       else if(response["message"]==-2){
         window.scroll(0,0);
-        this.error= "Your admission number must be filled first"
+        this.toastrservice.error("No two different genders participate together")
         this.alert=true;
         this.wait= false;
         this.loading= false;
@@ -250,14 +251,14 @@ export class ParticipatesComponent implements OnInit {
       }
       else if(response["message"]==-6){
         window.scroll(0,0);
-        this.error= "Team Member not registered in the fiesta Website"
+        this.toastrservice.error("Team Member not registered in the fiesta Website")
         this.alert=true;
         this.wait= false;
         this.loading= false;
       }
       else if(response["message"]==-4){
         window.scroll(0,0);
-        this.error= "Team member already Registered for this event"
+        this.toastrservice.error("Team member already Registered for this event")
         this.alert=true;
         this.wait= false; 
         this.loading= false;
@@ -265,14 +266,14 @@ export class ParticipatesComponent implements OnInit {
       }
       else if(response["message"]==-5){
         window.scroll(0,0);
-        this.error= "Team Name already Exist!! Enter different Team Name"
+        this.toastrservice.error("Team Name already Exist!! Enter different Team Name")
         this.alert=true;
         this.wait= false; 
         this.loading= false;
       }
       else if(response["message"]==-7){
         window.scroll(0,0);
-        this.msg= "Error Contact the admin"
+        this.toastrservice.show("Error Contact the admin")
         this.alert=false;
         this.success=true;
         this.loading= false;
