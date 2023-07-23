@@ -24,7 +24,7 @@ var local="http://localhost:4200/"
 
 app.use(cors({
   credentials:true,
-  origin:[local]
+  origin:[global]
 }));
 
 
