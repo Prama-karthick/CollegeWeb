@@ -3,6 +3,7 @@ import { Product } from "./models/product.model";
 export const eventdetails:any[]= [{
       id: 0,
       name: "As You Like It",
+      clubname:"",
       imageUrl:"assets/fiesta/as you link it.png",
       rules: [
         "Time Duration: 3 mins; Venue : Mech Seminar Hall",
@@ -19,6 +20,7 @@ export const eventdetails:any[]= [{
     },{
       id: 1,
       name: "Best Manager",
+      clubname:"",
       imageUrl:"assets/fiesta/BM.jpg",
       rules: [
         "No restriction in number of participants.",
@@ -41,6 +43,7 @@ export const eventdetails:any[]= [{
     },{
       id: 2,
       name: "Solo Dance",
+      clubname:"",
       imageUrl:"assets/fiesta/solo dance.jpeg",
       rules: [
         "Audio track must be in mp3 format.",
@@ -61,6 +64,7 @@ export const eventdetails:any[]= [{
     },{
       id: 3,
       name: "Solo Singing",
+      clubname:"",
       imageUrl:"assets/fiesta/solo sinnging.jpeg",
       rules: [
         "Reporting time: 09.00 AM; Students should be in formal wear.",
@@ -81,6 +85,7 @@ export const eventdetails:any[]= [{
     },{
       id: 4,
       name: "Solo Instrumental",
+      clubname:"",
       imageUrl:"assets/fiesta/instrumental.jpeg",
       rules: [
         "Students should be in formal wear.",
@@ -98,6 +103,7 @@ export const eventdetails:any[]= [{
     },{
       id: 5,
       name: "Pixie",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [
         "THEME: HOMETOWN PRIDE; Stick to the theme",
@@ -116,6 +122,7 @@ export const eventdetails:any[]= [{
     },{
       id: 6,
       name: "Drawing (Pencil Sketching) Solo Event",
+      clubname:"",
       imageUrl:"assets/fiesta/NSS.jpg",
       rules: [
         "Time Duration: 1 hour; Reporting Time : 01.30 PM",
@@ -132,6 +139,7 @@ export const eventdetails:any[]= [{
     },{
       id: 7,
       name: "Yoga",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [
         "Venue : CSE Seminar Hall",
@@ -148,6 +156,7 @@ export const eventdetails:any[]= [{
     },{
       id: 8,
       name: "Ezhuthaani",
+      clubname:"",
       imageUrl:"assets/fiesta/Ezhuthaani.png",
       rules: [
         "Theme/Topic : On the Spot",
@@ -169,6 +178,7 @@ export const eventdetails:any[]= [{
     },{
       id: 9,
       name: "Divide And Conquer",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [
 				"Venue : CSE Seminar Hall; Reporting Time : 01.15 PM",
@@ -189,6 +199,7 @@ export const eventdetails:any[]= [{
     },{
       id: 10,
       name: "Treasure hunt",
+      clubname:"",
       imageUrl:"assets/fiesta/thevent.jpg",
       rules: [
 				"The participating team must have exactly 5 members. There will be no changes in the participants list after initial submission",
@@ -210,6 +221,7 @@ export const eventdetails:any[]= [{
     },{
       id: 11,
       name: "Monsters’ Muss",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [
         "Venue : Civil Seminar Hall;Reporting Time : 01.30 PM",
@@ -228,6 +240,7 @@ export const eventdetails:any[]= [{
     },{
       id: 12,
       name: "Radio Mirchi",
+      clubname:"",
       imageUrl:"assets/fiesta/Radio Mirchi.png",
       rules: [
 				"Venue : CSE Seminar Hall;Reporting Time : 09.30 AM",
@@ -253,6 +266,7 @@ export const eventdetails:any[]= [{
     },{
       id: 13,
       name: "Potpourri",
+      clubname:"",
       imageUrl:"assets/fiesta/Potpourri.jpg",
       rules: [
 				"Venue : AV Hall, S & H Block",
@@ -278,6 +292,7 @@ export const eventdetails:any[]= [{
     },{
       id: 14,
       name: "Lyrical Hunt",
+      clubname:"",
       imageUrl:"assets/fiesta/Lyrical Hunt.png",
       rules: [
 				"Venue : S&H Seminar Hall;Time : 01.30 PM",
@@ -296,6 +311,7 @@ export const eventdetails:any[]= [{
     },{
       id: 15,
       name: "Sherlock Holmes",
+      clubname:"",
       imageUrl:"assets/fiesta/Sherlock Holmes.png",
       rules: [
 				"Venue : ECE Seminar Hall;Time : 01.30 PM",
@@ -317,6 +333,7 @@ export const eventdetails:any[]= [{
     },{
       id: 16,
       name: "Cinematrix (Short Flim)",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [
 				"Venue : S&H Seminar Hall;Reporting Time : 11.00 AM",
@@ -335,6 +352,7 @@ export const eventdetails:any[]= [{
     },{
       id: 17,
       name: "Quizzards of Oz",
+      clubname:"",
       imageUrl:"assets/fiesta/Quiz.png",
       rules: [
 				"Venue : ECE Seminar Hall;Reporting Time : 9.00 AM",
@@ -379,6 +397,7 @@ export const eventdetails:any[]= [{
     },{
       id: 18,
       name: "Group Dance",
+      clubname:"",
       imageUrl:"assets/fiesta/group dance.jpeg",
       rules:	[
 				"No of members: Minimum 4 to Maximum 15",
@@ -400,6 +419,7 @@ export const eventdetails:any[]= [{
     },{
       id: 19,
       name: "Poster Making",
+      clubname:"",
       imageUrl:"assets/fiesta/default.jpg",
       rules:	[
 				"Venue : S&H Block Computer Lab - I (I Floor).Reporting Time : 1.30 PM",
@@ -417,6 +437,7 @@ export const eventdetails:any[]= [{
     },{
       id: 20,
       name: "Rangoli",
+      clubname:"",
       imageUrl:"assets/fiesta/rangoli.jpeg",
       rules:	[
         "Maximum of 3 participants per team.",
@@ -434,6 +455,7 @@ export const eventdetails:any[]= [{
     },{
       id: 21,
       name: "Drama/Mime",
+      clubname:"",
       imageUrl:"assets/fiesta/drama_mime.jpeg",
       rules:	[
         "Maximum of 10 members and minimum of 4 per team.",

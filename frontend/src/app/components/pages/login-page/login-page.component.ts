@@ -50,16 +50,21 @@ export class LoginPageComponent implements OnInit{
     studentlogin(){
       this.loading=true
       this.isSubmitted=true;
-      if(this.sloginForm.invalid) return;
+      if(this.sloginForm.invalid){
+        this.toastrservice.show("Enter the fileds Correctly")
+        return;
+      }
       
       this.studentservice.studentlogin({adnumber:this.fc['adnumber'].value,password:this.fc['password'].value}).subscribe((res:any)=>{
-        if(res['msg']==-1)
+        if(res['msg']==-2)
        { 
-        
         this.toastrservice.error("Admin No not registered");
       }
-      else if(res['msg']==-2){
-        this.toastrservice.error("Check your Admin No");
+      // else if(res['msg']==-2){
+      //   this.toastrservice.error("Check your Admin No");
+      // }
+      else if(res['msg']==-1){
+        this.toastrservice.error("Password and Admin No doesn't Not match");
       }
       else{
         this.toastrservice.success('Login Successful')

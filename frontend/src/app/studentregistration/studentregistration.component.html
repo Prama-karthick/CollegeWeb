@@ -28,6 +28,16 @@
               <div *ngIf="fc['password'].errors['required']">Should not be empty</div>
             </div>
           </div>
+          <div class="input-container">
+            <label>Confirm-Password:</label>
+            <div>
+              <input class="field_class" type="password" placeholder="Enter password" formControlName="confirmPassword" />
+            </div>
+            <div class="error-list" *ngIf="fc['confirmPassword'].errors && isSubmitted">
+              <div *ngIf="fc['confirmPassword'].errors['required']">Should not be empty</div>
+              <div *ngIf="fc['confirmPassword'].errors['confirmPassword']">Both password doesn't match</div>
+            </div>
+          </div>
             <button type="submit">Register</button><br><br>
       </form>
     </div>

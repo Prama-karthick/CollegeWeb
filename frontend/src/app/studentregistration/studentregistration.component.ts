@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../services/user.service';
 import { StudentService } from '../services/student.service';
 import { ToastrService } from 'ngx-toastr';
+import { PasswordsMatchValidator } from '../shared/validators/password_match_validator';
 
 @Component({
   selector: 'app-studentregistration',
@@ -24,7 +25,10 @@ export class StudentregistrationComponent implements OnInit{
     this.loading=true
       this.sregisterForm=this.formBuilder.group({
         adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(5)]],
-        password:['',Validators.required]
+        password:['',Validators.required],
+        confirmPassword: ['', Validators.required],
+      },{
+        validators: PasswordsMatchValidator('password','confirmPassword')
       });
       this.returnUrl=this.activatedRoute.snapshot.queryParams['returnUrl'];
       this.loading=false
@@ -34,8 +38,9 @@ export class StudentregistrationComponent implements OnInit{
     return this.sregisterForm.controls;
   }
   submit(){
-
+this.isSubmitted=true
     if(this.sregisterForm.invalid){
+      this.toastrservice.error("Enter the fileds Correctly")
       return
       };
     
