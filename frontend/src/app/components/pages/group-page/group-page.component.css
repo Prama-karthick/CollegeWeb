@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .boxesh2{
@@ -27,7 +28,7 @@
 
 .category:hover{
   box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-  background-color: #c9d5d6;
+  background-color: #2d3232;
   transition: background-color .5s ease-out;
   color: black;
   font-weight: bolder;
@@ -154,7 +155,7 @@
 .Rules:after{
   padding: 0.3em 1em 1em 1em;
   content: "";
-  display: block;
+  /* display: block; */
   width: 50px;
   margin: 10px auto;
   border-bottom: 10px dotted grey;
@@ -163,8 +164,11 @@
 .details{
     height: 50vh;
     font-weight: 100;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/groupbg.jpeg');
-    background-size: cover;
+  
+    /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/fiesta/homeimg.jpg'); */
+    background: radial-gradient(ellipse at bottom, 
+    #1b2735 0%, #090a0f 100%);
+   
     -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
     -o-overflow-Y: hidden;
@@ -175,6 +179,15 @@
     animation: fadeIn 1 1s ease-out;
 }
 
+/* .details:after{
+  padding: 0.3em 1em 0.2em 1em;
+  content: ""; 
+  /* display: block;
+
+  margin: 10px auto;
+  /*border-bottom: 5px dotted grey;
+} */
+
 .light {
 
     position: absolute;
@@ -183,7 +196,7 @@
     background-color: white;
     box-shadow: #e9f1f1 0px 0px 20px 2px;
     opacity: 0;
-    top: 100vh;
+    top: 0vh;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -329,12 +342,17 @@
 .domains{
   margin: 0 0 0 0;
   font-size: 1.3em;
+  background: radial-gradient(ellipse at bottom, 
+  #1b2735 0%, #090a0f 100%);
+  background-size: cover;
 }
-
+.domains::before{
+  display: none;
+}
 .domains:after{
-  padding: 0.3em 1em 0.2em 1em;
+  /* padding: 0.3em 1em 0.2em 1em; */
   content: "";
-  display: block;
+  /* display: block; */
   width: 50px;
   margin: 10px auto;
   border-bottom: 5px dotted grey;
@@ -572,7 +590,7 @@
 
 #w3{
 
-  padding: 0.1em;
+  /* padding: 0.1em; */
   text-decoration: none;
   color: white;
   border-radius: 0.5em;

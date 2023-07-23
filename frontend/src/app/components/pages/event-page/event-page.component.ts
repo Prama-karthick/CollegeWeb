@@ -62,10 +62,13 @@ export class EventPageComponent {
     this.loading=false
   }
 
+  confirmationbox(){
+    this.loading=true;
+  }
+
 
 
   participate(){
-    this.loading=true
     var AdminNo=this.user.admissionNo
     if(this.user.token)
     { this.eventservice.soloevent({adminno:AdminNo,Ename:this.product.name}).subscribe((res:any)=>{
@@ -82,7 +85,7 @@ export class EventPageComponent {
     else{
       this.route.navigateByUrl("/login");
     }
-    this.loading=false
+  
   }
   
   checkevent(){
@@ -149,14 +152,25 @@ export class EventPageComponent {
 
   change(){
       this.list=!this.list;
+      if(this.product.id<9){
       this.eventservice.getparticipants(this.product.name).subscribe((response:any)=>{
-        if(response){
+        if(response['msg']==-1){
+          
+          console.log("Event page returns::"+response)
+          //this.participantList=this.List.filter(student=>student.isAdmin===false);
+          this.count=0;
+        }
+        else{
           this.participantList=response;
+          console.log("Event page returns::"+response)
           //this.participantList=this.List.filter(student=>student.isAdmin===false);
           this.count=this.participantList.length;
         }
 
-      })
+      })}
+      else{
+        this.route.navigateByUrl("/teampage/"+this.product.id)
+      }
   }
 
   exportToExcel()

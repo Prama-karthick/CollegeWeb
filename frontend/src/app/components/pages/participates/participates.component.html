@@ -6,7 +6,7 @@
     <!-- <div *ngIf="loading">
       <app-loading></app-loading>
     </div> -->
-    <div>
+    <div class="maincards">
 <div class="container" >
     <div class="row" #scroll>
     <div class="col-lg-6">
@@ -58,9 +58,12 @@
                       </ng-container>
                 </div>
             </div>
+            <div class="buttons">
+            <label (click)="undoactions()">Undo</label>
             <button (click)="addParticipant()" type="button" *ngIf="addParticipantDisplay" >
                 +add participant
             </button>
+             </div>
             <div class="row">
                 <div class="col-4">
                     <input type="submit" [disabled]="wait" class="main-btn" value="Participate"/>

@@ -8,6 +8,13 @@
   display: flex;
   justify-content: center;
 }
+.buttons{
+  display: flex;
+}
+
+.maincards{
+  display: flex;
+}
 
 button{
   color:white;

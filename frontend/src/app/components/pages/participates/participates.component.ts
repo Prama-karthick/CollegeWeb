@@ -194,6 +194,10 @@ export class ParticipatesComponent implements OnInit {
     this.loading=false
   }
 
+  undoactions(){
+    this.router.navigateByUrl("/groupevent/"+this.data.id);
+  }
+
   n: number=0;
   addParticipant(){
     this.loading=true
