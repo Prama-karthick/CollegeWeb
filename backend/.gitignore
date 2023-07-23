@@ -1,4 +1,4 @@
 node_modules
 .env
 built
-studentlist.ts
+src/studentlist.ts
