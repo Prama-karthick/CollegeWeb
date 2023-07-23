@@ -184,13 +184,14 @@ router.post('/soloeventparticipation',asyncHandler(
  router.post("/getsoloparticipants",asyncHandler(
     async(req,res)=>{
       var eventname=req.body.productname
-    //   for(let i=0;i<eventdetails.length;i++){
-    //     if(id==i){
-    //       var  eventname=eventdetails[i].name
-    // }}
+   
        const product=await EventModel.findOne({name:eventname});
       if(product)
         res.send(product.participants);
+         //   for(let i=0;i<eventdetails.length;i++){
+    //     if(id==i){
+    //       var  eventname=eventdetails[i].name
+    // }}
     
     res.json({msg:-1})
     }
