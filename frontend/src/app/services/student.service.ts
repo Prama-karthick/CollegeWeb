@@ -12,6 +12,8 @@ import { Student } from '../shared/student';
 export class StudentService {
   private userSubject=new BehaviorSubject<Student>(this.getUserFromLocal());
   public userObservable:Observable<Student>;
+  userevents!: string[];
+  userteams!: string[];
   constructor(private http:HttpClient,private toastrservice:ToastrService) { 
     this.userObservable=this.userSubject.asObservable();
   }
@@ -75,6 +77,27 @@ export class StudentService {
     window.location.reload();
   }
 
+  get events(){
+    return this.userevents
+  }
+  get teams(){
+    return this.userteams
+  }
+
+  addevents(eventname:string){
+    if(this.currentUser.event)
+    {this.userevents=this.currentUser.event}
+   
+    this.userevents.push(eventname);
+
+  }
+  addteams(tname:string){
+    if(this.currentUser.yourteams)
+    {this.userteams=this.currentUser.yourteams}
+   
+    this.userevents.push(tname);
+
+  }
 
   private setUserToLocalStorage(user:any){
 

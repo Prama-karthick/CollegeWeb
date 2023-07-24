@@ -15,7 +15,9 @@
 .maincards{
   display: flex;
 }
-
+.row{
+  display: flex;
+}
 button{
   color:white;
  opacity: 1;

@@ -69,7 +69,7 @@ export class ParticipatesComponent implements OnInit {
       maxNumberOfParticipates: 3
     },{
       id: "13",
-      name: "English Potpourri",
+      name: "Potpourri",
       minNumberOfParticipates: 3,
       maxNumberOfParticipates: 3
     },{
@@ -79,9 +79,9 @@ export class ParticipatesComponent implements OnInit {
       maxNumberOfParticipates: 3
     },{
       id: "15",
-      name: "Tamil Potpourri",
-      minNumberOfParticipates: 3,
-      maxNumberOfParticipates: 3
+      name: "Sherlock Holmes",
+      minNumberOfParticipates: 2,
+      maxNumberOfParticipates: 2
     },{
       id: "16",
       name: "Cinematrix (Short Flim)",
@@ -174,11 +174,11 @@ export class ParticipatesComponent implements OnInit {
     
 
     this.Linstructions= "Participant 1 will Consider as the Team Leader";
-    this.L2instructions= "Team Leader should have an account in the Fiesta'22"
+    this.L2instructions= "Team Leader should have an account in the Fiesta'23"
 
     this.name= this.data["name"];
     if(this.data["minNumberOfParticipates"]==this.data["maxNumberOfParticipates"]){
-      this.instructions = "Number Of participants required is "+ this.data["maxNumberOfParticipates"];
+      this.instructions = "The Team can have atmost "+this.data["maxNumberOfParticipates"]+" participants";
       this.instructionsMax= "Fill in all the details";
     }
     else{
@@ -197,7 +197,9 @@ export class ParticipatesComponent implements OnInit {
   undoactions(){
     //this.router.navigateByUrl("/groupevent/"+this.data.id);
     if(this.n>this.data.minNumberOfParticipates)
-          this.n=this.n-1
+     {     this.n=this.n-1;
+      (<FormArray>this.participantForm.get('participants')).removeAt(-1);
+    }
     else
       this.toastrservice.show("Minimum Participants Needed")
   }
@@ -289,7 +291,9 @@ export class ParticipatesComponent implements OnInit {
       else{
         window.scroll(0,0);
         this.router.navigateByUrl("/");
-
+        this.studentservice.addevents(this.data.name);
+        if(this.participantForm.value.teamname)
+          this.studentservice.addteams(this.participantForm.value.teamname);
        // this.error= "Error Contact the admin"
         this.alert=true;
         this.wait= false;

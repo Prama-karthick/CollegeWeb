@@ -14,7 +14,7 @@ export const eventdetails:any[]= [{
         "The audio track can be played in the background. If so, audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized)",
         "Vulgarity in any form is strictly prohibited.",
         "The Jury’s decision is final. If necessary, prelims will be conducted.",
-        "Staff Incharges:Mr.Viswalingam/English",
+        "Staff Incharge:Mr.Viswalingam/English",
       ]
     },{
       id: 1,
@@ -35,7 +35,7 @@ export const eventdetails:any[]= [{
         "---Time: 01:15 PM",
         "---Totally single Round: ( Situation handling)",
         "---Language for communication is strictly English.",
-        "Staff Incharges:Dr.A.Sakthivel, Asst. Professor (Sl.Grade)/CHEM",
+        "Staff Incharge:Dr.A.Sakthivel, Asst. Professor (Sl.Grade)/CHEM",
 
       ]
     },{
@@ -55,7 +55,7 @@ export const eventdetails:any[]= [{
         "Any kind of dance may be performed like classical, free style or Folk etc.,",
         "Maximum of 20 participants who complete registration, corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis to the concerned staff.",
         "Jury's decision is final.",
-        "Staff Incharges:Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
+        "Staff Incharge:Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
 
       ]
     },{
@@ -74,7 +74,7 @@ export const eventdetails:any[]= [{
         "Judging criteria will be : Shruthi, Voice Clarity, Song difficulty, Tempo and Improvisations.",
         "Jury decision is final. Prelims will be conducted.",
         "Submit your karaoke to the concerned staff on or before 17.04.2023 by 5 pm in mp3 format (Normalized).",
-        "Staff Incharges:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
+        "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
 
       ]
     },{
@@ -91,7 +91,7 @@ export const eventdetails:any[]= [{
         "Judging criteria :  Song difficulty, Tempo, Rhythm, No. Of flaws, Improvisations",
         "Submit your audio to the concerned staff on or before 29.08.2022 by 5 pm in mp3 format (Normalized).",
         "Jury's decision is final",
-        "Staff Incharges:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
+        "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
 
       ]
     },{
@@ -110,7 +110,7 @@ export const eventdetails:any[]= [{
         "Submit your photos through mail to photoclubforu@gmail.com (In subject, mention entry for pixie. Mention your name, year, dept, sec, roll no in the body of the email) on or before 10.08.2023",
 	"Attach the properties of the photo in the mail.",
         "Jury decision is final.",
-        "Staff Incharges:Mr.M.Suresh Kumar/PHY.",
+        "Staff Incharge:Mr.M.Suresh Kumar/PHY.",
 
       ]
     },{
@@ -126,7 +126,7 @@ export const eventdetails:any[]= [{
         "Participants should bring their own drawing paraphernalia including A4 sheet.",
         "Topic will be given on the spot",
         "Jury decision is final.",
-        "Staff Incharges:Mr.C.Utharanarayanan/MECH.",
+        "Staff Incharge:Mr.C.Utharanarayanan/MECH.",
 
       ]
     },{
@@ -142,13 +142,13 @@ export const eventdetails:any[]= [{
         "Shorts &amp; Sleeveless strictly not allowed. Musical Yoga Allowed.",
         "Rhythm,Posture,Complication,Flexibility is taken under Consideration.",
         "Jury decision is final.",
-        "Staff Incharges:Mrs.AMK.Saliha Banu/PED.",
+        "Staff Incharge:Mrs.AMK.Saliha Banu/PED.",
 
       ]
     },{
       id: 8,
       name: "Ezhuthaani",
-      clubname:"The Literary Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Ezhuthaani.png",
       rules: [
         "Theme/Topic : On the Spot",
@@ -163,7 +163,8 @@ export const eventdetails:any[]= [{
         "→ Vocabulary style - 10",
         "All entries will be thoroughly validated.",
         "Jury's decision is final.",
-        "Staff Incharges:Mrs.J.Deepalakshmi, Asst. Professor (Sl.Grade)/MATH.",
+        "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
+        "Staff Incharge:Mrs.J.Deepalakshmi, Asst. Professor (Sl.Grade)/MATH.",
 
       ]
     },{
@@ -183,7 +184,7 @@ export const eventdetails:any[]= [{
 	"Multiple tasks will be given for participants in each team separately in each level.",
 	"Marks would be provided on the basis of time of completion of the tasks collectively",
 	"Jury decision is final.",
-        "Staff Incharges:Mr.R.Sebastiyan/LIB.",
+        "Staff Incharge:Mr.R.Sebastiyan/LIB.",
 
       ]
     },{
@@ -204,7 +205,7 @@ export const eventdetails:any[]= [{
 	"Final score will be based on all previous levels.",
 	"Be genuine and ethical to solve the clues at each level on your own. Googling the answers is strictly prohibited.",
 	"Jury's decision is final.",
-        "Staff Incharges:Dr.J.Senthilkumar/ECE.",
+        "Staff Incharge:Dr.J.Senthilkumar/ECE.",
 
 				]
     },{
@@ -228,7 +229,7 @@ export const eventdetails:any[]= [{
     },{
       id: 12,
       name: "Radio Mirchi",
-      clubname:"The Literary Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Radio Mirchi.png",
       rules: [
 	"Venue : CSE Seminar Hall;Reporting Time : 10:15 AM",
@@ -247,13 +248,14 @@ export const eventdetails:any[]= [{
 	"	3. Originality",
 	"	4. Communication of the contest theme",
 	"	5. Sense of humour and presentation",
-        "Staff Incharges:Mrs.P.Palniladevi, Asst. Professor/ECE.",
+  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
+        "Staff Incharge:Mrs.P.Palniladevi, Asst. Professor/ECE.",
 
       ]
     },{
       id: 13,
       name: "Potpourri",
-      clubname:"The Literary Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Potpourri.jpg",
       rules: [
 	"Venue : AV Hall, S & H Block; Reporting Time : 01:15 PM",
@@ -268,13 +270,14 @@ export const eventdetails:any[]= [{
 	"The team which gets the pass question will get +2.5 for the correct answer and they will not get any negative marks if they haven't answered the question and passed.",
 	"In case of tie, the team will be asked 3 rapid fire questions and the team with more quick answers will be declared as the winner.",
 	"Jury decision is final.",
-        "Staff Incharges:Mr.G.Manoj Kumar, Asst. Professor (Sr.Grade)/MECH.",
+  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
+        "Staff Incharge:Mr.G.Manoj Kumar, Asst. Professor (Sr.Grade)/MECH.",
 
       ]
     },{
       id: 14,
       name: "Lyrical Hunt",
-      clubname:"The Literary Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Lyrical Hunt.png",
       rules: [
 	"Venue : S&H Seminar Hall;Time : 01.30 PM",
@@ -286,13 +289,13 @@ export const eventdetails:any[]= [{
 	"Main round will consist of 5 to 6 segments like Karaoke, Connections, Rapid Fire, Reverse the song etc….",
 	"Marks for each segment will be announced on the spot.",
 	"Jury decision is final",
-        "Staff Incharges: Mrs.S.Usha, Asst. Professor/CIV.",
+        "Staff Incharge: Mrs.S.Usha, Asst. Professor/CIV.",
 
       ]
     },{
       id: 15,
       name: "Sherlock Holmes",
-      clubname:"The Literary Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Sherlock Holmes.png",
       rules: [
 	"Venue : AV Hall, S & H Block",
@@ -303,8 +306,9 @@ export const eventdetails:any[]= [{
 	"Rounds will be revealed only during the contest.",
 	"Those 3 rounds also include a prelim.",
 	"Participation of girls and boys together is strictly prohibited.",
-	"Jury decision is final.",
-        "Staff Incharges: Mr.J.Anish Jafrin Thilak/MECH",
+	"Jury decision is final.",  
+  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
+        "Staff Incharge: Mr.J.Anish Jafrin Thilak/MECH",
 
       ]
     },{
@@ -323,13 +327,13 @@ export const eventdetails:any[]= [{
 	"Avoid help from professional artists.",
 	"Jury decision is final.",
 	"Permission letter from the parents is needed for Participation",
-        "Staff Incharges: Dr.Winfred Shashikanth/PHY.",
+        "Staff Incharge: Dr.Winfred Shashikanth/PHY.",
 
       ]
     },{
       id: 17,
-      name: "Quizzards of Oz",
-      clubname:"The Literary Club",
+      name: "Quiz",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Quiz.png",
       rules: [
 	"Venue : S&H Seminar Hall;Reporting Time : 9:45 AM",
@@ -367,7 +371,8 @@ export const eventdetails:any[]= [{
 				"	❖ No negative marking.",
 				"	❖ Each question is not a pass question",
 				"Jury decision is final.",
-        "Staff Incharges: Mrs.A.Annie Aglin/BT.",
+        "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
+        "Staff Incharge: Mrs.A.Annie Aglin/BT.",
 
 			 ]
     },{
@@ -388,7 +393,7 @@ export const eventdetails:any[]= [{
 	"No participation of boys and girls together.",
         "Maximum no of teams – 12; corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis.",
 	"Jury decision is final.",
-        "Staff Incharges: Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
+        "Staff Incharge: Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
 
 				]
     },{
@@ -405,7 +410,7 @@ export const eventdetails:any[]= [{
 	"For paper based participants should use A3 sheets and all other necessary items.",
 	"For digital graphics participants must bring their laptops with necessary software installed.",
 	"Jury decision is final.",
-        "Staff Incharges: Mr.M.Suresh Kumar/PHY.",
+        "Staff Incharge: Mr.M.Suresh Kumar/PHY.",
 
       ]
     },{
@@ -422,7 +427,7 @@ export const eventdetails:any[]= [{
         "Usage of templates are strictly prohibited.",
 	"Judging criteria will be : symmetry, color combination, innovation, creativity and the neatness of the Rangoli.",
 	"Jury's decision is final.",
-        "Staff Incharges: Mrs.BlessaBinolinPepsi/IT& Mrs.P.Madhumitha/English.",
+        "Staff Incharge: Mrs.BlessaBinolinPepsi/IT& Mrs.P.Madhumitha/English.",
 
 				]
     },{
@@ -442,8 +447,8 @@ export const eventdetails:any[]= [{
         "Participants must bring their own materials.",
         "First 15 teams who complete the registration with corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized).",
         "The Jury’s decision is final.",
-        "The Registeration Form for the event should be submitted to the concerned staff incharges",
-        "Staff Incharges: Mr.M.Jawahar/EEE.",
+        "The Registeration Form for the event should be submitted to the concerned Staff Incharge",
+        "Staff Incharge: Mr.M.Jawahar/EEE.",
 
       ]
     }

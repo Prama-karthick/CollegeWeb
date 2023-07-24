@@ -33,6 +33,8 @@ export class ProfileComponent {
   list:boolean=false;
   particularUser:any;
   isSearch:boolean=false;
+  uevents!: string[];
+  uteams!: string[];
 
 constructor(activatedRoute:ActivatedRoute,private toastrservice:ToastrService,private profileservice:ProfileService,private route:Router,private eventservice:EventService,private orderService:OrderService,private userService:StudentService){
 
@@ -60,7 +62,8 @@ this.user=this.userService.currentUser
 
 	// 		})
 	// }
-
+this.uevents=this.userService.events;
+this.uteams=this.userService.teams
 
 }
 
