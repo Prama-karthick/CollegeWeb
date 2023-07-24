@@ -36,9 +36,9 @@
   <div class="flexing">
 
   <div class="workshop">
-    <h2>Workshop</h2>
-    <div class="workshopName" *ngFor="let teams of user.yourteams">
-      <li>{{teams}}</li><input type="submit" class="main-btn" routerLink="/modify/{{teams}}" value="Participate"/>
+    <h2>Events</h2>
+    <div class="workshopName" *ngFor="let event of user.event">
+      <li>{{event}}</li><input type="submit" class="main-btn" routerLink="/modify/{{teams}}" value="Participate"/>
     </div>
   <br><br><br>
     <!-- <div class="payments">
@@ -51,9 +51,9 @@
   </div>
 
   <div class="events">
-    <h2>Events</h2>
-    <div class="eventNames" *ngFor="let event of user.event">
-    <li>{{event}}</li>
+    <h2>Your Teams:</h2>
+    <div class="eventNames" *ngFor="let team of user.yourteams">
+    <li>{{team}}</li>
     </div>
     <!-- <div class="payments">
       <h4 *ngIf="user.eventPay">Events Fee:<br>PAID</h4>

@@ -172,7 +172,7 @@
     -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
     -o-overflow-Y: hidden;
-    overflow-y: hidden;
+    overflow-Y: hidden;
     -webkit-animation: fadeIn 1 1s ease-out;
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;

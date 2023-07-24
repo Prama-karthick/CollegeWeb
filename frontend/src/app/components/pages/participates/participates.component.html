@@ -51,7 +51,7 @@
                                         <label for="adminno" class="mt-3">Adminsion Number:</label>
                                         <input id="adminno" class="form-control mt-2" formControlName="admissionNo" type="text" placeholder="Adminssion Number"/>
                                     </div>
-                                   <label> <span>--------------------------------------------------------------------------------------</span></label>
+                                   <label> <span>------------------------------------</span></label>
                                 </div> 
                             </div>   
                         </ng-container>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="buttons">
-            <label (click)="undoactions()">Undo</label>
+            <button (click)="undoactions()">Undo</button>
             <button (click)="addParticipant()" type="button" *ngIf="addParticipantDisplay" >
                 +add participant
             </button>

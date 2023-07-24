@@ -34,7 +34,7 @@
         <a routerLink="/event/{{product.id}}">
           <img [src]="product.imageUrl" /> 
         <div class="content">
-          <div class="name">
+          <div class="name" style="text-align: center;">
             <p class="Event-details">{{product.name}}</p>
             <!-- <p class="Event-details">{{product.time}}</p> -->
             <p>by</p>
@@ -52,9 +52,11 @@
         <a routerLink="/event/{{product.id}}">
           <img [src]="product.imageUrl" /> 
         <div class="content">
-          <div class="name">
+          <div class="name" style="text-align: center;">
             <p class="Event-details">{{product.name}}</p>
             <!-- <p class="Event-details">{{product.time}}</p> -->
+            <p>by</p>
+            <p>{{product.clubname}}</p>
           </div>
          
         </div>

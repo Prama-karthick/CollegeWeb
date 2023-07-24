@@ -89,7 +89,7 @@ export class ParticipatesComponent implements OnInit {
       maxNumberOfParticipates: 8
     },{
       id: "17",
-      name: "Quizzards of Oz",
+      name: "Quiz",
       minNumberOfParticipates: 2,
       maxNumberOfParticipates: 2
     },{
@@ -195,7 +195,11 @@ export class ParticipatesComponent implements OnInit {
   }
 
   undoactions(){
-    this.router.navigateByUrl("/groupevent/"+this.data.id);
+    //this.router.navigateByUrl("/groupevent/"+this.data.id);
+    if(this.n>this.data.minNumberOfParticipates)
+          this.n=this.n-1
+    else
+      this.toastrservice.show("Minimum Participants Needed")
   }
 
   n: number=0;
