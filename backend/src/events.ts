@@ -4,7 +4,7 @@ export const eventdetails:any[]= [{
       id: 0,
       name: "As You Like It",
       clubname:"Fine Arts Club",
-      imageUrl:"assets/fiesta/as you link it.png",
+      imageUrl:"assets/fiesta/As u like it.png",
       rules: [
         "Time Duration: 3 mins; Venue : Mech Seminar Hall",
         "Reporting Time : 1.15 PM",
@@ -133,7 +133,7 @@ export const eventdetails:any[]= [{
       id: 7,
       name: "Yoga",
       clubname:"Health Club",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/yoga.png",
       rules: [
         "Venue : CSE Seminar Hall",
         "Reporting Time : 09.15 AM",
@@ -171,7 +171,7 @@ export const eventdetails:any[]= [{
       id: 9,
       name: "Divide And Conquer",
       clubname:"Reader's Club",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/dc.png",
       rules: [
 	"Venue : CSE Seminar Hall; Reporting Time : 01:15 PM",
 	"The team can consist of 5 members;Only 20 teams can register.",
@@ -212,7 +212,7 @@ export const eventdetails:any[]= [{
       id: 11,
       name: "Monsters’ Muss",
       clubname:"Blue Sky Club",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/mm.png",
       rules: [
         "Venue : Civil Seminar Hall;Reporting Time : 01.15 PM",
         "Duration: 2 hours",
