@@ -117,7 +117,16 @@ export class ParticipatesComponent implements OnInit {
 
   constructor(private fb: FormBuilder,private route: ActivatedRoute, 
     private router: Router, private studentservice: StudentService,
-    private eventservice:EventService,private toastrservice:ToastrService) { }
+    private eventservice:EventService,private toastrservice:ToastrService) { 
+
+      // this.name="EVENT NAME";
+      // this.Linstructions="Team leader will be participant 1"
+      // this.L2instructions="MAX participants should be 10"
+      // this.instructionsMax="Max instructions"
+      // this.instructions="demo instructions for designing"
+      // this.addParticipantDisplay=true
+
+    }
 
   participantForm= new FormGroup({
     teamname:new FormControl('',[Validators.required]),
@@ -172,7 +181,8 @@ export class ParticipatesComponent implements OnInit {
         this.afterForm= false;
       }
     
-
+      //var min=this.data["minNumberOfParticipates"]
+       var min=2
     this.Linstructions= "Participant 1 will Consider as the Team Leader";
     this.L2instructions= "Team Leader should have an account in the Fiesta'23"
 
@@ -187,7 +197,7 @@ export class ParticipatesComponent implements OnInit {
       this.addParticipantDisplay=true;
     }
 
-    for (var i = 0; i < this.data["minNumberOfParticipates"]; i++) {
+    for (var i = 0; i < min; i++) {
       this.addParticipant()
     }
 

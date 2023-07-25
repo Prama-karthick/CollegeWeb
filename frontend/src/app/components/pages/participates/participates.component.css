@@ -9,14 +9,39 @@
   justify-content: center;
 }
 .buttons{
+  padding-left: 5%;
   display: flex;
 }
-
-.maincards{
+.participatebutton{
+  float: inline-end;
+}
+.backbutton{
+  float: inline-start;
+}
+.submitbuttons{
+  align-items:center;
   display: flex;
 }
-.row{
+.instructions{
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 2%;
+  font-style: italic;
+  font-size: large;
+  
+}
+li{
+  list-style:square;
+  color: #FFF;
+  padding-bottom: 2%;
+}
+/* .maincards{
   display: flex;
+} */
+/* .outterrow{
+  display: flex;
+} */
+.teamdetails{
+  text-align: center;
 }
 button{
   color:white;
@@ -29,10 +54,10 @@ button{
  background-image: linear-gradient(to bottom, #ED213A, #93291E);
  -webkit-border-radius: 34;
  -moz-border-radius: 34;
- border-radius: 34px;
+ border-radius: 20px;
  font-family: Arial;
  color: #000000;
- font-size: 24px;
+ font-size: 15px;
  padding: 10px 30px 10px 30px;
  text-decoration: none;
 }

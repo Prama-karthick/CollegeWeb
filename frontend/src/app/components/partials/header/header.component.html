@@ -16,7 +16,7 @@
           <a routerLink="/studentregistration">Register</a>
         </li>
         <li *ngIf="isAuth" class="menu-container">
-          <a routerLink="/dashboard">{{user.name}}</a>
+          <a >{{user.name}} v</a>
           <div class="menu">
             <a routerLink="/profile">Profile</a>
             <a (click)="logout()">Logout</a>
