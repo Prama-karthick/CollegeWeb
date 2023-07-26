@@ -182,8 +182,8 @@ export class ParticipatesComponent implements OnInit {
         this.afterForm= false;
       }
     
-      //var min=this.data["minNumberOfParticipates"]
-       var min=2
+      var min=this.data["minNumberOfParticipates"]
+      //  var min=2
     this.Linstructions= "Participant 1 will Consider as the Team Leader";
     this.L2instructions= "Team Leader should have an account in the Fiesta'23"
 

@@ -69,7 +69,7 @@ this.user=this.userService.currentUser
 this.uevents=this.userService.events;
 this.uteams=this.userService.teams;
 delay(5000);
-this.loading=true;
+this.loading=false;
 
 }
 
