@@ -10,7 +10,8 @@
 }
 .buttons{
   padding-left: 5%;
-  display: flex;
+  display:flex;
+  justify-content: center;
 }
 .participatebutton{
   float: inline-end;
@@ -19,9 +20,10 @@
   float: inline-start;
 }
 .submitbuttons{
-  align-items:center;
+  justify-content: center;
   display: flex;
 }
+
 .instructions{
   font-family: 'Times New Roman', Times, serif;
   padding-top: 2%;

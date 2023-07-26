@@ -63,9 +63,10 @@
             <div *ngIf="fc['password'].errors['required']">Should not be empty</div>
           </div>
         </div>
-          <button type="submit">Login</button>
+          <button type="submit" [disabled]="loading" >Login</button>
     </form>
   </div>
+  <div *ngIf="loading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
   </div>
   </div>
  </div>

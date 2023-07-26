@@ -10,6 +10,8 @@ import { ToastrService } from 'ngx-toastr';
 import * as XLSX from 'xlsx';
 import { StudentService } from 'src/app/services/student.service';
 import { Student } from 'src/app/shared/student';
+import { delay } from 'rxjs';
+
 
 
 @Component({
@@ -35,6 +37,7 @@ export class ProfileComponent {
   isSearch:boolean=false;
   uevents!: string[];
   uteams!: string[];
+  loading: boolean;
 
 constructor(activatedRoute:ActivatedRoute,private toastrservice:ToastrService,private profileservice:ProfileService,private route:Router,private eventservice:EventService,private orderService:OrderService,private userService:StudentService){
 
@@ -62,8 +65,11 @@ this.user=this.userService.currentUser
 
 	// 		})
 	// }
+  this.loading=true;
 this.uevents=this.userService.events;
-this.uteams=this.userService.teams
+this.uteams=this.userService.teams;
+delay(5000);
+this.loading=true;
 
 }
 

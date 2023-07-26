@@ -21,6 +21,7 @@
             <h2>{{name}}</h2>
             </h3>
         </div>
+        <div *ngIf="wait" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
 
         <div class="alert alert-success mt-3" *ngIf="success" role="alert">
           <label>{{msg}}</label>
@@ -38,8 +39,16 @@
                     <input id="teamname" class="form-control mt-2" formControlName="teamname" type="text" placeholder="Team Name"/><br>
                 </div>
                 <div class="buttons">
-                <button (click)="undoactions()" style="align-content:left;">Remove Participant</button>
+            
+                    <button (click)="undoactions()" *ngIf="removeDisplay">Remove Participant</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button (click)="addParticipant()" type="button"  *ngIf="addParticipantDisplay">
+                        +add participant
+                    </button>
+                 </div>
+                <div class="formsandbuttons">
                 <div class="row"> 
+                   
                     <ng-container formArrayName="participants">
                         <ng-container *ngFor="let participant of participants; let participantindex = index">
                             <div [formGroupName]="participantindex">
@@ -58,17 +67,14 @@
                 </div>
            
             
-           
-            <button (click)="addParticipant()" type="button" *ngIf="addParticipantDisplay" >
-                +add participant
-            </button>
-             </div>
+                
+            </div>
              <div class="submitbuttons">
             <div class="backbutton">
                 <div class="col-4">
                     <button (click)="back()" class="main-btn">Back</button>
                 </div>
-            </div>
+            </div>&nbsp;&nbsp;&nbsp;
             <div class="participatebutton">
                 <div class="col-4">
                     <!-- <input value="ojo"/> -->

@@ -38,7 +38,7 @@
 <div  class="container" >
    <img [src]="product.imageUrl" [alt]="product.name"/>
    <div *ngIf="loading">
-    <label>Do you want to participate in {{product.name}} ?</label>
+    <label>Do you want to participate in {{product.name}} ?</label><br><br>
     <button (click)="loading=false">Cancel</button>&nbsp;<button (click)="participate()">Confirm</button>
   </div>
   <div class="details" *ngIf="!loading">

@@ -37,9 +37,12 @@
 
   <div class="workshop">
     <h2>Events</h2>
+    <div *ngIf="loading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
+  <div  *ngIf="!loading">
     <div class="workshopName" *ngFor="let event of uevents">
        <li>{{event}}</li><!--<input type="submit" class="main-btn" routerLink="/modify/{{event}}" value="Participate"/> -->
     </div>
+  </div>
   <br><br><br>
     <!-- <div class="payments">
       <h4 *ngIf="user.isPayed">Workshop:{{this.workshopName}}<br>Workshop Fee:<br>PAID</h4>
@@ -52,9 +55,12 @@
 
   <div class="events">
     <h2>Your Teams:</h2>
-    <div class="eventNames" *ngFor="let team of uteams">
+    <div *ngIf="loading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
+    <div *ngIf="!loading">
+    <div  class="eventNames" *ngFor="let team of uteams">
     <li>{{team}}</li>
     </div>
+  </div>
     <!-- <div class="payments">
       <h4 *ngIf="user.eventPay">Events Fee:<br>PAID</h4>
       <div *ngIf="!user.eventPay">

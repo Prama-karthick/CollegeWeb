@@ -114,6 +114,7 @@ export class ParticipatesComponent implements OnInit {
       maxNumberOfParticipates: 10
     }]
   };
+  removeDisplay: boolean=false;
 
   constructor(private fb: FormBuilder,private route: ActivatedRoute, 
     private router: Router, private studentservice: StudentService,
@@ -195,6 +196,7 @@ export class ParticipatesComponent implements OnInit {
       this.instructions = "The minimum Number of participants need is "+ this.data["minNumberOfParticipates"];
       this.instructionsMax= "The maximum Number of participants allowed is " + this.data["maxNumberOfParticipates"];
       this.addParticipantDisplay=true;
+      this.removeDisplay=true;
     }
 
     for (var i = 0; i < min; i++) {
@@ -211,7 +213,10 @@ export class ParticipatesComponent implements OnInit {
       (<FormArray>this.participantForm.get('participants')).removeAt(-1);
     }
     else
-      this.toastrservice.show("Minimum Participants Needed")
+      this.toastrservice.error("Minimum Participants Needed")
+    if(this.n<this.data.maxNumberOfParticipates){
+      this.addParticipantDisplay=true;
+    }
   }
 
   n: number=0;

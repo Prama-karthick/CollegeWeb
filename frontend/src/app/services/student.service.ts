@@ -95,7 +95,7 @@ export class StudentService {
     if(this.currentUser.yourteams)
     {this.userteams=this.currentUser.yourteams}
    
-    this.userevents.push(tname);
+    this.userteams.push(tname);
 
   }
 
