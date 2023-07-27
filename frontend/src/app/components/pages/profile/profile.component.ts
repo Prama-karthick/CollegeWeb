@@ -35,7 +35,7 @@ export class ProfileComponent {
   list:boolean=false;
   particularUser:any;
   isSearch:boolean=false;
-  uevents!: string[];
+  uevents: string[]=[];
   uteams!: string[];
   loading: boolean;
 
@@ -66,8 +66,10 @@ this.user=this.userService.currentUser
 	// 		})
 	// }
   this.loading=true;
-this.uevents=this.userService.events;
-this.uteams=this.userService.teams;
+  if(this.user.event)
+    this.uevents=this.user.event
+  if(this.user.yourteams)
+    this.uteams=this.user.yourteams;
 delay(5000);
 this.loading=false;
 

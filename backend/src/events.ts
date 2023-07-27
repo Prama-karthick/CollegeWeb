@@ -12,8 +12,10 @@ export const eventdetails:any[]= [{
         "Singing, Dancing, Instrumentals are NOT ALLOWED.",
         "Participants should bring the necessary items",
         "The audio track can be played in the background. If so, audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized)",
+        "Submit your audio tracks in the G-Form-> https://forms.gle/HGJxVXRLLJDVTstP9 ",
         "Vulgarity in any form is strictly prohibited.",
         "The Jury’s decision is final. If necessary, prelims will be conducted.",
+        "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge:Mr.Viswalingam/English",
       ]
     },{
@@ -42,7 +44,7 @@ export const eventdetails:any[]= [{
       id: 2,
       name: "Solo Dance",
       clubname:"Fine Arts Club",
-      imageUrl:"assets/fiesta/solo dance.jpeg",
+      imageUrl:"assets/fiesta/Solo Dance.png",
       rules: [
         "Audio track must be in mp3 format.",
         "Venue: MCC; Time Duration: 4 mins.",
@@ -54,7 +56,9 @@ export const eventdetails:any[]= [{
         "Reporting time 9:10 AM",
         "Any kind of dance may be performed like classical, free style or Folk etc.,",
         "Maximum of 20 participants who complete registration, corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis to the concerned staff.",
+        "Submit your audio tracks in the G-Form-> https://forms.gle/W2bYExKdQCGdNE6i8 ",
         "Jury's decision is final.",
+        "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge:Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
 
       ]
@@ -62,7 +66,7 @@ export const eventdetails:any[]= [{
       id: 3,
       name: "Solo Singing",
       clubname:"Fine Arts Club",
-      imageUrl:"assets/fiesta/solo sinnging.jpeg",
+      imageUrl:"assets/fiesta/Solo Singing.jpeg",
       rules: [
         "Reporting time: 10:00 AM; Students should be in formal wear.",
         "Time Duration : 3 mins; Venue : Mech Seminar Hall",
@@ -74,6 +78,8 @@ export const eventdetails:any[]= [{
         "Judging criteria will be : Shruthi, Voice Clarity, Song difficulty, Tempo and Improvisations.",
         "Jury decision is final. Prelims will be conducted.",
         "Submit your karaoke to the concerned staff on or before 17.04.2023 by 5 pm in mp3 format (Normalized).",
+        "Submit your audio tracks in the G-Form-> https://forms.gle/UVugo7s6pr3oZ9Kv9 ",
+        "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
 
       ]
@@ -81,7 +87,7 @@ export const eventdetails:any[]= [{
       id: 4,
       name: "Solo Instrumental",
       clubname:"Fine Arts Club",
-      imageUrl:"assets/fiesta/instrumental.jpeg",
+      imageUrl:"assets/fiesta/Solo Instrumentals.jpg",
       rules: [
         "Students should be in formal wear.",
         "Venue : Mech Seminar Hall;Time Duration : 3 mins.",
@@ -90,7 +96,9 @@ export const eventdetails:any[]= [{
         "Mild Karoke/ Mild Voiceovers can be used (if needed) upon which the instrument can be played.",
         "Judging criteria :  Song difficulty, Tempo, Rhythm, No. Of flaws, Improvisations",
         "Submit your audio to the concerned staff on or before 29.08.2022 by 5 pm in mp3 format (Normalized).",
+        "Submit your audio tracks in the G-Form-> https://forms.gle/SvL8WePWNjdgtXVr5 ",
         "Jury's decision is final",
+        "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
 
       ]
@@ -98,7 +106,7 @@ export const eventdetails:any[]= [{
       id: 5,
       name: "Pixie",
       clubname:"Photography Club",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/pixe.jpeg",
       rules: [
         "THEME: STREET PHOTOGRAPHY; Stick to the theme",
         "Venue : In front of MCC; Voting starts @09:30 AM",
@@ -204,6 +212,7 @@ export const eventdetails:any[]= [{
 	"The first team to finish the final level will be the winner of the event.",
 	"Final score will be based on all previous levels.",
 	"Be genuine and ethical to solve the clues at each level on your own. Googling the answers is strictly prohibited.",
+  "For queris mail:clubinnovativemepco@gmail.com",
 	"Jury's decision is final.",
         "Staff Incharge:Dr.J.Senthilkumar/ECE.",
 
@@ -315,7 +324,7 @@ export const eventdetails:any[]= [{
       id: 16,
       name: "Cinematrix (Short Flim)",
       clubname:"Photography Club",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/fiesta/shortfilm.jpg",
       rules: [
 	"Venue : S&H Seminar Hall;Reporting Time : 10:45 AM",
 	"Maximum of 8 members per team.",
@@ -379,7 +388,7 @@ export const eventdetails:any[]= [{
       id: 18,
       name: "Group Dance",
       clubname:"Fine Arts Club",
-      imageUrl:"assets/fiesta/group dance.jpeg",
+      imageUrl:"assets/fiesta/Group Dance.png",
       rules:	[
 	"No of members: Minimum 4 to Maximum 15",
 	"Time Duration: 5 minutes; Venue: MCC",
@@ -393,6 +402,8 @@ export const eventdetails:any[]= [{
 	"No participation of boys and girls together.",
         "Maximum no of teams – 12; corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis.",
 	"Jury decision is final.",
+  "Submit your audio tracks in the G-Form-> https://forms.gle/KD7qyiyjXHUGjtXa6 ",
+  "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge: Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
 
 				]
@@ -417,7 +428,7 @@ export const eventdetails:any[]= [{
       id: 20,
       name: "Rangoli",
       clubname:"Fine arts Club",
-      imageUrl:"assets/fiesta/rangoli.jpeg",
+      imageUrl:"assets/fiesta/Rangoli.jpeg",
       rules:	[
 	"Venue: S&H Block Ground & First Veranda.",
         "Maximum of 3 participants per team.",
@@ -427,6 +438,7 @@ export const eventdetails:any[]= [{
         "Usage of templates are strictly prohibited.",
 	"Judging criteria will be : symmetry, color combination, innovation, creativity and the neatness of the Rangoli.",
 	"Jury's decision is final.",
+  "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge: Mrs.BlessaBinolinPepsi/IT& Mrs.P.Madhumitha/English.",
 
 				]
@@ -434,7 +446,7 @@ export const eventdetails:any[]= [{
       id: 21,
       name: "Drama/Mime",
       clubname:"Fine arts Club",
-      imageUrl:"assets/fiesta/drama_mime.jpeg",
+      imageUrl:"assets/fiesta/DramaMime.png",
       rules:	[
         "Maximum of 12 members and minimum of 4 per team.",
         "Time Duration: 8 min.;Venue : MCC",
@@ -446,8 +458,10 @@ export const eventdetails:any[]= [{
         "Judgement will be based on acting, concept, stage presence, audio, costume etc.,",
         "Participants must bring their own materials.",
         "First 15 teams who complete the registration with corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized).",
+        "Submit your audio tracks in the G-Form-> https://forms.gle/sPiWSNz9xUvUt8gH8 ",
         "The Jury’s decision is final.",
         "The Registeration Form for the event should be submitted to the concerned Staff Incharge",
+        "For queries mail: mepcofinearts2022@gmail.com",
         "Staff Incharge: Mr.M.Jawahar/EEE.",
 
       ]
