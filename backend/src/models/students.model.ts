@@ -2,16 +2,16 @@ import { model, Schema } from "mongoose";
 
 export interface Student{
   id:string;
-  name:string;
-  email:string;
-  password:string;
+  admissionNo:string;
   isAdmin:boolean;
   event:string[];
   yourteams:string[];
-  admissionNo:number;
+  password:string;
+  name:string;
+  year:string;
   gender:string;
   department:string;
-  year:string;
+  email:string;
   section:string;
   points:number;
 }
@@ -19,7 +19,7 @@ export interface Student{
 export interface RegisterStudent{
   name:string;
   email:string;
-  admissionNo:number;
+  admissionNo:string;
   gender:string;
   department:string;
   year:string;
@@ -36,9 +36,9 @@ export const StudentSchema=new Schema<Student>({
   isAdmin:{type:Boolean},
   event:{type:[String]},
   yourteams:{type:[String]},
-  admissionNo:{type:Number,required:true,unique:true},
+  admissionNo:{type:String,required:true,unique:true},
   year:{type:String,required:true},
-  gender:{type:String,required:true},
+  gender:{type:String},
   department:{type:String,required:true},
   section:{type:String,required:true},
   points:{type:Number}

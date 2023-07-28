@@ -25,6 +25,7 @@ export class StudentregistrationComponent implements OnInit{
     this.loading=true
       this.sregisterForm=this.formBuilder.group({
         adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(5)]],
+        gender:['',Validators.required],
         password:['',Validators.required],
         confirmPassword: ['', Validators.required],
       },{
@@ -57,7 +58,7 @@ this.isSubmitted=true
  
   }
   confirmdetails(){
-    this.studentservice.confirmregistration({adnumber:this.fc['adnumber'].value,password:this.fc['password'].value}).subscribe((res:any)=>{
+    this.studentservice.confirmregistration({adnumber:this.fc['adnumber'].value,gender:this.fc['gender'].value,password:this.fc['password'].value}).subscribe((res:any)=>{
       if(res['msg']!=-1){
       this.route.navigateByUrl("/")
       this.details=res;

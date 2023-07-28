@@ -43,7 +43,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
 
 
   router.post('/register',asyncHandler(async(req,res)=>{
-    const {adnumber,password}=req.body;
+    const {adnumber,password,gender}=req.body;
     const student=await StudentModel.findOne({admissionNo:adnumber});
     if(!student){
       res.status(400).send("No match");
@@ -51,6 +51,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
     }
     if(student){
     student.password=password
+    student.gender=gender
     await student.save();
     res.send(generateTokenResponse(student));
   }

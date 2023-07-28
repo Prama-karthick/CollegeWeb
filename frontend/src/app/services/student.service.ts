@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { REGISTER_STUDENT, SEARCH_STUDENT, STUDENT_LOGIN, USER_LOGIN } from '../shared/constants/urls';
 import { IUserLogin } from '../shared/interfaces/IuserLogin';
-import { Interfaces } from '../studentLogin/shared/interfaces';
+import { Interfaces, RegInterfaces } from '../studentLogin/shared/interfaces';
 import { HttpClient } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 import { Student } from '../shared/student';
@@ -35,7 +35,7 @@ export class StudentService {
     );
   }
 
-  confirmregistration(studentLogin:Interfaces):Observable<any>{
+  confirmregistration(studentLogin:RegInterfaces):Observable<any>{
      
     return  this.http.post<any>(REGISTER_STUDENT, studentLogin).pipe(
       tap({

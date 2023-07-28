@@ -6,7 +6,7 @@ export class Student{
     isAdmin!:boolean;
     event?:string[];
     yourteams?:string[];
-    admissionNo!:number;
+    admissionNo!:string;
     gender!:string;
     department!:string;
     year!:string;

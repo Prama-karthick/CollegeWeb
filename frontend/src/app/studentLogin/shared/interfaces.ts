@@ -3,3 +3,9 @@ export interface Interfaces {
     password:string;      
 }
 
+export interface RegInterfaces {
+    adnumber:string;
+    gender:string;
+    password:string;      
+}
+

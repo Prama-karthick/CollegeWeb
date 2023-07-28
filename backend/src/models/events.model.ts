@@ -9,7 +9,7 @@ export interface Events{
 export const RegisterStudentSchema=new Schema<RegisterStudent>({
     name:{type:String,required:true},
     email:{type:String,required:true},
-    admissionNo:{type:Number,required:true},
+    admissionNo:{type:String,required:true},
     gender:{type:String,required:true},
     department:{type:String,required:true},
     year:{ type:String, required:true },

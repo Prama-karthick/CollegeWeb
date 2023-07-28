@@ -48,7 +48,7 @@ export interface TeamEvents{
 export const RegisterStudentSchema=new Schema<RegisterStudent>({
     name:{type:String},
     email:{type:String},
-    admissionNo:{type:Number,required:true},
+    admissionNo:{type:String,required:true},
     gender:{type:String},
     department:{type:String},
     year:{ type:String },

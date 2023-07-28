@@ -19,6 +19,13 @@
               <div *ngIf="fc['adnumber'].errors['adnumber']">Enter Proper Admission Number</div>
             </div>
           </div>
+          <div  class="input-container">
+          <select formControlName="gender">
+            <option value="" disabled selected hidden>Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
           <div class="input-container">
             <label>Create Password:</label>
             <div>
