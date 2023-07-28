@@ -174,13 +174,13 @@ export class ParticipatesComponent implements OnInit {
     // this.myDb.getUserDetails().subscribe((response: any)=>{
     //   this.userDetail= response["userDetails"]
      this.yourEvents= this.userDetail.event
-
-      if(this.yourEvents.includes(this.name)){
-        this.msg= "You have Already Registered for this event"
-        this.alert=false;
-        this.success=true;
-        this.afterForm= false;
-      }
+    console.log(this.yourEvents);
+      // if(this.yourEvents.includes(this.name)){
+      //   this.msg= "You have Already Registered for this event"
+      //   this.alert=false;
+      //   this.success=true;
+      //   this.afterForm= false;
+      // }
     
       var min=this.data["minNumberOfParticipates"]
       //  var min=2

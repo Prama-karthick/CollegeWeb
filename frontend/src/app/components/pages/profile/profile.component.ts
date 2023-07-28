@@ -70,6 +70,8 @@ this.user=this.userService.currentUser
     this.uevents=this.user.event
   if(this.user.yourteams)
     this.uteams=this.user.yourteams;
+    console.log(this.uevents);
+    console.log(this.uteams);
 delay(5000);
 this.loading=false;
 
