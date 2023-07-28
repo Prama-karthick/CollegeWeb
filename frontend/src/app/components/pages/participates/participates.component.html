@@ -21,7 +21,7 @@
             <h2>{{name}}</h2>
             </h3>
         </div>
-        <div *ngIf="wait" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
+        <div class="loading" *ngIf="wait" >Loading...</div>
 
         <div class="alert alert-success mt-3" *ngIf="success" role="alert">
           <label>{{msg}}</label>

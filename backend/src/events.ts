@@ -131,6 +131,7 @@ export const eventdetails:any[]= [{
         "Participants should bring their own drawing paraphernalia including A4 sheet.",
         "Topic will be given on the spot",
         "Jury decision is final.",
+        "For queries mail:nssunit14@gmail.com", 
         "Staff Incharge:Mr.C.Utharanarayanan/MECH.",
 
       ]
@@ -229,6 +230,7 @@ export const eventdetails:any[]= [{
         "Electrical/External sources should not be used during the event.",
         "Judging will also be based on fluency, creative thinking, multi-tasking, language skills.",
         "Jury’s decision is final.",
+        "For queris mail:mepcobluesky@gmail.com",
         "Staff incharge: Dr.B.Rathika (English department)."
       ]
     },{

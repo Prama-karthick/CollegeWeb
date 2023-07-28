@@ -18,6 +18,7 @@ export class StudentregistrationComponent implements OnInit{
   notconfirm=true;
   loading!: boolean;
   details:any;
+  wait: boolean=false;
   constructor(private formBuilder:FormBuilder,private studentservice:StudentService
     ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){}
 
@@ -40,6 +41,7 @@ export class StudentregistrationComponent implements OnInit{
   }
   submit(){
 this.isSubmitted=true
+this.wait=true;
     if(this.sregisterForm.invalid){
       this.toastrservice.error("Enter the fileds Correctly")
       return
@@ -55,9 +57,11 @@ this.isSubmitted=true
         this.toastrservice.error("Already Registered Admin No.");
       }
     });
+    this.wait=false;
  
   }
   confirmdetails(){
+    this.wait=true;
     this.studentservice.confirmregistration({adnumber:this.fc['adnumber'].value,gender:this.fc['gender'].value,password:this.fc['password'].value}).subscribe((res:any)=>{
       if(res['msg']!=-1){
       this.route.navigateByUrl("/")
@@ -67,5 +71,6 @@ this.isSubmitted=true
       this.toastrservice.error("Already Registered Admin No.");
     }
     });
+    this.wait=false;
   }
 }

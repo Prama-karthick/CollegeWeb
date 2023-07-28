@@ -305,11 +305,12 @@ export class ParticipatesComponent implements OnInit {
       }
       else{
         window.scroll(0,0);
-        this.router.navigateByUrl("/");
+        this.router.navigateByUrl("/profile");
         this.studentservice.addevents(this.data.name);
         if(this.participantForm.value.teamname)
           this.studentservice.addteams(this.participantForm.value.teamname);
        // this.error= "Error Contact the admin"
+       this.toastrservice.success("Team Created Successfully")
         this.alert=true;
         this.wait= false;
         this.loading= false;

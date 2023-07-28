@@ -30,6 +30,7 @@ export class EventPageComponent {
   List:any[]=[];
   issolo!: boolean;
   rules!: string[];
+  wait: boolean=false;
   constructor(activatedRoute:ActivatedRoute,private eventservice:EventService,private cartservice:CartService,private route:Router,private userService:StudentService,private orderService:OrderService,private toastrservice:ToastrService,private profileservice:ProfileService){
     this.loading=true
     activatedRoute.params.subscribe((params)=>{
@@ -69,10 +70,12 @@ export class EventPageComponent {
 
 
   participate(){
+    this.wait=true;
     var AdminNo=this.user.admissionNo
     if(this.user.token)
     { this.eventservice.soloevent({adminno:AdminNo,Ename:this.product.name}).subscribe((res:any)=>{
       if(res['msg']!=-1){
+        this.userService.addevents(this.product.name);
         this.toastrservice.success("Registered to the event successfully");
         this.route.navigateByUrl("/")
       }
@@ -85,6 +88,7 @@ export class EventPageComponent {
     else{
       this.route.navigateByUrl("/login");
     }
+    this.wait=false;
   
   }
   

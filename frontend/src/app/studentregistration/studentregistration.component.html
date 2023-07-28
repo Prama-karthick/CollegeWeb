@@ -5,7 +5,8 @@
     <!-- <div *ngIf="loading">
       <img src="assets/fiesta/load.gif"/>
     </div> -->
-
+    <div class="outterlabel">
+      <div class="gform">For MBA/MCA Students -><a target="_blank" href="https://forms.gle/HNRME8N99EEm8v3M9">Register Form</a></div>
     <div class="details" >
 
       <h1>Register</h1><br>
@@ -48,7 +49,7 @@
               <div *ngIf="fc['confirmPassword'].errors['confirmPassword']">Both password doesn't match</div>
             </div>
           </div>
-            <button type="submit">Register</button><br><br>
+            <button type="submit" [disabled]="wait" >Register</button><br><br>
       </form>
     </div>
     <div *ngIf="!notconfirm">
@@ -59,10 +60,11 @@
       <h4>Admission Number:{{details.admissionNo}}</h4><br>
       <h4>Class:{{details.year}}-{{details.department}}-{{details.section}}</h4><br>
       <div class="checkButtons">
-        <button (click)="notconfirm=true">Cancel</button>&nbsp;<button (click)="confirmdetails()">Confirm and Register</button>
+        <button (click)="notconfirm=true" [disabled]="wait" >Cancel</button>&nbsp;<button (click)="confirmdetails()" [disabled]="wait" >Confirm and Register</button>
       </div>
     </div>
-   
+    <div class="start" *ngIf="wait" >Loading...</div>
+  </div>
     </div>
  
    </div>

@@ -67,7 +67,7 @@ this.user=this.userService.currentUser
 	// }
   this.loading=true;
   if(this.user.event)
-    this.uevents=this.user.event
+    this.uevents=this.userService.events
   if(this.user.yourteams)
     this.uteams=this.user.yourteams;
     console.log(this.uevents);

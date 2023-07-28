@@ -1,3 +1,4 @@
+import { FatalDiagnosticError } from '@angular/compiler-cli/src/ngtsc/diagnostics';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -16,6 +17,7 @@ export class LoginPageComponent implements OnInit{
     sloginForm!:FormGroup;
     isSubmitted=false;
     returnUrl='';
+  wait: boolean=false;
     constructor(private formBuilder:FormBuilder,private userservice:UserService
       ,private activatedRoute:ActivatedRoute,private route:Router,private studentservice:StudentService,private toastrservice:ToastrService){}
 
@@ -48,7 +50,7 @@ export class LoginPageComponent implements OnInit{
     }
 
     studentlogin(){
-      this.loading=true
+      this.wait=true
       this.isSubmitted=true;
       if(this.sloginForm.invalid){
         this.toastrservice.show("Enter the fileds Correctly")
@@ -72,7 +74,7 @@ export class LoginPageComponent implements OnInit{
         
       }
       })
-this.loading=false
+this.wait=false
     }
 
 }
