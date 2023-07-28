@@ -6,7 +6,7 @@ export const eventdetails:any[]= [{
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/As u like it.png",
       rules: [
-        "Time Duration: 3 mins; Venue : Mech Seminar Hall",
+        "Time Duration: 3 mins;",
         "Reporting Time : 1.15 PM",
         "Students can exhibit any talents like Juggling, Martial Art, Beat Box, Silambam, Hulahoops, Mimicry, Mono-act etc.,",
         "Singing, Dancing, Instrumentals are NOT ALLOWED.",
@@ -28,12 +28,10 @@ export const eventdetails:any[]= [{
         "Usage of proper words during the event should be strictly followed.",
         "The Jury’s decision is final. ",
         "ROUND 1- Prelims 3 rounds (Aptitude Questions, Individual task and multitasking).",
-        "---Venue : Civil Seminar Hall",
         "---Time: 09:15 AM",
         "---Language for communication is strictly English.  ",
         "---Selected paticipants will get to next round",
         "Final Round",
-        "---Venue : MCC",
         "---Time: 01:15 PM",
         "---Totally single Round: ( Situation handling)",
         "---Language for communication is strictly English.",
@@ -47,7 +45,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/Solo Dance.png",
       rules: [
         "Audio track must be in mp3 format.",
-        "Venue: MCC; Time Duration: 4 mins.",
+        "Time Duration: 4 mins.",
         "Whistle, Vulgarity in songs, Moves, Costumes or any sorts will lead to disqualification.",
         "Dangerous properties should not be used.",
         "Songs must not be highly peppy (Strictly Avoid kuthu songs).",
@@ -69,7 +67,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/Solo Singing.jpeg",
       rules: [
         "Reporting time: 10:00 AM; Students should be in formal wear.",
-        "Time Duration : 3 mins; Venue : Mech Seminar Hall",
+        "Time Duration : 3 mins",
         "No pre-recordings should be played.",
         "Only Karaoke is allowed. No other background voices",
         "Any style of music can be performed (Folk, Jazz, Melody, Pop, Metal etc.).",
@@ -90,7 +88,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/Solo Instrumentals.jpg",
       rules: [
         "Students should be in formal wear.",
-        "Venue : Mech Seminar Hall;Time Duration : 3 mins.",
+        "Time Duration : 3 mins.",
         "Reporting Time : 09:00 AM",
         "Any kind of instruments can be played. ( Percussions, Non-Percussions, Keys, Strings, Wind Instruments) or Multiple instruments(e.g. keyboard + Guitar) can be played.",
         "Mild Karoke/ Mild Voiceovers can be used (if needed) upon which the instrument can be played.",
@@ -109,7 +107,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/pixe.jpeg",
       rules: [
         "THEME: STREET PHOTOGRAPHY; Stick to the theme",
-        "Venue : In front of MCC; Voting starts @09:30 AM",
+        "Voting starts @09:30 AM",
         "Internet images will be disqualified",
         "Colour correction is allowed but avoid surrealism",
         "Best Photos will be short-listed from the entries and will be displayed on the pixie board.",
@@ -128,7 +126,6 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/NSS.jpg",
       rules: [
         "Time Duration: 1 hour; Reporting Time : 01.30 PM",
-        "Venue : Drawing Hall & SHF16, S&H Block (First floor)",
         "Drawings should be drawn in an A4 sheet.",
         "Participants should use only pencil for sketching.",
         "Participants should bring their own drawing paraphernalia including A4 sheet.",
@@ -143,7 +140,6 @@ export const eventdetails:any[]= [{
       clubname:"Health Club",
       imageUrl:"assets/fiesta/yoga.png",
       rules: [
-        "Venue : CSE Seminar Hall",
         "Reporting Time : 09.15 AM",
         "Each candidate is to perform one Bending,one Stretching,one Twisting and extra two Asana of their own.",
         "Tracksuits & Closed T-shirts must be worn during the competition.",
@@ -160,7 +156,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/Ezhuthaani.png",
       rules: [
         "Theme/Topic : On the Spot",
-        "Venue : SHG04, SHG05;Reporting Time : 9:10 AM",
+        "Reporting Time : 9:10 AM",
         "Participants need to exhibit their Creative Writing skills (fiction or poetry) in Tamil or English.",
         "The duration of the event is 1 hour",
         "The maximum mark for the event is 50 with the following split-up.",
@@ -181,7 +177,7 @@ export const eventdetails:any[]= [{
       clubname:"Reader's Club",
       imageUrl:"assets/fiesta/dc.png",
       rules: [
-	"Venue : CSE Seminar Hall; Reporting Time : 01:15 PM",
+	" Reporting Time : 01:15 PM",
 	"The team can consist of 5 members;Only 20 teams can register.",
 	"Registration based on first come first serve basis.",
 	"No change of Team members is permitted once the registration is closed.",
@@ -223,7 +219,7 @@ export const eventdetails:any[]= [{
       clubname:"Blue Sky Club",
       imageUrl:"assets/fiesta/mm.png",
       rules: [
-        "Venue : Civil Seminar Hall;Reporting Time : 01.15 PM",
+        "Reporting Time : 01.15 PM",
         "Duration: 2 hours",
 	      "Entry Closing Time: 1:30 PM.",
         "Each team should have two students.",
@@ -241,7 +237,7 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Radio Mirchi.png",
       rules: [
-	"Venue : CSE Seminar Hall;Reporting Time : 10:15 AM",
+	"Reporting Time : 10:15 AM",
 	"A team can have a maximum of three members. Single member per team is acceptable.",
 	"Recorded voices or any sound are not allowed.",
 	"Voice and tone modulations of the participants will be considered.",
@@ -267,7 +263,7 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Potpourri.jpg",
       rules: [
-	"Venue : AV Hall, S & H Block; Reporting Time : 01:15 PM",
+	" Reporting Time : 01:15 PM",
 	"Each team should consist of 3 members.",
 	"There may be prelims, and then 8 teams will be in finals.",
 	"Prelims consist of 3 segments, each segment contains 5 questions (each 1 mark).",
@@ -289,7 +285,7 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Lyrical Hunt.png",
       rules: [
-	"Venue : S&H Seminar Hall;Time : 01.30 PM",
+	"Time : 01.30 PM",
         "Each team can have 3 members",
 	"The Event comprises of 2 segments - Prelims followed by the Main Event.",
 	"Prelims will be conducted and 8 teams will be selected for the main round.",
@@ -307,7 +303,6 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Sherlock Holmes.png",
       rules: [
-	"Venue : AV Hall, S & H Block",
 	"Reporting Time: 9:10 AM",
 	"It is a detective game.",
 	"Each team should consist of two members.",
@@ -326,7 +321,7 @@ export const eventdetails:any[]= [{
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/shortfilm.jpg",
       rules: [
-	"Venue : S&H Seminar Hall;Reporting Time : 10:45 AM",
+	"Reporting Time : 10:45 AM",
 	"Maximum of 8 members per team.",
 	"THEME: SOCIAL WELFARE.",
 	"Duration: 15 min (including title and credits).",
@@ -345,7 +340,7 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Quiz.png",
       rules: [
-	"Venue : S&H Seminar Hall;Reporting Time : 9:45 AM",
+	"Reporting Time : 9:45 AM",
 	"Each team should consist of two members.Prelims would be of a written format.",
 	"Six teams would be selected from the prelims.",
         "Topics include historical, scientific, sports, cinema, etc.",
@@ -391,7 +386,6 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/Group Dance.png",
       rules:	[
 	"No of members: Minimum 4 to Maximum 15",
-	"Time Duration: 5 minutes; Venue: MCC",
         "Reporting time 10:00 AM",
 	"Concepts or themes can be used without affecting the dance.",
 	"Whistle, Vulgarity in Songs, Moves, Costumes or any sorts will lead to disqualification.",
@@ -413,7 +407,6 @@ export const eventdetails:any[]= [{
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/default.jpg",
       rules:	[
-	"Venue : S&H Block Computer Lab - I (I Floor).Reporting Time : 1:15 PM",
 	"Two members per team.Topic: On the spot",
 	"You will get 90 mins to work on your poster.",
 	"Both paper based and digital graphics are allowed.",
@@ -430,7 +423,6 @@ export const eventdetails:any[]= [{
       clubname:"Fine arts Club",
       imageUrl:"assets/fiesta/Rangoli.jpeg",
       rules:	[
-	"Venue: S&H Block Ground & First Veranda.",
         "Maximum of 3 participants per team.",
 	"Theme : NATIONAL INTEGRATY",
 	"Time Duration : 90 mins Reporting Time: 10:00 am",
@@ -449,7 +441,7 @@ export const eventdetails:any[]= [{
       imageUrl:"assets/fiesta/DramaMime.png",
       rules:	[
         "Maximum of 12 members and minimum of 4 per team.",
-        "Time Duration: 8 min.;Venue : MCC",
+        "Time Duration: 8 min.",
         "Reporting Time : 2:00 PM",
         "Participants can use either audio track in MP3 format or Oral delivery.",
         "Drama or mime could be performed.",

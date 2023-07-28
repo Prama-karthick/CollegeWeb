@@ -23,8 +23,15 @@
   label{
   font-size: 1.1em;
   }
-  
-  
+ 
+  select{
+    margin-top: .5em;
+    font-family: cursive;
+    height: 2rem;
+    width: 6.2rem;
+    border-radius: 0.5rem;
+    border-color: rgb(223, 221, 221);
+  }
   button {
       border-style: none;
       border-radius: 5px;
@@ -70,11 +77,33 @@
     width:flex;
     height: 60%;
     padding: 2em;
-    margin-top: 5%;
+    margin-top: 8%;
+    /* margin-right: 10%; */
     border-radius: 1em;
     background-color: white;
   }
+
+  .gform{
+    background-color:indianred;
+    border-radius: 1em;
+    border-radius: 2%;
+    margin-top: 2%;
+    position: fixed;
+    color:black;
+    /* animation: animate 1.0s linear infinite; */
+  }
   
+  @keyframes animate{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.2;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
   .info_div {
       text-align: center;
       margin-top: 20px;

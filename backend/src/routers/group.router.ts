@@ -7,7 +7,7 @@ import { RegisterStudent, Student, StudentModel } from "../models/students.model
 
 var TL:Student
 var team:TeamEvents={
-  id:'',
+  id:'', 
   name:'',
   teamname:'',
   participants:[]
@@ -172,7 +172,7 @@ router.post('/checkgroupevent',asyncHandler(
       if(checkEventexists(student,Ename)){
         res.json({msg:-1})
       }
-      setTeamLeader(student)
+      //setTeamLeader(student)
     res.json({msg:0})
     }
     
