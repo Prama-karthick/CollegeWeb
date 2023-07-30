@@ -20,9 +20,9 @@ export class LoginPageComponent implements OnInit{
   wait: boolean=false;
     constructor(private formBuilder:FormBuilder,private userservice:UserService
       ,private activatedRoute:ActivatedRoute,private route:Router,private studentservice:StudentService,private toastrservice:ToastrService){
-      if(this.userservice.currentUser){
-        this.route.navigateByUrl('/')
-      }
+      // if(this.userservice.currentUser){
+      //   this.route.navigateByUrl('/')
+      // }
 
       }
 
