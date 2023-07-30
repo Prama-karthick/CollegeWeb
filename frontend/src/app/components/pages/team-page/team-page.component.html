@@ -60,7 +60,7 @@
       <div class="btn">
 
 
-      <button *ngIf="user.eventPay else elseBlock" (click)="registerEvents()">Register</button>
+      <button *ngIf="user else elseBlock" (click)="registerEvents()">Register</button>
       <ng-template #elseBlock>
         <button (click)="registerEvents()">Participate</button>
       </ng-template>
