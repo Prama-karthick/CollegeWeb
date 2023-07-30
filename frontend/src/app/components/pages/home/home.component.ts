@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit{
   showgroupevents!: boolean;
   
   constructor(activatedRoute:ActivatedRoute,eventservice:EventService){
+    window.scroll(0,0)
     this.loading=true
     activatedRoute.params.subscribe((params)=>{
       this.groupname=params['groupname']

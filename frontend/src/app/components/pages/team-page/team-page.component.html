@@ -74,7 +74,7 @@
       <button  (click)="change()">Team List</button>
       <div *ngIf="this.list">
         <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
-          <i class="fa-solid fa-file-export"></i> Export to Excel
+          <i class="fa-solid fa-file-export"></i>Download
       </button>
 
       <h3>No of Teams:{{this.count}}</h3><br>
@@ -85,7 +85,7 @@
           <th>Team Members</th>
           <th>Members Mail-id</th>
         </tr>
-
+ 
         <tr *ngFor="let team of List">
           <td>{{team.teamName}}</td>
           <td>{{team.teammem1.college}}</td>

@@ -156,7 +156,7 @@ router.post('/soloeventparticipation',asyncHandler(
                         
             }
         
-        console.log(req.body.participants)
+
         const NewTeam:TeamEvents={
             id:'',
             teamname:req.body.teamname,
@@ -183,11 +183,9 @@ router.post('/soloeventparticipation',asyncHandler(
 
  router.get("/getsoloparticipants:productname",asyncHandler(async(req,res)=>{
       const eventname=req.params.productname
-      console.log(eventname)
    
        const product=await EventModel.findOne({name:eventname});
       if(product){
-        console.log(product.participants)
         res.send(product.participants);
     }
          //   for(let i=0;i<eventdetails.length;i++){
@@ -198,6 +196,26 @@ router.post('/soloeventparticipation',asyncHandler(
     res.json({msg:-1})
     }
   ));
+
+
+
+  router.get("/getgroupparticipants:productname",asyncHandler(async(req,res)=>{
+    const eventname=req.params.productname
+ 
+     const product=await TeamEventModel.find({name:eventname});
+     console.log(product);
+    if(product){
+      console.log(product)
+      res.send(product);
+  }
+       //   for(let i=0;i<eventdetails.length;i++){
+  //     if(id==i){
+  //       var  eventname=eventdetails[i].name
+  // }}
+  
+  res.json({msg:-1})
+  }
+));
 
 
 

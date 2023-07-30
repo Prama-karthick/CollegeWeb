@@ -19,7 +19,12 @@ export class LoginPageComponent implements OnInit{
     returnUrl='';
   wait: boolean=false;
     constructor(private formBuilder:FormBuilder,private userservice:UserService
-      ,private activatedRoute:ActivatedRoute,private route:Router,private studentservice:StudentService,private toastrservice:ToastrService){}
+      ,private activatedRoute:ActivatedRoute,private route:Router,private studentservice:StudentService,private toastrservice:ToastrService){
+      if(this.userservice.currentUser){
+        return ;
+      }
+
+      }
 
     // ngOnInit(): void {
     //     this.loginForm=this.formBuilder.group({

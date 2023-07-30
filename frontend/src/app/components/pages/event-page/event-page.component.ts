@@ -31,7 +31,12 @@ export class EventPageComponent {
   issolo!: boolean;
   rules!: string[];
   wait: boolean=false;
-  constructor(activatedRoute:ActivatedRoute,private eventservice:EventService,private cartservice:CartService,private route:Router,private userService:StudentService,private orderService:OrderService,private toastrservice:ToastrService,private profileservice:ProfileService){
+  constructor(activatedRoute:ActivatedRoute,private eventservice:EventService,private cartservice:CartService,
+    private route:Router,
+    private userService:StudentService,private orderService:OrderService,
+    private toastrservice:ToastrService,private profileservice:ProfileService){
+
+      window.scroll(0,0)
     this.loading=true
     activatedRoute.params.subscribe((params)=>{
       if(params['id'])
@@ -157,16 +162,16 @@ export class EventPageComponent {
   change(){
       this.list=!this.list;
       if(this.product.id<9){
-      this.eventservice.getparticipants(this.product.name).subscribe((response:any)=>{
+      this.eventservice.getsoloparticipants(this.product.name).subscribe((response:any)=>{
         if(response['msg']==-1){
           
-          console.log("Event page returns::"+response)
+        //  console.log("Event page returns::"+response)
           //this.participantList=this.List.filter(student=>student.isAdmin===false);
           this.count=0;
         }
         else{
           this.participantList=response;
-          console.log("Event page returns::"+response)
+        //  console.log("Event page returns::"+response)
           //this.participantList=this.List.filter(student=>student.isAdmin===false);
           this.count=this.participantList.length;
         }

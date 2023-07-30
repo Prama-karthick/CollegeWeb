@@ -143,19 +143,21 @@
     <div *ngIf="product.id < 9" class="event">
       <h3>No of Participants:{{this.count}}</h3>
       <button style="float: right;" (click)="exportToExcel()">
-        <i class="fa-solid fa-file-export"></i> Export to Excel
+        <i class="fa-solid fa-file-export"></i>Download
     </button>
       <table id="list">
         <tr>
           <th>Name</th>
           <th>Email</th>
           <th>Class</th>
+          <th>Admin No</th>
           <th>Gender</th>
         </tr>
         <tr *ngFor="let person of participantList">
           <td>{{person.name}}</td>
           <td>{{person.email}}</td>
           <td>{{person.year}}-{{person.department}} {{person.section}}</td>
+          <td>{{person.admissionNo}}</td>
           <td>{{person.gender}}</td>
         </tr>
       </table>

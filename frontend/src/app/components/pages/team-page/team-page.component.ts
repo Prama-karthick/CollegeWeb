@@ -6,9 +6,11 @@ import { CartService } from 'src/app/services/cart.service';
 import { EventService } from 'src/app/services/event.service';
 import { OrderService } from 'src/app/services/order.service';
 import { ProfileService } from 'src/app/services/profile.service';
+import { StudentService } from 'src/app/services/student.service';
 import { UserService } from 'src/app/services/user.service';
 import { ITeamInterface } from 'src/app/shared/interfaces/ITeamInterface';
 import { Products } from 'src/app/shared/Product';
+import { Student } from 'src/app/shared/student';
 import { User } from 'src/app/shared/user';
 import * as XLSX from 'xlsx';
 
@@ -20,7 +22,7 @@ import * as XLSX from 'xlsx';
 export class TeamPageComponent implements OnInit {
     isPay:boolean=false;
     eLen:number=0;
-    user!:User;
+    user!:Student;
     product!:Products;
     TeamForm!:FormGroup;
     eventTitle!:string;
@@ -29,9 +31,10 @@ export class TeamPageComponent implements OnInit {
     payList:any[]=[];
     participantList:any[]=[];
     count:number=0;
-    constructor(private formBuilder:FormBuilder,private userservice:UserService
+    constructor(private formBuilder:FormBuilder,private userservice:StudentService      
       ,private activatedRoute:ActivatedRoute,private profileservice:ProfileService,private route:Router,private cartservice:CartService,private eventservice:EventService,
       private orderService:OrderService,private toastrservice:ToastrService){
+        window.scroll(0,0);
         activatedRoute.params.subscribe((params)=>{
           if(params['id']){
             eventservice.getEventById(params['id']).subscribe(serverfood=>{
@@ -40,8 +43,25 @@ export class TeamPageComponent implements OnInit {
         })
       }
     })
+
+    this.eventservice.getgroupparticipants(this.product.name).subscribe((response:any)=>{
+      if(response['msg']==-1){
+        
+      //  console.log("Event page returns::"+response)
+        //this.participantList=this.List.filter(student=>student.isAdmin===false);
+        this.count=0;
+      }
+      else{
+        console.log(response);
+        this.participantList=response;
+      //  console.log("Event page returns::"+response)
+        //this.participantList=this.List.filter(student=>student.isAdmin===false);
+       // this.count=this.participantList.partic;
+      }
+
+    })
     this.user=this.userservice.currentUser;
-    this.isPay=this.user.isPayed;
+   // this.isPay=this.user.isPayed;
     if(this.user.event)
     this.eLen=this.user.event.length;
   }

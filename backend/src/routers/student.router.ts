@@ -25,7 +25,7 @@ router.get('/insert',asyncHandler(
 
 router.post('/search',asyncHandler(async(req,res)=>{
     const {adnumber}=req.body;
-    console.log(adnumber)
+   // console.log(adnumber)
     const student=await StudentModel.findOne({admissionNo:adnumber});
     if(!student){
       res.status(400).send("No match");
@@ -60,7 +60,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
   router.post("/login",asyncHandler(
     async(req,res)=>{
       const {adnumber,password}=req.body;
-      console.log(req.body)
+      //console.log(req.body)
       const student=await StudentModel.findOne({admissionNo:adnumber});
 
       if(student) {

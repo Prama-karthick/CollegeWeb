@@ -20,7 +20,11 @@ export class StudentregistrationComponent implements OnInit{
   details:any;
   wait: boolean=false;
   constructor(private formBuilder:FormBuilder,private studentservice:StudentService
-    ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){}
+    ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){
+      if(this.studentservice.currentUser){
+        return ;
+      }
+    }
 
   ngOnInit(): void {
     this.loading=true
