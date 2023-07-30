@@ -171,7 +171,9 @@ export class EventPageComponent {
           this.count=this.participantList.length;
         }
 
-      })}
+      })
+    window.alert(this.count);
+    }
       else{
         this.route.navigateByUrl("/teampage/"+this.product.id)
       }

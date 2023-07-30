@@ -68,6 +68,7 @@ export class EventService {
   }
 
   getparticipants(productname:string):Observable<any>{
+    console.log(productname);
     return this.http.post<any>(GET_SOLOPARTICIPANT,productname);
   }
 

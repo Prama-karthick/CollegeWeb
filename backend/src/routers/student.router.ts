@@ -60,7 +60,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
   router.post("/login",asyncHandler(
     async(req,res)=>{
       const {adnumber,password}=req.body;
-      console.log(adnumber)
+      console.log(req.body)
       const student=await StudentModel.findOne({admissionNo:adnumber});
 
       if(student) {

@@ -181,8 +181,7 @@ router.post('/soloeventparticipation',asyncHandler(
  ))
 
 
- router.post("/getsoloparticipants",asyncHandler(
-    async(req,res)=>{
+ router.post("/getsoloparticipants",asyncHandler(async(req,res)=>{
       const eventname=req.body.productname
       console.log(req.body)
    
