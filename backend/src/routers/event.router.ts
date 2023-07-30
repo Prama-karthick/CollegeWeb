@@ -181,7 +181,7 @@ router.post('/soloeventparticipation',asyncHandler(
  ))
 
 
- router.get("/getsoloparticipants",asyncHandler(async(req,res)=>{
+ router.get("/getsoloparticipants:productname",asyncHandler(async(req,res)=>{
       const eventname=req.params.productname
       console.log(eventname)
    
