@@ -22,7 +22,7 @@ export class StudentregistrationComponent implements OnInit{
   constructor(private formBuilder:FormBuilder,private studentservice:StudentService
     ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){
       if(this.studentservice.currentUser){
-        return ;
+       this.route.navigateByUrl('/')
       }
     }
 

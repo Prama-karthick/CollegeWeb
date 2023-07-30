@@ -21,7 +21,7 @@ export class LoginPageComponent implements OnInit{
     constructor(private formBuilder:FormBuilder,private userservice:UserService
       ,private activatedRoute:ActivatedRoute,private route:Router,private studentservice:StudentService,private toastrservice:ToastrService){
       if(this.userservice.currentUser){
-        return ;
+        this.route.navigateByUrl('/')
       }
 
       }

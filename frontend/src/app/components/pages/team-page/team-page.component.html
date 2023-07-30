@@ -2,7 +2,8 @@
   <div id="stars"></div>
   <div id="stars2"></div>
   <div id="stars3"></div>
-  <div *ngIf="!user.isAdmin">
+  <h1>{{eventTitle}}</h1>
+  <!-- <div *ngIf="!user.isAdmin">
     <h1>{{eventTitle}}</h1>
     <h3>Team Details</h3>
     <form class="form_class" [formGroup]="TeamForm">
@@ -68,9 +69,9 @@
 
     </form>
 
-    </div>
+    </div> -->
 
-    <div *ngIf="user.isAdmin" class="admin">
+    <!-- <div *ngIf="user.isAdmin" class="admin">
       <button  (click)="change()">Team List</button>
       <div *ngIf="this.list">
         <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
@@ -115,7 +116,7 @@
       </table>
 
     </div>
-    </div>
+    </div> -->
 
   </div>
 
