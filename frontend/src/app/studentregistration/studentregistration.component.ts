@@ -29,7 +29,7 @@ export class StudentregistrationComponent implements OnInit{
   ngOnInit(): void {
     this.loading=true
       this.sregisterForm=this.formBuilder.group({
-        adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(5)]],
+        adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(7)]],
         gender:['',Validators.required],
         password:['',Validators.required],
         confirmPassword: ['', Validators.required],

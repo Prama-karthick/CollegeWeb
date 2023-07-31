@@ -161,7 +161,8 @@ export class EventPageComponent {
 
   change(){
       this.list=!this.list;
-      if(this.product.id<9){
+      if(this.product.id<9)
+      {
       this.eventservice.getsoloparticipants(this.product.name).subscribe((response:any)=>{
         if(response['msg']==-1){
           
@@ -177,7 +178,6 @@ export class EventPageComponent {
         }
 
       })
-    window.alert(this.count);
     }
       else{
         this.route.navigateByUrl("/teampage/"+this.product.id)

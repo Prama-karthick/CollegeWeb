@@ -36,7 +36,7 @@ export class LoginPageComponent implements OnInit{
     ngOnInit(): void {
       this.loading=true
       this.sloginForm=this.formBuilder.group({
-        adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(5)]],
+        adnumber:['',[Validators.required,Validators.minLength(5),Validators.maxLength(7)]],
         password:['',Validators.required]
       });
       this.returnUrl=this.activatedRoute.snapshot.queryParams['returnUrl'];
