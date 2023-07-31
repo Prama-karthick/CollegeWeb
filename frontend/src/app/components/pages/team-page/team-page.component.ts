@@ -44,22 +44,7 @@ export class TeamPageComponent implements OnInit {
       }
     })
 
-    this.eventservice.getgroupparticipants(this.product.name).subscribe((response:any)=>{
-      if(response['msg']==-1){
-        
-      //  console.log("Event page returns::"+response)
-        //this.participantList=this.List.filter(student=>student.isAdmin===false);
-        this.count=0;
-      }
-      else{
-        console.log(response);
-        this.participantList=response;
-      //  console.log("Event page returns::"+response)
-        //this.participantList=this.List.filter(student=>student.isAdmin===false);
-       // this.count=this.participantList.partic;
-      }
-
-    })
+    
     this.user=this.userservice.currentUser;
    // this.isPay=this.user.isPayed;
     if(this.user.event)
@@ -219,6 +204,26 @@ export class TeamPageComponent implements OnInit {
 //   XLSX.writeFile(wb, fileName);
 
 //  }
+
+open(){
+  this.list!=this.list;
+  this.eventservice.getgroupparticipants(this.product.name).subscribe((response:any)=>{
+    if(response['msg']==-1){
+      
+    //  console.log("Event page returns::"+response)
+      //this.participantList=this.List.filter(student=>student.isAdmin===false);
+      this.count=0;
+    }
+    else{
+      console.log(response);
+      this.participantList=response;
+    //  console.log("Event page returns::"+response)
+      //this.participantList=this.List.filter(student=>student.isAdmin===false);
+     // this.count=this.participantList.partic;
+    }
+
+  })
+}
 
 }
 

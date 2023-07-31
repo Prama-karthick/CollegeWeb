@@ -14,6 +14,11 @@
   color:ghostwhite;
   animation: animate 1.0s linear infinite;
 }
+
+.group{
+  color:rgb(0, 255, 0);
+  animation: animate 2.0s linear infinite;
+}
 @keyframes animate{
   0%{
     opacity: 1;
