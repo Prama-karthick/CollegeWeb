@@ -14,6 +14,7 @@ export class StudentService {
   public userObservable:Observable<Student>;
   userevents!: string[];
   userteams!: string[];
+  studentin: boolean=false;
   constructor(private http:HttpClient,private toastrservice:ToastrService) { 
     this.userObservable=this.userSubject.asObservable();
   }
@@ -75,8 +76,14 @@ export class StudentService {
     localStorage.removeItem('Prouser');
     // this.cartService.clearCart();
     window.location.reload();
+    this.studentin=false;
   }
-
+  loggedin(){
+    this.studentin=true;
+  }
+  get loginstatus(){
+    return this.studentin;
+  }
   get events(){
     return this.userevents
   }

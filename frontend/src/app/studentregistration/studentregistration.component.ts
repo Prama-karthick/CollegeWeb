@@ -21,9 +21,9 @@ export class StudentregistrationComponent implements OnInit{
   wait: boolean=false;
   constructor(private formBuilder:FormBuilder,private studentservice:StudentService
     ,private activatedRoute:ActivatedRoute,private route:Router,private toastrservice:ToastrService){
-      // if(this.studentservice.currentUser){
-      //  this.route.navigateByUrl('/')
-      // }
+      if(this.studentservice.loginstatus){
+       this.route.navigateByUrl('/');
+      }
     }
 
   ngOnInit(): void {
