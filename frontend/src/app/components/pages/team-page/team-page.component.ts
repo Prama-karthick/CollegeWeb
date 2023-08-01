@@ -219,7 +219,7 @@ open(){
       this.participantList=response;
     //  console.log("Event page returns::"+response)
       //this.participantList=this.List.filter(student=>student.isAdmin===false);
-     // this.count=this.participantList.partic;
+     this.count=this.participantList.length;
     }
 
   })

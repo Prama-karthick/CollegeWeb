@@ -202,16 +202,25 @@ router.post('/soloeventparticipation',asyncHandler(
   router.get("/getgroupparticipants:productname",asyncHandler(async(req,res)=>{
     const eventname=req.params.productname
  
-     const product=await TeamEventModel.find({name:eventname});
-     console.log(product);
-    if(product){
-      console.log(product)
-      res.send(product);
-  }
-       //   for(let i=0;i<eventdetails.length;i++){
-  //     if(id==i){
-  //       var  eventname=eventdetails[i].name
-  // }}
+     const teams=await TeamEventModel.find({name:eventname});
+    // console.log(teams);
+    if(teams){
+      //console.log(teams)
+      
+        for(let i=0;i<teams.length;i++){
+            for(let j=0;j<teams[i].participants.length;j++){
+                let aNo=teams[i].participants[j].admissionNo
+                var student= await StudentModel.findOne({admissionNo:aNo})
+                if(student)
+                {
+                    aNo=aNo+" "+student.name+" "+student.email+" "+student.department+"-"+student.year+"-"+student.section
+                }
+                teams[i].participants[j].admissionNo=aNo;
+
+            }
+        }
+        res.send(teams);
+    }
   
   res.json({msg:-1})
   }
