@@ -89,8 +89,8 @@
         </tr>
  
         <tr *ngFor="let team of participantList">
-          <td rowspan="5">{{team.teamName}}</td>
-          <td>{{team.participants.admissionNo}}</td>
+          <td>{{team.teamname}}</td>
+          <td  *ngFor="let teammeber of team.participants" >{{teammeber.admissionNo}}</td>
           <!-- <td>{{team.teammem1}}<br>{{team.teammem2}}<br>{{team.teammem3}}<br>{{team.teammem4}}<br>{{team.teammem5}}<br>{{team.teammem6}}</td>
           <td>{{team.email1}}<br>{{team.email2}}<br>{{team.email3}}<br>{{team.email4}}<br>{{team.email5}}<br>{{team.email6}}</td>
        -->
@@ -99,7 +99,7 @@
 
       </table>
       <button class="btn btn-primary" style="float: right;">
-        <i class="fa-solid fa-file-export"></i> Export to Excel
+        <i class="fa-solid fa-file-export"></i>Download
     </button>
      <!--  <table id="paymentlist">
         <tr>
