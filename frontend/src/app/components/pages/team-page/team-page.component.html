@@ -4,7 +4,6 @@
   <div id="stars3"></div>
   <h1>{{eventTitle}}</h1>
   <button (click)="open()">Show List</button>
-  {{participantList}}
   <!-- <div *ngIf="!user.isAdmin">
     <h1>{{eventTitle}}</h1>
     <h3>Team Details</h3>
@@ -71,37 +70,38 @@
 
     </form>
 
-    </div> -->
+    </div> 
 
-    <!-- <div *ngIf="user.isAdmin" class="admin">
+    <div *ngIf="user.isAdmin" class="admin">
       <button  (click)="change()">Team List</button>
       <div *ngIf="this.list">
         <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
           <i class="fa-solid fa-file-export"></i>Download
-      </button>
+      </button>-->
 
       <h3>No of Teams:{{this.count}}</h3><br>
       <table id="list" >
         <tr>
           <th>Team Name</th>
-          <th>College Name</th>
+          <!-- <th>College Name</th> -->
           <th>Team Members</th>
-          <th>Members Mail-id</th>
+          <!-- <th>Members Mail-id</th> -->
         </tr>
  
-        <tr *ngFor="let team of List">
-          <td>{{team.teamName}}</td>
-          <td>{{team.teammem1.college}}</td>
-          <td>{{team.teammem1}}<br>{{team.teammem2}}<br>{{team.teammem3}}<br>{{team.teammem4}}<br>{{team.teammem5}}<br>{{team.teammem6}}</td>
+        <tr *ngFor="let team of participantList">
+          <td rowspan="5">{{team.teamName}}</td>
+          <td>{{team.participants.admissionNo}}</td>
+          <!-- <td>{{team.teammem1}}<br>{{team.teammem2}}<br>{{team.teammem3}}<br>{{team.teammem4}}<br>{{team.teammem5}}<br>{{team.teammem6}}</td>
           <td>{{team.email1}}<br>{{team.email2}}<br>{{team.email3}}<br>{{team.email4}}<br>{{team.email5}}<br>{{team.email6}}</td>
-        </tr>
+       -->
+        </tr> 
 
 
       </table>
       <button class="btn btn-primary" style="float: right;" (click)="exportToExcelPay()">
         <i class="fa-solid fa-file-export"></i> Export to Excel
     </button>
-      <table id="paymentlist">
+     <!--  <table id="paymentlist">
         <tr>
           <th>NAME</th>
           <th>EMAIL</th>
