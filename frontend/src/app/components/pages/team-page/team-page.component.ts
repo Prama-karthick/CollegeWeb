@@ -175,21 +175,21 @@ export class TeamPageComponent implements OnInit {
     //     }
     //   })
     // }
-//   exportToExcel()
-//   {
+  exportToExcel()
+  {
 
-//     let element = document.getElementById('list');
-//     const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
+    let element = document.getElementById('list');
+    const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
 
-//     /* generate workbook and add the worksheet */
-//     const wb: XLSX.WorkBook = XLSX.utils.book_new();
-//     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
-//     let fileName = this.product.name+".xlsx"
+    /* generate workbook and add the worksheet */
+    const wb: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+    let fileName = this.product.name+".xlsx"
 
-//     /* save to file */
-//     XLSX.writeFile(wb, fileName);
+    /* save to file */
+    XLSX.writeFile(wb, fileName);
 
-//  }
+ }
 
 //  exportToExcelPay(){
 //   let element = document.getElementById('paymentlist');
