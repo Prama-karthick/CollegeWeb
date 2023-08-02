@@ -106,8 +106,9 @@ router.post('/soloeventparticipation',asyncHandler(
         var nochange=0
         for(let i=0; i<req.body.participants.length; i++){
            var student= await StudentModel.findOne({admissionNo:req.body.participants[i].admissionNo})
-           
-               if(student){
+            
+            if(student){
+               if(student.password !=''){
                    let eventexists=student.event.find(prod=>prod===ename);
                     if(eventexists){
                         nochange=0
@@ -125,6 +126,7 @@ router.post('/soloeventparticipation',asyncHandler(
                     nochange=0
                     res.json({message:-6})//team member not registered
                 }
+            }
            
            
            

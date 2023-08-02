@@ -8,6 +8,13 @@
         <!-- <li>
           <a href="https://goo.gl/maps/kDvWTuZmVeq8E5va6" target="_blank">Location</a>
         </li> -->
+        <li  class="menu-container">
+          <a routerLink="/">Home</a>
+          <div class="menu">
+            <a routerLink="/group/group1">Solo Events</a>
+            <a routerLink="/group/group2">Group Events</a>
+          </div>
+        </li>
         <li *ngIf="!isAuth">
           <a routerLink="/login">Login</a>
         </li>

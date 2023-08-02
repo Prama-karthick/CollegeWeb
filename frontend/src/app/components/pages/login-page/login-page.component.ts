@@ -23,6 +23,7 @@ export class LoginPageComponent implements OnInit{
         if(this.studentservice.loginstatus){
           this.route.navigateByUrl('/');
          }
+         this.wait=false
 
       }
 

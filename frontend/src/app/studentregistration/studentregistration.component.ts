@@ -24,6 +24,7 @@ export class StudentregistrationComponent implements OnInit{
       if(this.studentservice.loginstatus){
        this.route.navigateByUrl('/');
       }
+      this.wait=false
     }
 
   ngOnInit(): void {

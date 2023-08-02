@@ -4,6 +4,9 @@
   <div id="stars3"></div>
   <h1>{{eventTitle}}</h1>
   <button (click)="open()">Show List</button>
+  <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
+    <i class="fa-solid fa-file-export"></i>Download
+</button>
   <!-- <div *ngIf="!user.isAdmin">
     <h1>{{eventTitle}}</h1>
     <h3>Team Details</h3>
@@ -98,9 +101,7 @@
 
 
       </table>
-      <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
-        <i class="fa-solid fa-file-export"></i>Download
-    </button>
+      
      <!--  <table id="paymentlist">
         <tr>
           <th>NAME</th>
