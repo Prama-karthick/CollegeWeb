@@ -229,10 +229,10 @@ open(){
 
   })
   delay(5000);
-
+  this.taketime=false
   if(this.count==0){
-    this.noParticipants=true;
-    this.list=false;
+    //this.noParticipants=true;
+    //this.list=false;
   }
   else{
     this.taketime=false
