@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { delay } from 'rxjs';
 import { CartService } from 'src/app/services/cart.service';
 import { EventService } from 'src/app/services/event.service';
 import { OrderService } from 'src/app/services/order.service';
@@ -31,6 +32,8 @@ export class TeamPageComponent implements OnInit {
     payList:any[]=[];
     participantList:any[]=[];
     count:number=0;
+  noParticipants: boolean=false;
+  taketime: boolean=false;
     constructor(private formBuilder:FormBuilder,private userservice:StudentService      
       ,private activatedRoute:ActivatedRoute,private profileservice:ProfileService,private route:Router,private cartservice:CartService,private eventservice:EventService,
       private orderService:OrderService,private toastrservice:ToastrService){
@@ -207,6 +210,7 @@ export class TeamPageComponent implements OnInit {
 
 open(){
   this.list!=this.list;
+  this.taketime=true;
   this.eventservice.getgroupparticipants(this.product.name).subscribe((response:any)=>{
     if(response['msg']==-1){
       
@@ -223,6 +227,15 @@ open(){
     }
 
   })
+  delay(5000);
+
+  if(this.count==0){
+    this.noParticipants=true;
+    this.list=false;
+  }
+  else{
+    this.taketime=false
+  }
 }
 
 }

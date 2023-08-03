@@ -35,6 +35,7 @@ export const eventdetails:any[]= [{
         "---Time: 01:15 PM",
         "---Totally single Round: ( Situation handling)",
         "---Language for communication is strictly English.",
+        "For queries mail: mepcoconsumerclub@gmail.com",
         "Staff Incharge:Dr.A.Sakthivel, Asst. Professor (Sl.Grade)/CHEM",
 
       ]
@@ -132,7 +133,7 @@ export const eventdetails:any[]= [{
         "Topic will be given on the spot",
         "Jury decision is final.",
         "For queries mail:nssunit14@gmail.com", 
-        "Staff Incharge:Mr.C.Utharanarayanan/MECH.",
+        "Staff Incharge:Dr. A.Shenbagarajan/AIDS.",
 
       ]
     },{
@@ -188,6 +189,7 @@ export const eventdetails:any[]= [{
 	"Out of 20 teams, 10 Teams would be selected to Round 1 and 5 teams to the final round.",
 	"Multiple tasks will be given for participants in each team separately in each level.",
 	"Marks would be provided on the basis of time of completion of the tasks collectively",
+  "For queris mail:Readersclub.mepco.official@gmail.com",
 	"Jury decision is final.",
         "Staff Incharge:Mr.R.Sebastiyan/LIB.",
 
@@ -423,7 +425,7 @@ export const eventdetails:any[]= [{
       id: 20,
       name: "Rangoli",
       clubname:"Fine arts Club",
-      imageUrl:"assets/fiesta/Rangoli.jpeg",
+      imageUrl:"assets/fiesta/Rg.jpeg",
       rules:	[
         "Maximum of 3 participants per team.",
 	"Theme : NATIONAL INTEGRATY",

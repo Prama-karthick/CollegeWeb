@@ -4,6 +4,7 @@
   <div id="stars3"></div>
   <h1>{{eventTitle}}</h1>
   <button (click)="open()">Show List</button>
+  <h3 *ngIf="taketime">Please wait..This may take some time..!</h3>
   <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
     <i class="fa-solid fa-file-export"></i>Download
 </button>
@@ -81,7 +82,8 @@
         <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
           <i class="fa-solid fa-file-export"></i>Download
       </button>-->
-
+      <h3 *ngIf="noParticipants">No one particpated in this event</h3>
+      <div *ngIf="list">
       <h3>No of Teams:{{this.count}}</h3><br>
       <table id="list" >
         <tr>
@@ -101,6 +103,8 @@
 
 
       </table>
+    </div>
+    
       
      <!--  <table id="paymentlist">
         <tr>
