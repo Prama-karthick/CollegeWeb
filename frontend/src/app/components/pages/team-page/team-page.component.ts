@@ -209,8 +209,9 @@ export class TeamPageComponent implements OnInit {
 //  }
 
 open(){
-  this.list!=this.list;
+  this.list=true;
   this.taketime=true;
+  this.noParticipants=false;
   this.eventservice.getgroupparticipants(this.product.name).subscribe((response:any)=>{
     if(response['msg']==-1){
       
