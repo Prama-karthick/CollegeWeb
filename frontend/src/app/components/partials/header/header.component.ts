@@ -21,6 +21,9 @@ export class HeaderComponent implements OnInit{
     userservice.userObservable.subscribe((newuser)=>{
       this.user=newuser;
     })
+    if(this.user.admissionNo=="10001"){
+      this.userservice.logout();
+    }
   }
   ngOnInit(): void {
 
