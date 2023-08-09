@@ -56,13 +56,15 @@
         </ul>
     </div>
     <h3 class="group" *ngIf="isgroup">All the team members should Register in the Fiesta Website</h3>
-    <button *ngIf="isgroup  ;else outerelseblock" (click)="checkevent()">Participate</button>
+    <button *ngIf="isgroup && !closed  ;else outerelseblock" (click)="checkevent()">Participate</button>
     <ng-template #outerelseblock>
       <!-- <button>Registration Closed</button> -->
       
-        <button (click)="loading=true" >Participate</button>
+        <button *ngIf="!closed" (click)="loading=true" >Participate</button>
+        
       
     </ng-template>
+    <button *ngIf="closed">Registeration Closed</button>
   </div>
 </div>
 

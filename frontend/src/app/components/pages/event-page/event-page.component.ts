@@ -30,6 +30,8 @@ export class EventPageComponent {
   List:any[]=[];
   issolo!: boolean;
   rules!: string[];
+  closed:boolean=false;
+  closedevents:string[]=['10','14'];
   wait: boolean=false;
   constructor(activatedRoute:ActivatedRoute,private eventservice:EventService,private cartservice:CartService,
     private route:Router,
@@ -51,6 +53,10 @@ export class EventPageComponent {
           this.isgroup=true;
           this.issolo=false;
         }
+
+        if(params['id'] in this.closedevents){
+          this.closed=true;
+        }
       //   if(this.product.tname==="groupevent"){
       //     this.isgroup=true;
 
@@ -61,6 +67,7 @@ export class EventPageComponent {
       //   }
       })
     })
+   
     this.user=this.userService.currentUser;
     this.isPay=this.user.isPayed;
     if(this.user.event)
