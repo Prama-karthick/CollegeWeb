@@ -78,9 +78,14 @@
     height: 60%;
     padding: 2em;
     margin-top: 8%;
+    color: black;
+    align-content:center;
     /* margin-right: 10%; */
     border-radius: 1em;
     background-color: white;
+  }
+  li{
+    color: black;
   }
 
   .gform{

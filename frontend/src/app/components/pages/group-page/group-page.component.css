@@ -9,7 +9,10 @@
   font-family: 'Overlock SC', cursive;
   font-size: 2em;
 }
-
+.RegisterationVideo{
+  padding:  1em 2em 2em 1em;
+  text-align: center;
+}
 .category-container{
   padding-top:  1em;
   display: flex;
@@ -601,25 +604,30 @@
 
 
 #c1{
-  height: 50vh;
+  height: 5vh;
+  width: 5vh;
   font-size: 3em;
+  font-family: fantasy;
+  color:#1b2735;
   border-radius:10%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/soloimg.jpg');
-  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/15date.jpg');
+  background-size:contain;
 }
 #c1:hover{
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/soloimg.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/15date.jpg');
   background-size: cover;
 }
 #c2{
-  height: 50vh;
+  height: 10vh;
   font-size: 3em;
+  font-family: fantasy;
+  color:#1b2735;
   border-radius:10%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/teamimg.jpg');
-  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/16date.jpg');
+  background-size: contain;
 }
 #c2:hover{
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/teamimg.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/16date.jpg');
   background-size: cover;
 }
 /* #c3{
