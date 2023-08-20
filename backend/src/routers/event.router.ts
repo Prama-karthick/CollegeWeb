@@ -228,6 +228,33 @@ router.post('/soloeventparticipation',asyncHandler(
   }
 ));
 
+router.get("/getgroupparticipants/Drama/Mime",asyncHandler(async(req,res)=>{
+    const eventname="Drama/Mime"
+ console.log(eventname);
+     const teams=await TeamEventModel.find({name:eventname});
+    
+    if(teams){
+      //console.log(teams)
+      
+        for(let i=0;i<teams.length;i++){
+            for(let j=0;j<teams[i].participants.length;j++){
+                let aNo=teams[i].participants[j].admissionNo
+                var student= await StudentModel.findOne({admissionNo:aNo})
+                if(student)
+                {
+                    aNo=aNo+" "+student.name+" "+student.email+" "+student.department+"-"+student.year+"-"+student.section
+                }
+                teams[i].participants[j].admissionNo=aNo;
+
+            }
+        }
+        res.send(teams);
+    }
+  
+  res.json({msg:-1})
+  }
+));
+
 
 
 export default router;
