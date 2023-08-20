@@ -1,5 +1,5 @@
 import { environment } from "src/environments/environment";
-const global ="https://fiestaseniors.onrender.com"
+const global ="https://legacy23.onrender.com"
 const local="https://localhost:3000";
 const BASE_URL = global
 
