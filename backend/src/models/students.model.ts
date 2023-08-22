@@ -13,6 +13,9 @@ export interface Student{
   department:string;
   email:string;
   section:string;
+  accomdation:string;
+  mobileNo:string;
+  collegeName:string;
   points:number;
 }
 
@@ -22,6 +25,7 @@ export interface RegisterStudent{
   admissionNo:string;
   gender:string;
   department:string;
+  collegeName:string,
   year:string;
   section:string;
 }
@@ -36,11 +40,14 @@ export const StudentSchema=new Schema<Student>({
   isAdmin:{type:Boolean},
   event:{type:[String]},
   yourteams:{type:[String]},
-  admissionNo:{type:String,required:true,unique:true},
-  year:{type:String,required:true},
+  admissionNo:{type:String,unique:true},
+  year:{type:String},
   gender:{type:String},
-  department:{type:String,required:true},
-  section:{type:String,required:true},
+  department:{type:String},
+  section:{type:String},
+  accomdation:{type:String},
+  mobileNo:{type:String},
+  collegeName:{type:String},
   points:{type:Number}
 },
 {

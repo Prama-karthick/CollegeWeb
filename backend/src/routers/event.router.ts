@@ -14,7 +14,7 @@ router.post('/soloeventparticipation',asyncHandler(
 
         const eventname=req.body.Ename
         const {adminno}=req.body
-       var student=await StudentModel.findOne({admissionNo:adminno})
+       var student=await StudentModel.findOne({email:adminno})
        if(student){
         let eventexists=student.event.find(prod=>prod===eventname);
             if(eventexists){
@@ -28,8 +28,9 @@ router.post('/soloeventparticipation',asyncHandler(
                 const  newparticpant:RegisterStudent= {
                     name:student.name,
                     email:student.email,
-                    admissionNo:adminno,
+                    admissionNo:student.admissionNo,
                     gender:student.gender,
+                    collegeName:student.collegeName,
                     department:student.department,
                     year:student.year,
                     section:student.section

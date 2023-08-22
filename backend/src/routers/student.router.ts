@@ -26,7 +26,7 @@ router.get('/insert',asyncHandler(
 router.post('/search',asyncHandler(async(req,res)=>{
     const {adnumber}=req.body;
    // console.log(adnumber)
-    const student=await StudentModel.findOne({admissionNo:adnumber});
+    const student=await StudentModel.findOne({email:adnumber});
     if(!student){
       res.status(400).send("No match");
     }
@@ -44,7 +44,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
 
   router.post('/register',asyncHandler(async(req,res)=>{
     const {adnumber,password,gender}=req.body;
-    const student=await StudentModel.findOne({admissionNo:adnumber});
+    const student=await StudentModel.findOne({email:adnumber});
     if(!student){
       res.status(400).send("No match");
       res.json({msg:-1})
@@ -61,7 +61,7 @@ router.post('/search',asyncHandler(async(req,res)=>{
     async(req,res)=>{
       const {adnumber,password}=req.body;
       //console.log(req.body)
-      const student=await StudentModel.findOne({admissionNo:adnumber});
+      const student=await StudentModel.findOne({email:adnumber});
 
       if(student) {
         if(student.password==password){
@@ -96,6 +96,9 @@ var currentstudent!:Student
       admissionNo:user.admissionNo,
       department:user.department,
       year:user.year,
+      accomdation:user.accomdation,
+      mobileNo:user.mobileNo,
+      collegeName:user.collegeName,
       section:user.section,
       points:user.points,
     }
@@ -110,6 +113,9 @@ var currentstudent!:Student
       admissionNo:user.admissionNo,
       department:user.department,
       year:user.year,
+      accomdation:user.accomdation,
+      mobileNo:user.mobileNo,
+      collegeName:user.collegeName,
       section:user.section,
       points:user.points,
       token: token
