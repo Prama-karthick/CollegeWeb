@@ -2,7 +2,7 @@ import {Router} from 'express';
 import asyncHandler from "express-async-handler";
 import { details } from '../data';
 import { Product, ProductModel } from '../models/product.model';
-import { eventdetails } from '../events';
+import { eventdetails } from '../legacyEvents';
 
 const router=Router();
 
