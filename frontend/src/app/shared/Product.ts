@@ -16,6 +16,7 @@ export class Products{
 export class Events{
   id!:number;
   name!:string;
+  eventday!:string;
   clubname!:string;
   imageUrl!:string;
   rules!:string[];

@@ -3,7 +3,7 @@ import asyncHandler from "express-async-handler";
 import { RegisterStudent, Student, StudentModel } from "../models/students.model";
 import { EventModel, Events, RegisterStudentSchema } from "../models/events.model";
 import { GroupModel, TeamEvents,TeamEventModel } from "../models/groupteam.model";
-import { eventdetails } from "../events";
+import { eventdetails } from "../legacyEvents";
 import { getstudent } from "./student.router";
 
 

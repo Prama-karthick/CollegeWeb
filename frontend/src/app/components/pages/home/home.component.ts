@@ -16,8 +16,8 @@ export class HomeComponent implements OnInit{
   workshopss!:Events[];
   groupevents!:Events[];
   groupname: any;
-  showsoloevents!: boolean;
-  showgroupevents!: boolean;
+  showsoloevents: boolean=true;
+  showgroupevents: boolean=true;
   
   constructor(activatedRoute:ActivatedRoute,eventservice:EventService){
     window.scroll(0,0)
@@ -26,22 +26,28 @@ export class HomeComponent implements OnInit{
       this.groupname=params['groupname']
       if(params['groupname'])
       eventservice.getEventByGroup(params['groupname']).subscribe(res=>{
-        this.gproducts=res;
-        this.soloeventss=this.gproducts.filter(product=>product.id < 9);
+        this.workshopss=res;
+        if(this.groupname=="group1"){
+        this.gproducts=this.workshopss.filter(product=>product.eventday='day1')
+      }
+      else{
+        this.gproducts=this.workshopss.filter(product=>product.eventday='day2')
+      }
+        this.soloeventss=this.gproducts.filter(product=>product.id < 12);
         // this.workshopss=this.gproducts.filter(product=>product.id==="workshop");
-         this.groupevents=this.gproducts.filter(product=>product.id > 8);
+         this.groupevents=this.gproducts.filter(product=>product.id > 11);
 
       })
     })
 
-    if(this.groupname=='group1'){
-      this.showsoloevents=true;
-      this.showgroupevents=false;
-    }
-    if(this.groupname=='group2'){
-      this.showsoloevents=false;
-      this.showgroupevents=true;
-    }
+    // if(this.groupname=='group1'){
+    //   this.showsoloevents=true;
+    //   this.showgroupevents=false;
+    // }
+    // if(this.groupname=='group2'){
+    //   this.showsoloevents=false;
+    //   this.showgroupevents=true;
+    // }
 
     
   this.loading=false

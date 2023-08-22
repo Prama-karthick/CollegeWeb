@@ -270,6 +270,7 @@ function addteammember(member:Student){
     name:member.name,
     email:member.email,
     admissionNo:member.admissionNo,
+    collegeName:member.collegeName,
     gender:member.gender,
     department:member.department,
     year:member.year,
@@ -286,6 +287,7 @@ function setTeamLeader(teamleader:Student){
                         email:teamleader.email,
                         admissionNo:teamleader.admissionNo,
                         gender:teamleader.gender,
+                        collegeName:teamleader.collegeName,
                         department:teamleader.department,
                         year:teamleader.year,
                         section:teamleader.section
