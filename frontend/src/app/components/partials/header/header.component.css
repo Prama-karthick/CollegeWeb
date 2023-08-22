@@ -69,6 +69,7 @@ a span{
 
 .menu{
   border-radius: 0 0 16px 16px;
+  width: 80%;
   position:absolute;
   z-index:1;
   background:#F7FBFF;
@@ -78,13 +79,14 @@ a span{
 
 .menu-container:hover .menu{
   display: block;
+  width: 80%;
   transition: .3s;
 }
 
 .menu a{
   color: Black;
   width: 100%;
-  min-width:8rem;
+  /* min-width:8rem; */
   transition: .3s;
   border-radius: 16px;
 }

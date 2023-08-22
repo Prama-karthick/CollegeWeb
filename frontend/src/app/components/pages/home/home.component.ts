@@ -28,10 +28,10 @@ export class HomeComponent implements OnInit{
       eventservice.getEventByGroup(params['groupname']).subscribe(res=>{
         this.workshopss=res;
         if(this.groupname=="group1"){
-        this.gproducts=this.workshopss.filter(product=>product.eventday='day1')
+        this.gproducts=this.workshopss.filter(product=>product.eventday==='day1')
       }
       else{
-        this.gproducts=this.workshopss.filter(product=>product.eventday='day2')
+        this.gproducts=this.workshopss.filter(product=>product.eventday==='day2')
       }
         this.soloeventss=this.gproducts.filter(product=>product.id < 12);
         // this.workshopss=this.gproducts.filter(product=>product.id==="workshop");

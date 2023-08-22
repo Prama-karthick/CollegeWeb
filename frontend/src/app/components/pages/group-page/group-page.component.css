@@ -621,7 +621,7 @@
   height: 10vh;
   font-size: 3em;
   font-family: fantasy;
-  color:#1b2735;
+  color:rgb(239, 239, 11);
   border-radius:10%;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/16date.jpg');
   background-size: contain;

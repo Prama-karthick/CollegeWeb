@@ -5,14 +5,14 @@
       <ul>
         <li><a routerLink="/workshop" *ngIf="user.isAdmin && (user.email==='pramakarthick@gmail.com')">WorkshopList</a></li>
         <li><a routerLink="/admin" *ngIf="user.isAdmin && (user.email==='pramakarthick@gmail.com')">Admin</a></li>
-        <!-- <li>
-          <a href="https://goo.gl/maps/kDvWTuZmVeq8E5va6" target="_blank">Location</a>
-        </li> -->
+        <li>
+          <a routerLink="/login">Registeration</a>
+        </li>
         <li  class="menu-container">
-          <a routerLink="/">Home</a>
+          <a routerLink="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="menu">
-            <a routerLink="/group/group1">Solo Events</a>
-            <a routerLink="/group/group2">Group Events</a>
+            <a routerLink="/group/group1">Day 1</a>
+            <a routerLink="/group/group2">Day 2</a>
           </div>
         </li>
         <!-- <li *ngIf="!isAuth">
