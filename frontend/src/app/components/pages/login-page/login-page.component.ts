@@ -13,9 +13,11 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginPageComponent implements OnInit{
     loginForm!:FormGroup;
+
     loading!:boolean
     sloginForm!:FormGroup;
     isSubmitted=false;
+    screenshotUrl="assets/legacy/steps/1.png"
     returnUrl='';
   wait: boolean=false;
     constructor(private formBuilder:FormBuilder,private userservice:UserService
