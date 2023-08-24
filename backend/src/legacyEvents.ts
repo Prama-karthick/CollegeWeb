@@ -6,7 +6,17 @@ export const eventdetails:any[]= [{
       eventday:"day1",
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/default.jpg",
-      rules: [      ]
+      rules: [ 
+        "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
+        "தனி நபர் விவாதம்.",
+        "2 சுற்றுகளாக நடைபெறும்",
+        "ஒரு கல்லூரியில் இருந்து அதிகபட்சமாக 3 நபர்கள் பங்குபெறலாம்.",
+        "போட்டி நடைபெறும் இடத்தில் தலைப்புகள் வழங்கப்படும். ",
+        "நடுவரின் தீர்ப்பே இறுதியானது",
+        "வருகை நேரம் 10:15 AM.",
+        "For Queries mail to: tamildebate@mepcoeng.ac.in",
+        
+           ]
     },{
       id: 1,
       name: "Best Manager",
@@ -14,20 +24,20 @@ export const eventdetails:any[]= [{
       clubname:"Consumer Club",
       imageUrl:"assets/fiesta/BM.jpg",
       rules: [
-        "No restriction in number of participants.",
-        "Usage of proper words during the event should be strictly followed.",
-        "The Jury’s decision is final. ",
-        "ROUND 1- Prelims 3 rounds (Aptitude Questions, Individual task and multitasking).",
-        "---Time: 09:15 AM",
-        "---Language for communication is strictly English.  ",
-        "---Selected paticipants will get to next round",
-        "Final Round",
-        "---Time: 01:15 PM",
-        "---Totally single Round: ( Situation handling)",
-        "---Language for communication is strictly English.",
-        "For queries mail: mepcoconsumerclub@gmail.com",
-        "Staff Incharge:Dr.A.Sakthivel, Asst. Professor (Sl.Grade)/CHEM",
-
+        "Prelims=> Date: 15/09/2023  Time: 10.30 AM to 12.30 PM",
+        "--->Maximum of 5 participants per college.",
+        "--->It is an individual event.",
+        "--->The event comprises four rounds.",
+        "--->The language will be only English.",
+        "--->Jury’s decision is final",
+        "--->Reporting time 10.00 AM.",
+        "Final=> Date: 16/09/2023  Time: 10.30 AM to 12.15 PM & 3.30 PM to 4.30 PM",
+        "--->The selected participants from prelims round can participate.",
+        "--->The event rules are the same as prelims round.",
+        "--->Jury’s decision is final.",
+        "--->Reporting time 10.00 AM.",
+        "For Queries mail to: bestmanager@mepcoeng.ac.in",
+       
       ]
     },{
       id: 2,
@@ -36,21 +46,15 @@ export const eventdetails:any[]= [{
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/Solo Dance.png",
       rules: [
-        "Audio track must be in mp3 format.",
-        "Time Duration: 4 mins.",
-        "Whistle, Vulgarity in songs, Moves, Costumes or any sorts will lead to disqualification.",
-        "Dangerous properties should not be used.",
-        "Songs must not be highly peppy (Strictly Avoid kuthu songs).",
-        "Innovation and creativity in dance will be given additional credits.",
-        "The dress code must be proper and get approval from the concerned staff.",
-        "Reporting time 9:10 AM",
-        "Any kind of dance may be performed like classical, free style or Folk etc.,",
-        "Maximum of 20 participants who complete registration, corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis to the concerned staff.",
-        "Submit your audio tracks in the G-Form-> https://forms.gle/W2bYExKdQCGdNE6i8 ",
-        "Jury's decision is final.",
-        "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge:Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
-
+        "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
+        "Only one participant per college.",
+        "Time Duration: 3 minutes",
+        "Audio track must be in mp3 format & should be submitted at the registration desk.",
+        "Participants must bring their own costumes and properties.",
+        "Vulgarity of any sort will lead to disqualification.",
+        "Jury’s decision is final.",
+        "Reporting time 01.00 PM.",
+        "For Queries mail to: solodance@mepcoeng.ac.in",
       ]
     },{
       id: 3,
@@ -59,20 +63,15 @@ export const eventdetails:any[]= [{
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/Solo Singing.jpeg",
       rules: [
-        "Reporting time: 10:00 AM; Students should be in formal wear.",
-        "Time Duration : 3 mins",
-        "No pre-recordings should be played.",
-        "Only Karaoke is allowed. No other background voices",
-        "Any style of music can be performed (Folk, Jazz, Melody, Pop, Metal etc.).",
-        "Only Tamil songs are allowed.",
-        "Vulgarity in song selection, lyrics or any sorts will lead to disqualification.",
-        "Judging criteria will be : Shruthi, Voice Clarity, Song difficulty, Tempo and Improvisations.",
-        "Jury decision is final. Prelims will be conducted.",
-        "Submit your karaoke to the concerned staff on or before 17.04.2023 by 5 pm in mp3 format (Normalized).",
-        "Submit your audio tracks in the G-Form-> https://forms.gle/UVugo7s6pr3oZ9Kv9 ",
-        "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
-
+        "Date: 15/09/2023  Time: 1.30 PM to 3.00 PM",
+        "Maximum of 1 participant per college.",
+        "Time duration: 4 minutes.",
+        "Karaoke is allowed. Audio track must be in mp3 format & should be submitted in the registration desk at the time of registration.",
+        "Only Tamil songs are permitted",
+        "Vulgarity of any sort will lead to disqualification.",
+        "Jury’s decision is final.",
+        "Reporting time 01.00PM.",
+        "For Queries mail to: solosinging@mepcoeng.ac.in",
       ]
     },{
       id: 4,
@@ -81,18 +80,15 @@ export const eventdetails:any[]= [{
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/Solo Instrumentals.jpg",
       rules: [
-        "Students should be in formal wear.",
-        "Time Duration : 3 mins.",
-        "Reporting Time : 09:00 AM",
-        "Any kind of instruments can be played. ( Percussions, Non-Percussions, Keys, Strings, Wind Instruments) or Multiple instruments(e.g. keyboard + Guitar) can be played.",
-        "Mild Karoke/ Mild Voiceovers can be used (if needed) upon which the instrument can be played.",
-        "Judging criteria :  Song difficulty, Tempo, Rhythm, No. Of flaws, Improvisations",
-        "Submit your audio to the concerned staff on or before 29.08.2022 by 5 pm in mp3 format (Normalized).",
-        "Submit your audio tracks in the G-Form-> https://forms.gle/SvL8WePWNjdgtXVr5 ",
-        "Jury's decision is final",
-        "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge:Mr.Haamidh/Civil & Dr.Winfred Shashikanth.",
-
+        "Date: 15/09/2023  Time: 3.00 PM to 4.30 PM",
+        "Maximum of 2 participants per college.",
+        "Time duration: 5 minutes including setup/plug in time.",
+        "Participants must bring their own instruments.",
+        "Single participant can play multiple instruments.",
+        "Jury’s decision is final.",
+        "Reporting time 02.30 PM.",
+        "For Queries mail to: music@mepcoeng.ac.in",
+        
       ]
     },{
       id: 5,
@@ -100,18 +96,16 @@ export const eventdetails:any[]= [{
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/pixe.jpeg",
       rules: [
-        "THEME: STREET PHOTOGRAPHY; Stick to the theme",
-        "Voting starts @09:30 AM",
-        "Internet images will be disqualified",
-        "Colour correction is allowed but avoid surrealism",
-        "Best Photos will be short-listed from the entries and will be displayed on the pixie board.",
-        "Voting will be undertaken.",
-        "Soft copy of the photograph are only considered.",
-        "Submit your photos through mail to photoclubforu@gmail.com (In subject, mention entry for pixie. Mention your name, year, dept, sec, roll no in the body of the email) on or before 10.08.2023",
-	"Attach the properties of the photo in the mail.",
-        "Jury decision is final.",
-        "Staff Incharge:Mr.M.Suresh Kumar/PHY.",
-
+        "Date: 15/09/2023 Time: Before 10.30 AM",
+        "THEME: STREET PHOTOGRAPHY",
+        "Only one participation per college, and only one submission per entry is allowed.",
+        "Soft copies of the photographs must be submitted before 10th September, 2023 to pixie@mepcoeng.ac.in.",
+        "Plagiarism should be avoided.",
+        "Colour correction is allowed. Avoid surrealism.",
+        "Shortlisted photos will be displayed for voting.",
+        "Final result will be based on voting & Jury’s decision.",
+        "For Queries mail to: pixie@mepcoeng.ac.in",
+        
       ]
     },{
       id: 6,
@@ -120,15 +114,16 @@ export const eventdetails:any[]= [{
       clubname:"NSS",
       imageUrl:"assets/fiesta/NSS.jpg",
       rules: [
-        "Time Duration: 1 hour; Reporting Time : 01.30 PM",
-        "Drawings should be drawn in an A4 sheet.",
-        "Participants should use only pencil for sketching.",
-        "Participants should bring their own drawing paraphernalia including A4 sheet.",
-        "Topic will be given on the spot",
-        "Jury decision is final.",
-        "For queries mail:nssunit14@gmail.com", 
-        "Staff Incharge:Dr. A.Shenbagarajan/AIDS.",
-
+        "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
+        "One participant per college.",
+        "Time limit 1 hour.",
+        "All the necessary stationery items and materials must be brought by the participants.",
+        "Topics will be given on the spot.",
+        "Usage of electronic gadgets during the event is prohibited.",
+        "Jury’s decision is final.",
+        "Reporting Time: 01.00 PM",
+        "For Queries mail to: pencil@mepocoeng.ac.in",
+        
       ]
     },{
       id: 7,
@@ -137,13 +132,15 @@ export const eventdetails:any[]= [{
       clubname:"Health Club",
       imageUrl:"assets/fiesta/yoga.png",
       rules: [
-        "Reporting Time : 09.15 AM",
-        "Each candidate is to perform one Bending,one Stretching,one Twisting and extra two Asana of their own.",
-        "Tracksuits & Closed T-shirts must be worn during the competition.",
-        "Shorts &amp; Sleeveless strictly not allowed. Musical Yoga Allowed.",
-        "Rhythm,Posture,Complication,Flexibility is taken under Consideration.",
-        "Jury decision is final.",
-        "Staff Incharge:Mrs.AMK.Saliha Banu/PED.",
+        "Date: 16/09/2023  Time: 10.00 AM to 11.30 AM",
+        "One participant per College.",
+        "Time Duration:10 minutes.",
+        "Each candidate has to perform one bending, one stretching, one twisting and extra two asanas of their own.",
+        "Rhythm, Posture, Complication, and Flexibility are taken for consideration.",
+        "Jury’s decision is final.",
+        "Reporting time 09.30 AM.",
+        "For Queries mail to: yoga@mepcoeng.ac.in",
+        
 
       ]
     },{
@@ -153,21 +150,15 @@ export const eventdetails:any[]= [{
       clubname:"Health Club",
       imageUrl:"assets/fiesta/Ezhuthaani.png",
       rules: [
-        "Theme/Topic : On the Spot",
-        "Reporting Time : 9:10 AM",
-        "Participants need to exhibit their Creative Writing skills (fiction or poetry) in Tamil or English.",
-        "The duration of the event is 1 hour",
-        "The maximum mark for the event is 50 with the following split-up.",
-        "→ Content + flow - 15 marks",
-        "→ Presentation - 5 marks",
-        "→ Creativity + relevance to the title - 10 marks",
-        "→ English / Tamil Punctuation  - 10",
-        "→ Vocabulary style - 10",
-        "All entries will be thoroughly validated.",
-        "Jury's decision is final.",
-        "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-        "Staff Incharge:Mrs.J.Deepalakshmi, Asst. Professor (Sl.Grade)/MATH.",
-
+        "Date: 15/09/2023  Time: 10.30 AM to 12.00 PM",
+        "Maximum of 1 participant per College.",
+        "All the necessary items should be brought by the participant.",
+        "Individual performance alone is considered.",
+        "Karate, Silambam, Kalari, Taekwondo movements could be performed (For Karate and Taekwondo only kattas are allowed).",
+        "Jury’s decision is final.",
+        "Reporting time 10:00 AM.",
+        "For Queries mail to: martialarts@mepcoeng.ac.in",
+        
       ]
     },{
         id: 9,
@@ -176,21 +167,15 @@ export const eventdetails:any[]= [{
         clubname:"The LA&TM",
         imageUrl:"assets/fiesta/Ezhuthaani.png",
         rules: [
-          "Theme/Topic : On the Spot",
-          "Reporting Time : 9:10 AM",
-          "Participants need to exhibit their Creative Writing skills (fiction or poetry) in Tamil or English.",
-          "The duration of the event is 1 hour",
-          "The maximum mark for the event is 50 with the following split-up.",
-          "→ Content + flow - 15 marks",
-          "→ Presentation - 5 marks",
-          "→ Creativity + relevance to the title - 10 marks",
-          "→ English / Tamil Punctuation  - 10",
-          "→ Vocabulary style - 10",
-          "All entries will be thoroughly validated.",
-          "Jury's decision is final.",
-          "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-          "Staff Incharge:Mrs.J.Deepalakshmi, Asst. Professor (Sl.Grade)/MATH.",
-  
+          "Date: 15/09/2023  Time: 3.00 PM to 4.30 PM",
+        "தனி நபர் கவிதைப் பொட்டி",
+        "போட்டி ஒரே சுற்றாக ஒருங்கினைக்கப்படும்.",
+        "ஒரு கல்லூரியில் இருந்து அதிகபட்சமாக 3 நபர்கள் பங்குபெறலாம்.",
+        "போட்டி நடைபெறும் இடத்தில் தலைப்புகள் வழங்கப்படும். ",
+        "நடுவரின் தீர்ப்பே இறுதியானது. ",
+        "வருகை நேரம் 02:30 PM.",
+        "For Queries mail to: kavithai@mepcoeng.ac.in",
+
         ]
       },{
         id: 10,
@@ -199,21 +184,15 @@ export const eventdetails:any[]= [{
         clubname:"The LA&TM",
         imageUrl:"assets/fiesta/Ezhuthaani.png",
         rules: [
-          "Theme/Topic : On the Spot",
-          "Reporting Time : 9:10 AM",
-          "Participants need to exhibit their Creative Writing skills (fiction or poetry) in Tamil or English.",
-          "The duration of the event is 1 hour",
-          "The maximum mark for the event is 50 with the following split-up.",
-          "→ Content + flow - 15 marks",
-          "→ Presentation - 5 marks",
-          "→ Creativity + relevance to the title - 10 marks",
-          "→ English / Tamil Punctuation  - 10",
-          "→ Vocabulary style - 10",
-          "All entries will be thoroughly validated.",
-          "Jury's decision is final.",
-          "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-          "Staff Incharge:Mrs.J.Deepalakshmi, Asst. Professor (Sl.Grade)/MATH.",
-  
+          "Date: 16/09/2023  Time: 10:00 AM to 12:00 PM",
+          "Maximum of 2 participants per college.",
+          "It is an individual event.",
+          "The debate shall follow a parliamentary format.",
+          "The mediator has full authority over selection and usage of discussion topics.",
+          "Jury’s decision is final.",
+          "Reporting time 09.30 AM.",
+          "For Queries mail to: debateguru@mepcoeng.ac.in",
+          
         ]
       },{
         id: 11,
@@ -221,27 +200,37 @@ export const eventdetails:any[]= [{
         eventday:"day2",
         clubname:"The LA&TM",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [    
+          "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
+          "Topic will be given on the spot.",
+          "It is an individual event.",
+          "Maximum of one participant per college",
+          "Participant is expected to speak for a maximum of 3 minutes relevant to the topic given.",
+          "Delivery of speech should be in Tamil.",
+          "Mobile phone usage is not allowed inside the venue.",
+          "Jury’s decision is final",
+          "Reporting time: 01.00 PM.",
+          "For Queries mail to: extempore@mepcoeng.ac.in",
+          
+
+          ]
       },{
       id: 12,
-      name: "Divide And Conquer",
+      name: "Divide And Conquer(MULTI TASKING)",
       eventday:"day1",
       clubname:"Reader's Club",
       imageUrl:"assets/fiesta/dc.png",
       rules: [
-	" Reporting Time : 01:15 PM",
-	"The team can consist of 5 members;Only 20 teams can register.",
-	"Registration based on first come first serve basis.",
-	"No change of Team members is permitted once the registration is closed.",
-	"There are totally three rounds to finish the game i.e., Prelims, round 1 and the final round",
-	"Prelims would be conducted on on the same day of the event.Maximum of 10 teams will be selected from prelims.",
-	"Time Duration: 2 Hrs (20 min-Prelims, 45 min-Round 1,45 min-Final Round)",
-	"Out of 20 teams, 10 Teams would be selected to Round 1 and 5 teams to the final round.",
-	"Multiple tasks will be given for participants in each team separately in each level.",
-	"Marks would be provided on the basis of time of completion of the tasks collectively",
-  "For queris mail:Readersclub.mepco.official@gmail.com",
-	"Jury decision is final.",
-        "Staff Incharge:Mr.R.Sebastiyan/LIB.",
+          "Date: 15/09/2023  Time: 10.30 AM to 12.30 PM",
+          "A team must strictly have 5 members.",
+          "Maximum of 2 teams per college is allowed.",
+          "Multiple tasks will be given to participants in each team separately/individually.",
+          "Maximum of 10 teams will be selected from prelims.",
+          "Participation of girls and boys together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 10:00 AM",
+          "For Queries mail to: multitask@mepcoeng.ac.in",
+         
 
       ]
     },{
@@ -251,9 +240,12 @@ export const eventdetails:any[]= [{
       clubname:"Club Innovative",
       imageUrl:"assets/fiesta/thevent.jpg",
       rules: [
+        "Date: 16/09/2023 Time: 10.00 AM to 12.30 PM",
+        "Maximum of 2 teams per college and 5 members per team.",
 	"The participating team must have exactly 5 members. There will be no changes in the participants list after initial submission",
 	"Total 30 teams (15 Boys team and 15 Girls team) will be shortlisted for prelims round based on first come first serve",
-	"Participants should assemble at the S&H Seminar Hall on or before 9.10am. Prelims round starts by 9.15am",
+	"Prelims round starts by 9.15am",
+  "Participants reporting to desk after 9:55 AM will not be allowed to attend the prelims round.",
 	"Elimination will be there based on your prelims score.",
 	"15 teams will be shortlisted for the Item collection round.",
 	"If you borrow any items within the campus from anybody you must be responsible for returning it.",
@@ -261,31 +253,32 @@ export const eventdetails:any[]= [{
 	"For the Final round, 8 teams will be shortlisted",
 	"The first team to finish the final level will be the winner of the event.",
 	"Final score will be based on all previous levels.",
-	"Be genuine and ethical to solve the clues at each level on your own. Googling the answers is strictly prohibited.",
-  "For queris mail:clubinnovativemepco@gmail.com",
+	"Usage of electronic gadgets during the event is prohibited.",
+  "Participation of boys and girls is strictly prohibited.",
 	"Jury's decision is final.",
-        "Staff Incharge:Dr.J.Senthilkumar/ECE.",
+
+
 
 				]
     },{
       id: 14,
-      name: "Monsters’ Muss",
+      name: "Monsters’ Muss (English Language Game)",
       eventday:"day1",
       clubname:"Blue Sky Club",
       imageUrl:"assets/fiesta/mm.png",
       rules: [
-        "Reporting Time : 01.15 PM",
-        "Duration: 2 hours",
-	      "Entry Closing Time: 1:30 PM.",
-        "Each team should have two students.",
-        "Prelims may be conducted if the number of teams exceeds FIFTEEN.",
-        "Indiscipline in any form will lead to the disqualification of the team.",
-        "Stationary items like pens, pencils etc have to be brought by the participants.",
+        "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
+        "One team per college and 3 members per  team.",
+        "All the necessary stationery items must be brought by the participants.",
+        "If necessary, prelims will be there.",
+        "Any form of indisciplinary activities conducted will lead to  disqualification of the team.",
         "Electrical/External sources should not be used during the event.",
-        "Judging will also be based on fluency, creative thinking, multi-tasking, language skills.",
+        "Participation of girls and boys together is strictly prohibited.",
         "Jury’s decision is final.",
-        "For queris mail:mepcobluesky@gmail.com",
-        "Staff incharge: Dr.B.Rathika (English department)."
+        "Reporting time 10.00 AM",
+        "For Queries mail to: monstermuss@mepcoeng.ac.in",
+        
+      
       ]
     },{
       id: 15,
@@ -294,25 +287,19 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Radio Mirchi.png",
       rules: [
-	"Reporting Time : 10:15 AM",
-	"A team can have a maximum of three members. Single member per team is acceptable.",
-	"Recorded voices or any sound are not allowed.",
-	"Voice and tone modulations of the participants will be considered.",
-	"Participants should have their content relevant to their titles and may show their creative touch during the show.",
-	"The event as a whole has two rounds.",
-	"→ 1st round- participants can prepare their talk with their own topics.",
-	"→ 2nd round- participants will be given a task to find the topic and are expected to talk on the topic.",
-	"Vulgarity and provocative thoughts in the topic or talk will not be entertained and shall be subject to immediate disqualification from the event.",
-	"Jury decision is final.",
-	"JUDGMENT CRITERIA:",
-	"	1. Clarity of voice",
-	"	2. Fluency",
-	"	3. Originality",
-	"	4. Communication of the contest theme",
-	"	5. Sense of humour and presentation",
-  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-        "Staff Incharge:Mrs.P.Palniladevi, Asst. Professor/ECE.",
-
+        "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
+        "Maximum no. of participants: 10 per team and only one team per college.",
+        "Time Duration: 12 minutes on stage inclusive of setup/plug in time",
+        "A cappella is also allowed.",
+        "Pre-recorded sound is not allowed.",
+        "Participants must bring their own instruments.",
+        "Only Tamil songs are allowed",
+        "Vulgarity of any sort will lead to disqualification.",
+        "Participation of girls and boys together is allowed.",
+        "Jury’s decision is final.",
+        "Reporting time 10:00 AM",
+        "For Queries mail to: orchestra@mepcoeng.ac.in",
+	
       ]
     },{
       id: 16,
@@ -321,21 +308,18 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Potpourri.jpg",
       rules: [
-	" Reporting Time : 01:15 PM",
-	"Each team should consist of 3 members.",
-	"There may be prelims, and then 8 teams will be in finals.",
-	"Prelims consist of 3 segments, each segment contains 5 questions (each 1 mark).",
-	"Main event: Each team will be asked questions based on the rounds",
-	"The team with the correct answer will get a +5 mark.",
-	"For a Special question in a round where the team will get +10 marks.",
-	"During the Special question if the answer is wrong, -2 marks will be awarded.",
-	"The team can pass on the questions where they will not lose any marks.",
-	"The team which gets the pass question will get +2.5 for the correct answer and they will not get any negative marks if they haven't answered the question and passed.",
-	"In case of tie, the team will be asked 3 rapid fire questions and the team with more quick answers will be declared as the winner.",
-	"Jury decision is final.",
-  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-        "Staff Incharge:Mr.G.Manoj Kumar, Asst. Professor (Sr.Grade)/MECH.",
-
+        "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
+        "Individual participation, or a team of maximum 3 members is allowed.",
+        "Maximum of 2 registrations per college.",
+        "Time limit: Maximum 5 minutes.",
+        "It can be a stand-up comedy or a comic skit.",
+        "Use of audio or any video clippings are not allowed.",
+        "Vulgarity at any instance will lead to disqualification.",
+        "Participation of girls and boys together is strictly prohibited.",
+        "Jury’s decision is final.",
+        "Reporting time 10.00 AM.",
+        "For Queries mail to: kalakkalkalatta@mepcoeng.ac.in",
+        
       ]
     },{
       id: 17,
@@ -344,16 +328,15 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Lyrical Hunt.png",
       rules: [
-	"Time : 01.30 PM",
-        "Each team can have 3 members",
-	"The Event comprises of 2 segments - Prelims followed by the Main Event.",
-	"Prelims will be conducted and 8 teams will be selected for the main round.",
-	"Prelims - 3 segments; each segment - 10 questions & each question - 1 point..",
-	"Questions for prelims would be of the form Jumbled Lyric, Complete the lyric and Guess the song.",
-	"Main round will consist of 5 to 6 segments like Karaoke, Connections, Rapid Fire, Reverse the song etc….",
-	"Marks for each segment will be announced on the spot.",
-	"Jury decision is final",
-        "Staff Incharge: Mrs.S.Usha, Asst. Professor/CIV.",
+        "Date: 16/09/2023  Time: 10.30 AM to 12.00 PM",
+        "A game that tests your proficiency in lyrics from Tamil movies.",
+        "A team should contain 3 members, and only one team is allowed per college.",
+        "Event contains multiple segments like finding the karaoke, connections, etc.",
+        "Rules for each segment will be announced on the spot.",
+        "Participation of boys and girls together is prohibited",
+        "Jury’s decision is final.",
+        "Reporting time: 10.00 AM",
+        "For Queries mail to: lyricalmagic@mepcoeng.ac.in",
 
       ]
     },{
@@ -363,17 +346,17 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Sherlock Holmes.png",
       rules: [
-	"Reporting Time: 9:10 AM",
-	"It is a detective game.",
-	"Each team should consist of two members.",
-	"Three rounds will be conducted as a part of this event.",
-	"Rounds will be revealed only during the contest.",
-	"Those 3 rounds also include a prelim.",
-	"Participation of girls and boys together is strictly prohibited.",
-	"Jury decision is final.",  
-  "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-        "Staff Incharge: Mr.J.Anish Jafrin Thilak/MECH",
-
+        "Date: 15/09/2023  Time: 10.30 AM to 12.30 PM",
+        "It is a detective event.",
+        "Only 2 members per team.",
+        "Maximum of 2 teams per college.",
+        "Three rounds will be conducted as a part of this event including prelims.",
+        "Rounds will be revealed only during the contest",
+        "Participation of girls and boys together is strictly prohibited.",
+        "Jury’s decision is final.",
+        "Reporting time 10.00 AM.",
+        "For Queries mail to: sherlock@mepcoeng.ac.in",
+       
       ]
     },{
       id: 19,
@@ -382,18 +365,18 @@ export const eventdetails:any[]= [{
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/shortfilm.jpg",
       rules: [
-	"Reporting Time : 10:45 AM",
-	"Maximum of 8 members per team.",
-	"THEME: SOCIAL WELFARE.",
-	"Duration: 15 min (including title and credits).",
-	"The YouTube link must be sent or shared via Google Drive to photoclubforu@gmail.com on or before 10.08.2023",
-	"Best films will be shortlisted and intimated before 12.08.2023.",
-	"Cinematography & editing will play as the major score points.",
-	"Avoid help from professional artists.",
-	"Jury decision is final.",
-	"Permission letter from the parents is needed for Participation",
-        "Staff Incharge: Dr.Winfred Shashikanth/PHY.",
-
+        "Date: 16/09/2023  Time: 10.00 AM to 12.30 PM",
+        "Theme: Any message involving Social Awareness",
+        "Maximum of 8 members per team, and only one team per college is allowed.",
+        "Time Duration: 15 min (including title and credits).",
+        "Send the YouTube link or share via Google Drive to shortfilm@mepcoeng.ac.in before 10th September, 2023.",
+        "Best 10 films will be shortlisted and intimated before 13th September, 2023.",
+        "Cinematography, editing and story will be  considered for scores.",
+        "Avoid help from professional artists.",
+        "Jury’s Decision is final",
+        "Reporting time 09.30 AM.",
+        "For Queries mail to: shortfilm@mepcoeng.ac.in",
+       
       ]
     },{
       id: 20,
@@ -402,44 +385,15 @@ export const eventdetails:any[]= [{
       clubname:"The LA&TM",
       imageUrl:"assets/fiesta/Quiz.png",
       rules: [
-	"Reporting Time : 9:45 AM",
-	"Each team should consist of two members.Prelims would be of a written format.",
-	"Six teams would be selected from the prelims.",
-        "Topics include historical, scientific, sports, cinema, etc.",
-	"Main Round:",
-				"Round -1",
-				"	❖ Each team gets one question.",
-				"	❖ Each question is a pass question.",
-				"	❖ No negative marking.",
-				"	❖ Correct answer for direct question gets 10 marks.",
-				"	❖ Correct answer for passed question gets 5 marks.",
-				"Round – 2",
-				"	❖ Each team gets one question.",
-				"	❖ Each question is not a pass question.",
-				"	❖ Wrong answer gets a negative marking of -5.",
-				"	❖ Correct answer gets 10 marks.",
-				"Round – 3",
-				"	❖ Each team gets one question.",
-				"	❖ No negative marking.",
-				"	❖ Correct answer on first clue gets 20 marks.",
-				"	❖ Correct answer on second clue gets 15 marks.",
-				"	❖ Correct answer on third clue gets 10 marks.",
-				"	❖ Correct answer on last clue gets 5 marks.",
-				"Round – 4",
-				"	❖ Each team gets one question.",
-				"	❖ Only one person will answer the question.",
-				"	❖ Should answer rapidly.",
-				"	❖ No negative marking.",
-				"	❖ Each question is not a pass question.",
-				"	❖ The correct answer gets 5 marks.",
-				"Round – 5",
-				"	❖ Each team gets one question and genre based.",
-				"	❖ No negative marking.",
-				"	❖ Each question is not a pass question",
-				"Jury decision is final.",
-        "For queries contact : mepcoliterary@gmail.com with the event name as the subject.",
-        "Staff Incharge: Mrs.A.Annie Aglin/BT.",
-
+        "Date: 15/09/2023  Time: 10.30AM - 12.30 PM",
+        "Maximum of 2 members per team and Only one team per College.",
+        "Top 8 teams will be selected for the finals.",
+        "Use of any kind of external sources is not allowed.",
+        "Participation of girls and boys together is strictly prohibited.",
+        "Quiz Master’s Decision is final.",
+        "Reporting time 10.00 AM.",
+        "For Queries mail to: quiz@mepcoeng.ac.in",
+        
 			 ]
     },{
       id: 21,
@@ -448,21 +402,18 @@ export const eventdetails:any[]= [{
       clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/Group Dance.png",
       rules:	[
-	"No of members: Minimum 4 to Maximum 15",
-        "Reporting time 10:00 AM",
-	"Concepts or themes can be used without affecting the dance.",
-	"Whistle, Vulgarity in Songs, Moves, Costumes or any sorts will lead to disqualification.",
-	"Innovation and creativity in dance will be given additional credits.",
-	"Proper approval for dress must be sought from the concerned staff-in-charges earlier.",
-	"Dangerous properties should not be used.",
-	"Songs must not be highly peppy (Strictly Avoid kuthu songs)",
-	"No participation of boys and girls together.",
-        "Maximum no of teams – 12; corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized) on first come first basis.",
-	"Jury decision is final.",
-  "Submit your audio tracks in the G-Form-> https://forms.gle/KD7qyiyjXHUGjtXa6 ",
-  "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge: Dr.T.Prabaharan/Mech& Dr.C.Gangalakshmi/English.",
-
+        "Date: 15/09/2023  Time: 1.30 PM to 4.30 PM",
+        "Minimum 6 to Maximum 12 members and only one team per College.",
+        "Time Duration: 5 minutes.",
+        "Audio track must be in mp3 format & should be submitted in the registration desk at the time of registration.",
+        "Concepts or themes can be used without affecting the dance portion.",
+        "Participants must bring their own costumes and properties. Usage of dangerous properties is prohibited.",
+        "Participation of boys and girls together is strictly prohibited.",
+        "Vulgarity of any sort will lead to disqualification",
+        "Jury’s decision is final.",
+        "Reporting time 01.00 PM.",
+        "For Queries mail to: groupdance@mepcoeng.ac.in",
+        
 				]
     },{
       id: 22,
@@ -471,14 +422,17 @@ export const eventdetails:any[]= [{
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/default.jpg",
       rules:	[
-	"Two members per team.Topic: On the spot",
-	"You will get 90 mins to work on your poster.",
-	"Both paper based and digital graphics are allowed.",
-	"Poster should be made in A3 size.",
-	"For paper based participants should use A3 sheets and all other necessary items.",
-	"For digital graphics participants must bring their laptops with necessary software installed.",
-	"Jury decision is final.",
-        "Staff Incharge: Mr.M.Suresh Kumar/PHY.",
+        "Date: 15/09/2023  Time: 01.30 PM to 04.00 PM",
+        "Maximum of 2 teams per college and 3 members per team.",
+        "Time Duration: 2 hours.",
+        "Trailer must not exceed 5 minutes.",
+        "Participants must bring their own laptops with the required software installed in their laptop.",
+        "Images, videos and audio clips will be provided.",
+        "Participation of boys and girls together is strictly prohibited.",
+        "Jury’s decision is final.",
+        "Reporting time 01.00 PM.",
+        "For Queries mail to: trailertime@mepcoeng.ac.in",
+        
 
       ]
     },{
@@ -488,16 +442,18 @@ export const eventdetails:any[]= [{
       clubname:"Fine arts Club",
       imageUrl:"assets/fiesta/Rg.jpeg",
       rules:	[
-        "Maximum of 3 participants per team.",
-	"Theme : NATIONAL INTEGRATY",
-	"Time Duration : 90 mins Reporting Time: 10:00 am",
-        "Can use rock salt, flowers, dhal etc. & should bring the necessary items",
-        "Usage of templates are strictly prohibited.",
-	"Judging criteria will be : symmetry, color combination, innovation, creativity and the neatness of the Rangoli.",
-	"Jury's decision is final.",
-  "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge: Mrs.BlessaBinolinPepsi/IT& Mrs.P.Madhumitha/English.",
-
+        "Date: 15/09/2023  Time: 10.30 AM to 12.00 PM",
+        "Topic:  SERVICE TO HUMANITY IS SERVICE TO GOD.",
+        "Maximum of 1 team per College and 3 members per team.",
+        "Time Duration: 90 mins. ",
+        "Participants must bring their own materials.",
+        "Usage of rock salt, flower, dhal, etc. is allowed.",
+        "Usage of templates are not allowed",
+        "Participation of girls and boys together is strictly prohibited.",
+        "Jury’s decision is final.",
+        "Reporting time 10.00 AM.",
+        "For Queries mail to: rangoli@mepcoeng.ac.in",
+        
 				]
     },{
       id: 24,
@@ -506,21 +462,20 @@ export const eventdetails:any[]= [{
       clubname:"Fine arts Club",
       imageUrl:"assets/fiesta/DramaMime.png",
       rules:	[
-        "Maximum of 12 members and minimum of 4 per team.",
-        "Time Duration: 8 min.",
-        "Reporting Time : 2:00 PM",
-        "Participants can use either audio track in MP3 format or Oral delivery.",
-        "Drama or mime could be performed.",
-        "Language – Tamil & English.",
-        "Whistling, Teasing, Vulgarity in Songs, Dialogues, Costumes or any sort will lead to disqualification.",
-        "Judgement will be based on acting, concept, stage presence, audio, costume etc.,",
-        "Participants must bring their own materials.",
-        "First 15 teams who complete the registration with corrected audio track submission on or before 10.08.2023 by 5 pm in mp3 format (Normalized).",
-        "Submit your audio tracks in the G-Form-> https://forms.gle/sPiWSNz9xUvUt8gH8 ",
-        "The Jury’s decision is final.",
-        "The Registeration Form for the event should be submitted to the concerned Staff Incharge",
-        "For queries mail: mepcofinearts2022@gmail.com",
-        "Staff Incharge: Mr.M.Jawahar/EEE.",
+       "Date: 16/09/2023 Time: 9.30 AM to 12.30 PM",
+       "Minimum 8 to Maximum 12 members per team.",
+       "Only 1 team per college",   
+       "Time Duration: Maximum of 10 minutes.",
+       "Participants must bring their own costumes and properties.",
+       "Participants can use either audio track in MP3 format or can opt for oral delivery.",
+       "Based on talents they exhibit, credit points will be awarded.",
+       "Participation of boys and girls together is strictly prohibited.",
+       "Vulgarity of any sort will lead to disqualification",
+       "Audio track should be submitted in the registration desk at the time of registration",
+       "Jury’s decision is final.",
+       "Reporting time 09.00 AM",
+       "For Queries mail to: dramatics@mepcoeng.ac.in",
+
 
       ]
     },{
@@ -529,41 +484,112 @@ export const eventdetails:any[]= [{
         eventday:"day1",
         clubname:"Club Innovative",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [   
+          "Date: 15/09/2023  Time: 2.00 PM to 4.30 PM",
+          "It’s a brainstorming event related to food and cooking.",
+          "Round 1 – Prelims: Questions related to cooking and food. ",
+          "Round 2 - Do you know the ingredients ?",
+          "Round 3 - Taste and Smell (Final Round)",
+          "Prelims sheet will be given at the venue during  reporting time.",
+          "Maximum of 2 teams per college and Maximum of 3 members per team.",
+          "Usage of electronic gadgets during the event is prohibited.",
+          "Interactions among other teams are prohibited.",
+          "Participation of boys and girls together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 01.30 PM",
+          "For Queries mail to: divinedishes@mepcoeng.ac.in",
+          
+           ]
       },{
         id: 26,
         name: "MARKETOMANIA",
         eventday:"day1",
         clubname:"Consumer Club",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [    
+          "Date: 15/09/2023  Time: 2.00 PM to 4.30 PM",
+          "Maximum of 3 members per team and maximum of 2 teams per college",
+          "The event comprises of two rounds.",
+          "Communication must be in English.",
+          "1 hour for each round.",
+          "Participation of boys and girls together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 01.30 PM",
+          "For Queries mail to: marketomania@mepcoeng.ac.in",
+         
+          ]
       },{
         id: 27,
         name: "LIPHOMANIAC(SPELL BEE)",
         eventday:"day2",
         clubname:"Blue Sky Forum",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [   
+          "Date: 16/09/2023  Time: 10.00 AM to 12.30 PM",
+          "Minimum 4 to Maximum 5 members per team and Maximum of 3 teams per college.",
+          "Prelims + 3 rounds will be held.",
+          "Rounds will be based on Vocabulary with the given time limit.",
+          "Participation of boys and girls together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 09.30 AM",
+          "For Queries mail to: spellbee@mepcoeng.ac.in",
+          
+           ]
       },{
         id: 28,
         name: "EXPRESSIONS (FACE PAINTING)",
         eventday:"day2",
         clubname:"Fine arts Club",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [   
+          "Date: 16/09/2023  Time: 10:00 AM to 12:00 PM",
+          "Maximum of 2 members per team and only 1 team per college.",
+          "Time Duration: 1 hour.",
+          "Topic will be given on the spot.",
+          "Participants must bring their own materials.",
+          "Participation of boys and girls together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 09.30 AM.",
+          "For Queries mail to: painting@mepcoeng.ac.in",
+          
+           ]
       },{
         id: 29,
         name: "WAR WITH WORDS",
         eventday:"day2",
         clubname:"Blue Sky",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [    
+          "Date: 16/09/2023  Time: 01.30 PM to 04.00 PM",
+          "One team per college and 3 members per team.",
+          "All the necessary stationery items must be brought by the participants.",
+          "If necessary, prelims will be conducted.",
+          "Any form of indisciplinary actions will lead to the  disqualification of the team.",
+          "Electrical/ External sources should not be used during the event.",
+          "Participation of boys and girls together is strictly prohibited.",
+          "Jury’s decision is final.",
+          "Reporting time 01.00 PM.",
+          "For Queries mail to: warwords@mepcoeng.ac.in",
+          
+          ]
       },{
         id: 30,
         name: "மறுவார்த்தை (Translation)",
         eventday:"day2",
         clubname:"The LA&TM",
         imageUrl:"assets/fiesta/default.jpg",
-        rules: [      ]
+        rules: [   
+          "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
+          "ஓர் அணிக்கு இரண்டு பேர். ",
+          "ஒரு கல்லூரியில் இருந்து அதிகபட்சமாக இரண்டு அணிகள் பங்குபெறலாம்.",
+          "காலக்கெடு மற்றும் எழுத்துப்பிழை தவறுகளின் அடிப்படையில் தீர்ப்பு வழங்கப்படும்.",
+          "போட்டி மூன்று சுற்றுகளாக நடைபெறும்.",
+          "போட்டி நடைபெறும் இடத்தில் தலைப்புகள் வழங்கப்படும்.",
+          "ஆண்களும் பெண்களும் ஒரு குழுவாக ஒன்றாக பங்கேற்கக்கூடாது. ",
+          "நடுவரின் தீர்ப்பே இறுதியானது ",
+          "வருகை நேரம் 01.00 PM.",
+          "For Queries mail to: dumbc@mepcoeng.ac.in",
+         
+           ]
       },
   ]

@@ -5,6 +5,7 @@
 }
 
 .boxesh2{
+  color: #FFFFFF;
   text-align: center;
   font-family: 'Overlock SC', cursive;
   font-size: 2em;
@@ -604,31 +605,34 @@
 
 
 #c1{
-  height: 5vh;
-  width: 5vh;
+  height: auto;
+  width: auto;
   font-size: 3em;
   font-family: fantasy;
-  color:#1b2735;
+  text-shadow: #FFFFFF;
+  color:rgb(0, 0, 0);
   border-radius:10%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/15date.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.123), rgba(0,0,0,0.123)),  url('src/assets/15date.jpg');
   background-size:contain;
 }
 #c1:hover{
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/15date.jpg');
-  background-size: cover;
+  background-size: contain;
 }
 #c2{
-  height: 10vh;
+  height: auto;
+  width: auto;
   font-size: 3em;
   font-family: fantasy;
-  color:rgb(239, 239, 11);
+  text-shadow: #FFFFFF;
+  color:rgb(0, 0, 0);
   border-radius:10%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/16date.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0,0,0,0.123)),  url('src/assets/16date.jpg');
   background-size: contain;
 }
 #c2:hover{
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('src/assets/16date.jpg');
-  background-size: cover;
+  background-size: contain;
 }
 /* #c3{
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url('src/assets/ece.webp');
