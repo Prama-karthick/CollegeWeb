@@ -4,7 +4,7 @@ export const eventdetails:any[]= [{
       id: 0,
       name: "விவாத மேடை",
       eventday:"day1",
-      clubname:"Fine Arts Club",
+      clubname:"The LA&TM",
       imageUrl:"assets/fiesta/default.jpg",
       rules: [ 
         "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
@@ -305,7 +305,7 @@ export const eventdetails:any[]= [{
       id: 16,
       name: "KALAKKAL KALATTA",
       eventday:"day1",
-      clubname:"The LA&TM",
+      clubname:"Fine Arts Club",
       imageUrl:"assets/fiesta/Potpourri.jpg",
       rules: [
         "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",

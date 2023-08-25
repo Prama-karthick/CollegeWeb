@@ -67,20 +67,31 @@
           <div class="start" *ngIf="wait" >Loading...</div>
     </form>
   </div> -->
-  <h3 style="padding-top: 10%;">To know the Registeration Steps</h3>
-  <div class="screenshots" style="display:flex;margin-left: 25%;padding-top: 5%;">
-    <br>
-    <a target="_blank" href="assets/legacy/Legacy'23 Registration Process.pdf" style="background-color: red;color: white;" download>Registeration Steps pdf</a>
-    <!-- <h3 style="margin-top: 25%;"><</h3>
-    
-    <img [src]="screenshotUrl"/>
-    
-    <h3 style="margin-top: 25%;" (hover)="screenshotUrl" >></h3> -->
+  <!-- <h3 style="padding-top: 10%;">Common Rules</h3> -->
+  <div *ngIf="!next">
+  <h3><a target="_blank" style="color: red;text-decoration: none;" href="https://drive.google.com/file/d/1_rpDGXRWD6ewV99auyaOyYQYIVF6EsMT/view?usp=drive_link"><b>Common Rules</b></a></h3><br>
+  <ul>
+    <li><b>Registration for Legacy’23 should be done only through the forms provided by
+      Mepco Schlenk Engineering College, Sivakasi.</b></li><br>
+    <li><b>The entire registration procedure should be completed on or before
+      09-09-2023.</b></li><br>
+    <li><b>Maximum number of participants per college is 50 (Fifty) only.</b></li><br>
+    <li><b>Participants should bring bonafide certificate and their college ID card.</b></li><br>
+    <li><b>Maximum of two faculty per college should accompany the participants.</b></li><br>
+  </ul>
+</div>
+  <div class="documents" *ngIf="next">
+  <b><h3 style="padding-top: 10%;text-decoration: underline;">To know the Registeration Steps</h3></b>
+  <div class="screenshots" style="display:flex;padding-top: 5%;">
+    <h3>Click here -><a target="_blank" href="assets/legacy/Legacy'23 Registration Process.pdf" style="background-color: red;color: white;text-decoration: none;" download>Registeration Steps pdf</a></h3>
   </div>
-  <h3 style="padding-top: 10%;">To Get Registeration Excel</h3>
-  <div style="display:flex;margin-left:25%;padding-top: 5%;">
-  <a style="background-color: green;color: white;" target="_blank" href="https://docs.google.com/spreadsheets/d/1GClbpQwyIQq3c8svv0EbvFSixUVAryxJoDdB05b7Xg8/copy" >Registeration Excel</a>
-</div>  
+  <b><h3 style="padding-top: 10%;text-decoration: underline;">To Get Registeration Excel</h3></b>
+  <div style="display:flex;padding-top: 5%;">
+    <h3>Click here -><a style="background-color: green;color: white;text-decoration: none;" target="_blank" href="https://docs.google.com/spreadsheets/d/1GClbpQwyIQq3c8svv0EbvFSixUVAryxJoDdB05b7Xg8/copy" >Registeration Excel</a></h3>
+</div> 
+</div> 
+<button *ngIf="!next" (click)="next=true">Next</button>
+<button *ngIf="next" (click)="next=false">Back</button>
 </div>
   </div>
  </div>

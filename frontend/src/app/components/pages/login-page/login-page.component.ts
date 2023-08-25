@@ -13,7 +13,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginPageComponent implements OnInit{
     loginForm!:FormGroup;
-
+    next:boolean=false;
     loading!:boolean
     sloginForm!:FormGroup;
     isSubmitted=false;

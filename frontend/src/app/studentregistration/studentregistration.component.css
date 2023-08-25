@@ -75,11 +75,11 @@
   .details{
     letter-spacing: 3px;
     width:flex;
-    height: 60%;
+    max-height: 80%;
     padding: 2em;
     margin-top: 8%;
     color: black;
-    align-content:center;
+    text-align: center;
     /* margin-right: 10%; */
     border-radius: 1em;
     background-color: white;

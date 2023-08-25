@@ -87,13 +87,19 @@ color: black;
 
 .details{
   letter-spacing: 3px;
+  text-align: center;
+  
   width:auto;
-  height: 60%;
+  max-height: 80%;
   padding: 2em;
   margin-top: 5%;
   border-radius: 1em;
   background-color: white;
 }
+
+/* .documents{
+  display: flex;
+} */
 
 .info_div {
     text-align: center;
