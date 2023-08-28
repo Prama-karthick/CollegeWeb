@@ -5,7 +5,7 @@ export const eventdetails:any[]= [{
       name: "விவாத மேடை",
       eventday:"day1",
       clubname:"The LA&TM",
-      imageUrl:"assets/fiesta/default.jpg",
+      imageUrl:"assets/legacy/Vivaatha Medai.png",
       rules: [ 
         "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
         "தனி நபர் விவாதம்.",
@@ -93,6 +93,7 @@ export const eventdetails:any[]= [{
     },{
       id: 5,
       name: "Pixie",
+      eventday:"day1",
       clubname:"Photography Club",
       imageUrl:"assets/fiesta/pixe.jpeg",
       rules: [
@@ -182,7 +183,7 @@ export const eventdetails:any[]= [{
         name: "DEBATE GURU",
         eventday:"day2",
         clubname:"The LA&TM",
-        imageUrl:"assets/fiesta/Ezhuthaani.png",
+        imageUrl:"assets/legacy/Debate_guru.png",
         rules: [
           "Date: 16/09/2023  Time: 10:00 AM to 12:00 PM",
           "Maximum of 2 participants per college.",
@@ -199,7 +200,7 @@ export const eventdetails:any[]= [{
         name: "EXTEMPORE",
         eventday:"day2",
         clubname:"The LA&TM",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/Extempore.jpg",
         rules: [    
           "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
           "Topic will be given on the spot.",
@@ -577,7 +578,7 @@ export const eventdetails:any[]= [{
         name: "மறுவார்த்தை (Translation)",
         eventday:"day2",
         clubname:"The LA&TM",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/Maruvaarthai.jpg",
         rules: [   
           "Date: 16/09/2023  Time: 1.30 PM to 3.30 PM",
           "ஓர் அணிக்கு இரண்டு பேர். ",
