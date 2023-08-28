@@ -74,8 +74,8 @@
   
   .details{
     letter-spacing: 3px;
-    width:flex;
-    max-height: 80%;
+    width:auto;
+    max-height: 65%;
     padding: 2em;
     margin-top: 8%;
     color: black;

@@ -22,7 +22,7 @@ export const eventdetails:any[]= [{
       name: "Best Manager",
       eventday:"day1",
       clubname:"Consumer Club",
-      imageUrl:"assets/fiesta/BM.jpg",
+      imageUrl:"assets/legacy/BM.jpg",
       rules: [
         "Prelims=> Date: 15/09/2023  Time: 10.30 AM to 12.30 PM",
         "--->Maximum of 5 participants per college.",
@@ -148,7 +148,7 @@ export const eventdetails:any[]= [{
       name: "MARTIAL ARTS",
       eventday:"day1",
       clubname:"Health Club",
-      imageUrl:"assets/fiesta/Ezhuthaani.png",
+      imageUrl:"assets/legacy/ma.jpg",
       rules: [
         "Date: 15/09/2023  Time: 10.30 AM to 12.00 PM",
         "Maximum of 1 participant per College.",
@@ -165,7 +165,7 @@ export const eventdetails:any[]= [{
         name: "கவித்திடல்",
         eventday:"day1",
         clubname:"The LA&TM",
-        imageUrl:"assets/fiesta/Ezhuthaani.png",
+        imageUrl:"assets/legacy/Kavithidal.png",
         rules: [
           "Date: 15/09/2023  Time: 3.00 PM to 4.30 PM",
         "தனி நபர் கவிதைப் பொட்டி",
@@ -284,7 +284,7 @@ export const eventdetails:any[]= [{
       id: 15,
       name: "SYMPHONIQUE",
       eventday:"day1",
-      clubname:"The LA&TM",
+      clubname:"Fine arts club",
       imageUrl:"assets/fiesta/Radio Mirchi.png",
       rules: [
         "Date: 15/09/2023  Time: 10.30 AM to 01.00 PM",
@@ -483,7 +483,7 @@ export const eventdetails:any[]= [{
         name: "DIVINE DISHES",
         eventday:"day1",
         clubname:"Club Innovative",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/dd.png",
         rules: [   
           "Date: 15/09/2023  Time: 2.00 PM to 4.30 PM",
           "It’s a brainstorming event related to food and cooking.",
@@ -505,7 +505,7 @@ export const eventdetails:any[]= [{
         name: "MARKETOMANIA",
         eventday:"day1",
         clubname:"Consumer Club",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/marketing.jpeg",
         rules: [    
           "Date: 15/09/2023  Time: 2.00 PM to 4.30 PM",
           "Maximum of 3 members per team and maximum of 2 teams per college",
@@ -540,7 +540,7 @@ export const eventdetails:any[]= [{
         name: "EXPRESSIONS (FACE PAINTING)",
         eventday:"day2",
         clubname:"Fine arts Club",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/Face Painting.png",
         rules: [   
           "Date: 16/09/2023  Time: 10:00 AM to 12:00 PM",
           "Maximum of 2 members per team and only 1 team per college.",
@@ -558,7 +558,7 @@ export const eventdetails:any[]= [{
         name: "WAR WITH WORDS",
         eventday:"day2",
         clubname:"Blue Sky",
-        imageUrl:"assets/fiesta/default.jpg",
+        imageUrl:"assets/legacy/www.jpg",
         rules: [    
           "Date: 16/09/2023  Time: 01.30 PM to 04.00 PM",
           "One team per college and 3 members per team.",
