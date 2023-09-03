@@ -81,14 +81,35 @@
   </ul>
 </div>
   <div class="documents" *ngIf="next">
-  <b><h3 style="padding-top: 10%;text-decoration: underline;">To know the Registration Steps</h3></b>
-  <div class="screenshots" style="display:flex;padding-top: 5%;">
+  <b><h3  >Registration Steps</h3></b><br><br>
+  <!-- <div class="screenshots" style="display:flex;padding-top: 5%;">
     <h3>Click here -><a target="_blank" href="assets/legacy/Legacy'23 Registration Process.pdf" style="background-color: red;color: white;text-decoration: none;" download>Registration Steps pdf</a></h3>
+  </div> -->
+  <div style="padding-top: 1%;">
+  <ol>
+    <b>
+      <li>Download The Excel sheet ->     
+        <a style="background-color: green;color: white;text-decoration: none;" target="_blank"
+             href="assets/legacy/Registration Excel.xlsx" download>Registration Excel
+          </a>    
+      </li><br>
+      <li>
+        <a>Fill the excel sheet with a proper details to particpate in events</a>
+      </li><br>
+      <li>
+        <a>Fill the G-form by uploading the Excel sheet ->
+          <a style="background-color: blue;color: white;text-decoration: none;"
+           target="_blank" href="https://forms.gle/nCZvHgq3MDzQF5H26" >
+           Legacy’23 Registration G-Form
+          </a>
+        </a>
+      </li><br>
+      <li>
+        <a>Students Will receive the mail after Successfull Registration</a>
+      </li><br>
+    </b>
+  </ol>
   </div>
-  <b><h3 style="padding-top: 10%;text-decoration: underline;">To Get Registration Excel</h3></b>
-  <div style="display:flex;padding-top: 5%;">
-    <h3>Click here -><a style="background-color: green;color: white;text-decoration: none;" target="_blank" href="assets/legacy/Registration Excel.xlsx" download>Registration Excel</a></h3>
-</div> 
 </div> 
 <button *ngIf="!next" (click)="next=true">Next</button>
 <button *ngIf="next" (click)="next=false">Back</button>
