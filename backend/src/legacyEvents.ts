@@ -256,6 +256,7 @@ export const eventdetails:any[]= [{
 	"Final score will be based on all previous levels.",
 	"Usage of electronic gadgets during the event is prohibited.",
   "Participation of boys and girls is strictly prohibited.",
+  "For Queries mail to: thunt@mepcoeng.ac.in",
 	"Jury's decision is final.",
 
 
@@ -523,7 +524,7 @@ export const eventdetails:any[]= [{
         id: 27,
         name: "LIPHOMANIAC(SPELL BEE)",
         eventday:"day2",
-        clubname:"Blue Sky Forum",
+        clubname:"Readers Club",
         imageUrl:"assets/fiesta/default.jpg",
         rules: [   
           "Date: 16/09/2023  Time: 10.00 AM to 12.30 PM",
