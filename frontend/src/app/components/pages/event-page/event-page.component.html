@@ -151,16 +151,16 @@
         <tr>
           <th>Name</th>
           <th>Email</th>
-          <th>Class</th>
-          <th>Admin No</th>
+          <th>Year</th>
+          <th>College</th>
           <th>Gender</th>
         </tr>
         <tr *ngFor="let person of participantList">
-          <td>{{person.name}}</td>
-          <td>{{person.email}}</td>
-          <td>{{person.year}}-{{person.department}} {{person.section}}</td>
-          <td>{{person.admissionNo}}</td>
-          <td>{{person.gender}}</td>
+          <td>{{person.StudentName}}</td>
+          <td>{{person.Email}}</td>
+          <td>{{person.year}}</td>
+          <td>{{person.collegeName}}</td>
+          <td>{{person.Gender}}</td>
         </tr>
       </table>
       </div>

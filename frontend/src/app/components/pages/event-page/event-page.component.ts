@@ -170,7 +170,7 @@ export class EventPageComponent {
 
   change(){
       this.list=!this.list;
-      if(this.product.id<9)
+      if(this.product.id<32)
       {
       this.eventservice.getsoloparticipants(this.product.name).subscribe((response:any)=>{
         if(response['msg']==-1){

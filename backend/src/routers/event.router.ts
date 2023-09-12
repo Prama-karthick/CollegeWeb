@@ -20,7 +20,7 @@ router.get('/insert',asyncHandler(
       //  }
    
        await LegacyStudentModel.create(legacystudentlist);
-       res.send("Inserted Successfully!");
+       res.send("Students Uploaded");
    }
    ))
 
