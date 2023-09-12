@@ -25,6 +25,7 @@ export class ProfileComponent {
   workshopName!:string;
   workshopPrice!:number;
   eventNames:string[]=[];
+  checkadmin:boolean=false;
   participantLists:any[]=[];
   participantList:any[]=[];
   List:any[]=[];
@@ -81,6 +82,7 @@ this.loading=false;
 setadmin(pass:any){
   if(pass=="legacy23.onrender.com"){
     this.userService.setadminstatus();
+    this.checkadmin=true;
   }
   else{
     window.alert("Illegal Access!!")

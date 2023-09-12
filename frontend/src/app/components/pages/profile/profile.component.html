@@ -78,7 +78,7 @@
   </div>
   
 
-  <div *ngIf="user.isAdmin" class="admin">
+  <div *ngIf="user.isAdmin || checkadmin" class="admin">
     <!-- <button  (click)="change()">Participant List</button><button  (click)="accomdation()">Accomdation List</button><button  (click)="paymentList()">Payment List</button> -->
     <div *ngIf="isSearch && particularUser ; else nosuchuser">
       <table>
@@ -86,21 +86,21 @@
           <th>Name</th>
           <th>Email</th>
           <th>College</th>
-          <th>Event Fee:</th>
-          <th>Workshop</th>
-          <th>Workshop Fee:</th>
+          <th>Payment</th>
+          <!-- <th>Workshop</th> -->
+          
           <th>Accomdation</th>
+          <th>Accomdation Fee</th>
           <th>Contact</th>
         </tr>
         <tr>
-          <td>{{particularUser.name}}</td>
-          <td>{{particularUser.email}}</td>
-          <td>{{particularUser.college}}</td>
-          <td><h4 *ngIf="particularUser.eventPay">PAID</h4></td>
-          <td>{{particularUser.workshop}}</td>
-          <td><h4 *ngIf="particularUser.isPayed">PAID</h4></td>
-          <td>{{particularUser.accomdation}}</td>
-          <td>{{particularUser.phone_number}}</td>
+          <td>{{particularUser.StudentName}}</td>
+          <td>{{particularUser.Email}}</td>
+          <td>{{particularUser.collegeName}}</td>
+          <td><h4>{{particularUser.Payment}}</h4></td>
+          <td>{{particularUser.Accomodation }}</td>
+          <td><h4>{{particularUser.Accom_payment}}</h4></td>
+          <td>{{particularUser.MobileNo}}</td>
         </tr>
       </table>
       </div>
@@ -109,28 +109,34 @@
       </ng-template>
     <br><label>Search By Email</label>
     <br><input #searchemail  type="text">
-    <!-- <button (click)="clickme(searchemail.value)">Search</button> -->
+    <!-- <button (click)="clickme(searchemail.value)">Search</button> -->*ngFor="let person of participantLists"
 
     <div *ngIf="this.list">
       <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
         <i class="fa-solid fa-file-export"></i> Export to Excel
     </button>
     <h3>No of Students:{{this.count}}</h3>
-    <table class="table table-hover table-condensed table-striped" id="participantsTable">
-        <tr>
+    <table id="participantsTable">
+      <tr>
         <th>Name</th>
         <th>Email</th>
         <th>College</th>
+        <th>Payment</th>
+        <!-- <th>Workshop</th> -->
+        
+        <th>Accomdation</th>
+        <th>Accomdation Fee</th>
         <th>Contact</th>
       </tr>
-
-      <tr *ngFor="let person of participantLists">
-        <td>{{person.name}}</td>
-        <td>{{person.email}}</td>
-        <td>{{person.college}}</td>
-        <td>{{person.phone_number}}</td>
+      <tr *ngFor="let particularUser of participantLists">
+        <td>{{particularUser.StudentName}}</td>
+        <td>{{particularUser.Email}}</td>
+        <td>{{particularUser.collegeName}}</td>
+        <td><h4>{{particularUser.Payment}}</h4></td>
+        <td>{{particularUser.Accomodation }}</td>
+        <td><h4>{{particularUser.Accom_payment}}</h4></td>
+        <td>{{particularUser.MobileNo}}</td>
       </tr>
-
     </table>
 
     </div>
