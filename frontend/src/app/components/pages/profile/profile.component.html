@@ -4,7 +4,7 @@
   <div id="stars2"></div>
   <div id="stars3"></div>
   <div>
-  <div class="details">
+  <!-- <div class="details">
     <h1>Details</h1>
     <div class="c1">
       <h1>Name:</h1>
@@ -22,38 +22,44 @@
       <h3>Admission Number:</h3>
       <p>{{user.admissionNo}}</p>
     </div>
-    <!-- <div class="c1">
+    <div class="c1">
       <h3>Department:</h3>
     
     </div>
     <div class="c1">
       <h3>College:</h3>
       
-    </div> -->
+    </div> 
 
-  </div>
+  </div> -->
 
-  <div class="flexing">
+  <!-- <div class="flexing">
 
   <div class="workshop">
     <h2>Events</h2>
     <div *ngIf="loading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
   <div  *ngIf="!loading">
     <div class="workshopName" *ngFor="let event of uevents">
-       <li>{{event}}</li><!--<input type="submit" class="main-btn" routerLink="/modify/{{event}}" value="Participate"/> -->
+       <li>{{event}}</li><input type="submit" class="main-btn" routerLink="/modify/{{event}}" value="Participate"/>
     </div>
   </div>
   <br><br><br>
-    <!-- <div class="payments">
+    <div class="payments">
       <h4 *ngIf="user.isPayed">Workshop:{{this.workshopName}}<br>Workshop Fee:<br>PAID</h4>
       <div *ngIf="!user.isPayed">
       <h4>Workshop Fee:&nbsp;{{this.workshopPrice}}+ 4% Transaction charge</h4>
      <button (click)="workshopPay()">pay</button>
     </div>
     </div> -->
+    <div class="details">
+    <label>Admin Password:</label>
+    <input #password type="password"/><br>
+    <button (click)="setadmin(password.value)">Submit</button>
   </div>
 
-  <div class="events">
+
+
+  <!-- <div class="events">
     <h2>Your Teams:</h2>
     <div *ngIf="loading" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Loading...</div>
     <div *ngIf="!loading">
@@ -61,18 +67,18 @@
     <li>{{team}}</li>
     </div>
   </div>
-    <!-- <div class="payments">
+     <div class="payments">
       <h4 *ngIf="user.eventPay">Events Fee:<br>PAID</h4>
       <div *ngIf="!user.eventPay">
       <h4>Event Fee:&nbsp;200 + 4% Transaction charge</h4>
       <button (click)="eventPay()">pay</button>
     </div>
-    </div> -->
+    </div>
+  </div> -->
   </div>
-  </div>
-  </div>
+  
 
-  <div *ngIf="user.isAdmin && (user.email==='pramakarthick@gmail.com') " class="admin">
+  <div *ngIf="user.isAdmin" class="admin">
     <!-- <button  (click)="change()">Participant List</button><button  (click)="accomdation()">Accomdation List</button><button  (click)="paymentList()">Payment List</button> -->
     <div *ngIf="isSearch && particularUser ; else nosuchuser">
       <table>

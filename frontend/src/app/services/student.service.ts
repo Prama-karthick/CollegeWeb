@@ -14,6 +14,7 @@ export class StudentService {
   public userObservable:Observable<Student>;
   userevents!: string[];
   userteams!: string[];
+  admin!:boolean;
   studentin: boolean=false;
   constructor(private http:HttpClient,private toastrservice:ToastrService) { 
     this.userObservable=this.userSubject.asObservable();
@@ -89,6 +90,14 @@ export class StudentService {
   }
   get teams(){
     return this.userteams
+  }
+
+  setadminstatus(){
+    this.admin=true;
+  }
+
+  get adminstatus(){
+    return this.admin;
   }
 
   addevents(eventname:string){

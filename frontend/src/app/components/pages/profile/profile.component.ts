@@ -78,6 +78,16 @@ this.loading=false;
 }
 
 
+setadmin(pass:any){
+  if(pass=="legacy23.onrender.com"){
+    this.userService.setadminstatus();
+  }
+  else{
+    window.alert("Illegal Access!!")
+  }
+}
+
+
 eventPay(){
 this.orderService.eventpay("event").subscribe((result:any)=>{
 

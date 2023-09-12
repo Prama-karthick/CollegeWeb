@@ -34,7 +34,7 @@ const routes: Routes = [
   {path:'modify/:tname',component:ProfilemodificationComponent,canActivate:[AuthGuard]},
 
   {path: "paid", component:PaidComponent,canActivate:[AuthGuard]},
-  {path:"profile",component:ProfileComponent,canActivate:[AuthGuard]},
+  {path:"profile",component:ProfileComponent},
   {path:"admin",component:AdminPageComponent,canActivate:[AuthGuard]},
   {path:"workshop",component:WorkshopComponent,canActivate:[AuthGuard]}
 

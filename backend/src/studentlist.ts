@@ -3,13 +3,13 @@ import { Student } from "./models/students.model";
 export const studentlist:any[]=[
   {
     id:'',
-    name:'',
-    email:'',
+    name:'tester',
+    email:'popo@gmail.com',
     password:'',
     isAdmin :false,
     event:[''],
     yourteams:[''],
-    admissionNo:"",
+    admissionNo:"12221",
     gender:'Male',
     department:'CSE',
     year:'IV',

@@ -1,13 +1,28 @@
 import { Router } from "express";
 import asyncHandler from "express-async-handler";
-import { RegisterStudent, Student, StudentModel } from "../models/students.model";
+import { LegacyStudentModel, RegisterStudent, Student, StudentModel } from "../models/students.model";
 import { EventModel, Events, RegisterStudentSchema } from "../models/events.model";
 import { GroupModel, TeamEvents,TeamEventModel } from "../models/groupteam.model";
 import { eventdetails } from "../legacyEvents";
 import { getstudent } from "./student.router";
+import { legacystudentlist } from "../legacystudentlist";
 
 
 const router= Router();
+
+router.get('/insert',asyncHandler(
+    async (req, res) => {
+       const studentscount = await LegacyStudentModel.countDocuments();
+       //const incount= studentlist.length;
+      //  if(studentscount> incount){
+      //    res.send("Check Details");
+      //    return;
+      //  }
+   
+       await LegacyStudentModel.create(legacystudentlist);
+       res.send("Inserted Successfully!");
+   }
+   ))
 
 router.post('/soloeventparticipation',asyncHandler(
     async (req, res) => {
@@ -186,10 +201,140 @@ router.post('/soloeventparticipation',asyncHandler(
 
  router.get("/getsoloparticipants:productname",asyncHandler(async(req,res)=>{
       const eventname=req.params.productname
-   
-       const product=await EventModel.findOne({name:eventname});
+      var filter;
+        switch (eventname){
+            case "விவாத மேடை":{
+                filter={விவாத:"TRUE"}
+                break;
+            }
+            case "Best Manager":{
+                filter={BEST:"TRUE"}
+                break;
+            }
+            case "MAKE YOUR MOVE (Solo Dance)":{
+                filter={MAKE:"TRUE"}
+                break;
+            }
+            case "VOICE OF LEGACY (Solo Singing)":{
+                filter={VOICE:"TRUE"}
+                break;
+            }
+            case "MUSIC UNPLUGGED (Solo Instrumental)":{
+                filter={MUSIC:"TRUE"}
+                break;
+            }
+            case "Pixie":{
+                filter={PIXIE:"TRUE"}
+                break;
+            }
+            case "Pencil Sketching":{
+                filter={PENCIL:"TRUE"}
+                break;
+            }
+            case "Yoga":{
+                filter={YOGA:"TRUE"}
+                break;
+            }
+            case "MARTIAL ARTS":{
+                filter={MARTIAL:"TRUE"}
+                break;
+            }
+            case "கவித்திடல்":{
+                filter={கவித்திடல்:"TRUE"}
+                break;
+            }
+            case "DEBATE GURU":{
+                filter={DEBATE:"TRUE"}
+                break;
+            }
+            case "EXTEMPORE":{
+                filter={EXTEMPORE:"TRUE"}
+                break;
+            }
+            case "Divide And Conquer(MULTI TASKING)":{
+                filter={DIVIDE:"TRUE"}
+                break;
+            }
+            case "Treasure hunt":{
+                filter={TREASURE:"TRUE"}
+                break;
+            }
+            case "Monsters’ Muss (English Language Game)":{
+                filter={Monsters:"TRUE"}
+                break;
+            }
+            case "SYMPHONIQUE":{
+                filter={SYMPHONIQUE:"TRUE"}
+                break;
+            }
+            case "KALAKKAL KALATTA":{
+                filter={KALAKKAL:"TRUE"}
+                break;
+            }
+            case "Lyrical Hunt":{
+                filter={LYRICAL:"TRUE"}
+                break;
+            }
+            case "Sherlock Holmes":{
+                filter={SHERLOK:"TRUE"}
+                break;
+            }
+            case "Cinematrix (Short Flim)":{
+                filter={CINEMATRIX:"TRUE"}
+                break;
+            }
+            case "QUIZZARDS (QUIZ)":{
+                filter={QUIZZARDS:"TRUE"}
+                break;
+            }
+            case "CHOREO BOOM (Group Dance)":{
+                filter={CHOREO:"TRUE"}
+                break;
+            }
+            case "GRAPHIX (TRAILER TIME)":{
+                filter={GRAPHIX:"TRUE"}
+                break;
+            }
+            case "Rangoli":{
+                filter={RANGOLI:"TRUE"}
+                break;
+            }
+            case "DRAMATICS":{
+                filter={DRAMATICS:"TRUE"}
+                break;
+            }
+            case "DIVINE DISHES":{
+                filter={DIVINE:"TRUE"}
+                break;
+            }
+            case "MARKETOMANIA":{
+                filter={MARKETOMANIA:"TRUE"}
+                break;
+            }
+            case "LIPHOMANIAC(SPELL BEE)":{
+                filter={LIPHOMANIAC:"TRUE"}
+                break;
+            }
+            case "EXPRESSIONS (FACE PAINTING)":{
+                filter={EXPRESSIONS:"TRUE"}
+                break;
+            }
+            case "WAR WITH WORDS":{
+                filter={WAR:"TRUE"}
+                break;
+            }
+            case "மறுவார்த்தை (Translation)":{
+                filter={மறுவார்த்தை:"TRUE"}
+                break;
+            }
+            default: { 
+                filter={WAR:"TRUE"}
+                break; 
+             } 
+        }
+       const product=await LegacyStudentModel.find(filter);
       if(product){
-        res.send(product.participants);
+        res.send(product);
     }
          //   for(let i=0;i<eventdetails.length;i++){
     //     if(id==i){

@@ -29,6 +29,7 @@ export class EventPageComponent {
   count:number=0;
   List:any[]=[];
   issolo!: boolean;
+  checkadmin:boolean=false;
   rules!: string[];
   closed:boolean=false;
   closedevents:string[]=['10','14'];
@@ -73,6 +74,7 @@ export class EventPageComponent {
     if(this.user.event)
     this.eLen=this.user.event.length;
     this.loading=false
+    this.checkadmin=this.userService.adminstatus;
   }
 
   confirmationbox(){
