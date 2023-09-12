@@ -11,10 +11,10 @@ router.get('/insert',asyncHandler(
     async (req, res) => {
        const studentscount = await StudentModel.countDocuments();
        const incount= studentlist.length;
-       if(studentscount> incount){
-         res.send("Check Details");
-         return;
-       }
+      //  if(studentscount> incount){
+      //    res.send("Check Details");
+      //    return;
+      //  }
    
        await StudentModel.create(studentlist);
        res.send("Inserted Successfully!");
