@@ -83,6 +83,20 @@ setadmin(pass:any){
   if(pass=="legacy23.onrender.com"){
     this.userService.setadminstatus();
     this.checkadmin=true;
+    this.eventservice.getAllParticipants("LISTS").subscribe((response:any)=>{
+            if(response){
+            // this.count=response.length;
+            this.participantLists=response;
+            this.count=response.length;
+            // this.Lists=response;
+            // this.participantLists=this.Lists.filter(student=>student.isAdmin===false);
+            // this.count=this.participantLists.length;
+      
+            }
+            else{
+              this.toastrservice.error("No participants");
+            }
+          })
   }
   else{
     window.alert("Illegal Access!!")

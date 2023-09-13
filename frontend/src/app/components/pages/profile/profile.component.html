@@ -105,11 +105,10 @@
       </table>
       </div>
       <ng-template #nosuchuser>
-        <h2>Mail id Doesn't Match</h2>
       </ng-template>
     <br><label>Search By Email</label>
     <br><input #searchemail  type="text">
-    <!-- <button (click)="clickme(searchemail.value)">Search</button> -->*ngFor="let person of participantLists"
+    <!-- <button (click)="clickme(searchemail.value)">Search</button> -->
 
     <div *ngIf="this.list">
       <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">

@@ -49,4 +49,4 @@ export const GROUP_EVENT=EVENT_URL+'/participates';
 
 export const GET_SOLOPARTICIPANT=EVENT_URL+'/getsoloparticipants';
 export const GET_GROUPPARTICIPANT=EVENT_URL+'/getgroupparticipants';
-
+export const GET_ALLPARTICIPANT=EVENT_URL+'/getallparticpants';

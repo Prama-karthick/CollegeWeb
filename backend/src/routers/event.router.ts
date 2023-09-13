@@ -260,7 +260,7 @@ router.post('/soloeventparticipation',asyncHandler(
                 break;
             }
             case "Monsters’ Muss (English Language Game)":{
-                filter={Monsters:"TRUE"}
+                filter={MONSTERS:"TRUE"}
                 break;
             }
             case "SYMPHONIQUE":{
@@ -276,7 +276,7 @@ router.post('/soloeventparticipation',asyncHandler(
                 break;
             }
             case "Sherlock Holmes":{
-                filter={SHERLOK:"TRUE"}
+                filter={SHERLOCK:"TRUE"}
                 break;
             }
             case "Cinematrix (Short Flim)":{
@@ -344,6 +344,20 @@ router.post('/soloeventparticipation',asyncHandler(
     res.json({msg:-1})
     }
   ));
+
+  router.get("/getallparticpants:name",asyncHandler(async(req,res)=>{
+     const product=await LegacyStudentModel.find();
+    if(product){
+      res.send(product);
+    }
+       //   for(let i=0;i<eventdetails.length;i++){
+  //     if(id==i){
+  //       var  eventname=eventdetails[i].name
+  // }}
+  
+  res.json({msg:-1})
+  }
+));
 
 
 

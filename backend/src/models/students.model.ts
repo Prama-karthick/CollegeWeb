@@ -104,7 +104,7 @@ export const LegacyStudentSchema=new Schema<LegacyStudent>({
   StudentName:{type:String,required:true},
   year:{type:String},
   collegeName:{type:String,required:true},
-  Email:{type:String,unique:true},
+  Email:{type:String},
   MobileNo:{type:String},
   Gender:{type:String},
   Accomdation:{type:String},
