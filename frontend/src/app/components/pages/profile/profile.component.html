@@ -124,20 +124,17 @@
         <th>Name</th>
         <th>Email</th>
         <th>College</th>
+        <th>Gender</th>
         <th>Payment</th>
         <!-- <th>Workshop</th> -->
-        
-        <th>Accomdation</th>
-        <th>Accomdation Fee</th>
         <th>Contact</th>
       </tr>
       <tr *ngFor="let s of participantLists">
         <td>{{s.StudentName}}</td>
         <td>{{s.Email}}</td>
         <td>{{s.collegeName}}</td>
+        <td>{{p.Gender}}</td>
         <td><h4>{{s.Payment}}</h4></td>
-        <td>{{s.Accomodation }}</td>
-        <td><h4>{{s.Accom_payment}}</h4></td>
         <td>{{s.MobileNo}}</td>
       </tr>
     </table>

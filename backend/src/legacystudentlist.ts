@@ -1,5 +1,1 @@
-export const legacystudentlist:any[]=
-[
-
-
-]
+export const legacystudentlist:any[]=[]
