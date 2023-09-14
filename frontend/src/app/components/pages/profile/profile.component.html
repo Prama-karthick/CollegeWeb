@@ -79,40 +79,44 @@
   
 
   <div *ngIf="user.isAdmin || checkadmin" class="admin">
+    <button class="btn btn-primary" style="float: right;" (click)="exportExcel()">
+      <i class="fa-solid fa-file-export"></i> Download
+  </button>
     <!-- <button  (click)="change()">Participant List</button><button  (click)="accomdation()">Accomdation List</button><button  (click)="paymentList()">Payment List</button> -->
     <div *ngIf="isSearch && particularUser ; else nosuchuser">
-      <table>
+      <table id="accomTable">
         <tr>
           <th>Name</th>
           <th>Email</th>
           <th>College</th>
-          <th>Payment</th>
+          <!-- <th>Payment</th> -->
           <!-- <th>Workshop</th> -->
-          
+          <th>Gender</th>
           <th>Accomdation</th>
           <th>Accomdation Fee</th>
           <th>Contact</th>
         </tr>
-        <tr>
-          <td>{{particularUser.StudentName}}</td>
-          <td>{{particularUser.Email}}</td>
-          <td>{{particularUser.collegeName}}</td>
-          <td><h4>{{particularUser.Payment}}</h4></td>
-          <td>{{particularUser.Accomodation }}</td>
-          <td><h4>{{particularUser.Accom_payment}}</h4></td>
-          <td>{{particularUser.MobileNo}}</td>
+        <tr *ngFor="let p of particularUser">
+          <td>{{p.StudentName}}</td>
+          <td>{{p.Email}}</td>
+          <td>{{p.collegeName}}</td>
+          <!-- <td><h4>{{p.Payment}}</h4></td> -->
+          <td>{{p.Gender}}</td>
+          <td>{{p.Accomodation }}</td>
+          <td><h4>{{p.Accom_payment}}</h4></td>
+          <td>{{p.MobileNo}}</td>
         </tr>
       </table>
       </div>
       <ng-template #nosuchuser>
       </ng-template>
-    <br><label>Search By Email</label>
+    <br><label>Search By Accomdation</label>
     <br><input #searchemail  type="text">
-    <!-- <button (click)="clickme(searchemail.value)">Search</button> -->
+    <button (click)="clickme(searchemail.value)">Search</button>
 
     <div *ngIf="this.list">
       <button class="btn btn-primary" style="float: right;" (click)="exportToExcel()">
-        <i class="fa-solid fa-file-export"></i> Export to Excel
+        <i class="fa-solid fa-file-export"></i> Download
     </button>
     <h3>No of Students:{{this.count}}</h3>
     <table id="participantsTable">
@@ -127,19 +131,19 @@
         <th>Accomdation Fee</th>
         <th>Contact</th>
       </tr>
-      <tr *ngFor="let particularUser of participantLists">
-        <td>{{particularUser.StudentName}}</td>
-        <td>{{particularUser.Email}}</td>
-        <td>{{particularUser.collegeName}}</td>
-        <td><h4>{{particularUser.Payment}}</h4></td>
-        <td>{{particularUser.Accomodation }}</td>
-        <td><h4>{{particularUser.Accom_payment}}</h4></td>
-        <td>{{particularUser.MobileNo}}</td>
+      <tr *ngFor="let s of participantLists">
+        <td>{{s.StudentName}}</td>
+        <td>{{s.Email}}</td>
+        <td>{{s.collegeName}}</td>
+        <td><h4>{{s.Payment}}</h4></td>
+        <td>{{s.Accomodation }}</td>
+        <td><h4>{{s.Accom_payment}}</h4></td>
+        <td>{{s.MobileNo}}</td>
       </tr>
     </table>
 
     </div>
-    <div *ngIf="this.Alist">
+    <!-- <div *ngIf="this.Alist">
       <button class="btn btn-primary" style="float: right;" (click)="exportExcel()">
         <i class="fa-solid fa-file-export"></i> Export to Excel
     </button>
@@ -163,7 +167,7 @@
 
     </table>
 
-    </div>
+    </div> -->
     <div *ngIf="this.Plist">
       <button class="btn btn-primary" style="float: right;" (click)="printPayList()">
         <i class="fa-solid fa-file-export"></i> Export to Excel

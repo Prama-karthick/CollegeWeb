@@ -34,7 +34,7 @@ export class ProfileComponent {
   Plist:boolean=false;
   count:number=0;
   list:boolean=false;
-  particularUser:any;
+  particularUser:any[]=[];
   isSearch:boolean=false;
   uevents: string[]=[];
   uteams!: string[];
@@ -83,6 +83,7 @@ setadmin(pass:any){
   if(pass=="legacy23.onrender.com"){
     this.userService.setadminstatus();
     this.checkadmin=true;
+    this.list=true;
     this.eventservice.getAllParticipants("LISTS").subscribe((response:any)=>{
             if(response){
             // this.count=response.length;
@@ -293,23 +294,24 @@ exportToExcel()
 //   })
 // }
 
-// clickme(useemail:string){
-//   if(useemail){
-//     this.userService.search({email:useemail}).subscribe((response:any)=>{
-//       if(response){
-//           this.isSearch=true;
-//           this.particularUser=response;
-//       }
-//       else{
-//         this.isSearch=false;
-//         this.toastrservice.error("No User was found");
-//       }
-//   })
-//   }
-//   else{
-//     this.toastrservice.error("Enter the email to search");
-//   }
+clickme(useemail:string){
+  if(useemail){
+        this.particularUser=this.participantLists.filter(student=>student.accomdation==="yes" || student.accomdation==="YES" || student.accomdation==="Y" || student.accomdation==="y");
+      if(this.particularUser)
+      {
+          this.isSearch=true;
+          // this.particularUser=this.participantLists;
+      }
+      else{
+        this.isSearch=false;
+        this.toastrservice.error("No Students");
+      }
+  }
 
-// }
+  else{
+    this.toastrservice.error("Enter YES/yes to search");
+  }
+
+}
 
 }
